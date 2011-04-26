@@ -1,0 +1,43 @@
+
+
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+	<font class="mediumtxt"><br>
+		
+		
+		
+	<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center"><tbody>
+		
+		<tr><td bgcolor="#dde3ec"><table width="100%" cellspacing="1" cellpadding="4" border="0" class="smalltxt"><tbody><tr class="header"><td colspan="99">年级列表</td></tr>
+	<tr align="center" class="category">
+		<td width="90">ID</td>
+		<td>名称</td>
+		<td width="50">含班级数</td>
+		<td width="50">含学生数</td>
+		<td colspan="2">操作</td>
+	</tr>
+		<% @grades.each do |grade| %>
+		  <tr align="center" class="pointable">
+				<td bgcolor="#f8f9fc"><%= grade.id %></td>
+				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"><%= link_to grade.name+'级',"/grades/#{grade.id}/students" %></td>
+				<td bgcolor="#ffffff"><%= grade.klasses.count %></td>
+				<td bgcolor="#ffffff"><%= sum=0;grade.klasses.each {|k| sum+=k.students.count};sum %></td>
+		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_props.png"/>'.html_safe, "/grades/#{grade.id}/students" %></td>
+		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_drop.png"/>'.html_safe, grade, :confirm => '确认吗?', :method => :delete %></td>
+		  </tr>
+		<% end %>
+		</tbody></table></td></tr>
+			<tr class="multi"><td><%= paginate @grades %></td></tr>
+	</tbody></table></font>
+	<table width="99%" cellspacing="0" cellpadding="0" align="center">
+	<tbody><tr>
+	</tr></tbody></table>
+	
+</table>
+

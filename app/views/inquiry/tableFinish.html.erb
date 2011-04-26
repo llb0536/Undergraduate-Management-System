@@ -1,0 +1,47 @@
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%"><tr class="header"><td>生成表格：信息确认</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+<ul><li>请确认已选择的信息。</ul>
+</td></tr></table></td></tr></table>
+<br><br>
+
+<%= form_tag '/inquiry/tableConfirmed' do %>
+<input type="hidden" name="checked_grades" value="<%= params[:checked_grades] %>">
+<input type="hidden" name="checked_klasses" value="<%= params[:checked_klasses] %>">
+<input type="hidden" name="checked_students" value="<%= params[:checked_students] %>">
+<input type="hidden" name="checked_courses" value="<%= params[:checked_courses] %>">
+<input type="hidden" name="checked_courses_quan" value="<%= params[:quan] %>">
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tbody><tr><td bgcolor="#dde3ec">
+<table border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr class="header"><td colspan="5">总结</td></tr>
+<tr align="center">
+<td bgcolor="#f8f9fc" width="15%">生成人:</td>
+<td bgcolor="#ffffff" width="27%"><%= current_user.name %></td>
+<td bgcolor="#f8f9fc" width="15%">统计班级数:</td>
+<td bgcolor="#ffffff" width="28%"><%= params[:checked_klasses].to_s.split(', ').count %></td>
+</tr>
+<tr align="center">
+<td bgcolor="#f8f9fc" width="15%">统计学生数:</td>
+<td bgcolor="#ffffff" width="27%"><%= params[:checked_students].to_s.split(', ').count %></td>
+<td bgcolor="#f8f9fc" width="15%">统计课程数:</td>
+<td bgcolor="#ffffff" width="28%"><%= params[:checked_courses].to_s.split(', ').count %></td>
+</tr>
+<tr align="center">
+<td bgcolor="#f8f9fc" width="15%" style="vertical-align:top">科目及权重:</td>
+<td bgcolor="#ffffff" colspan="3" align="left" style="padding:5px">
+<% @courses_hash.each do |key,value| %>
+	<span style="color:#000"><%= key.name %></span><span style="color:#999">(<%= value %>)</span>&nbsp;&nbsp;
+<% end %>
+</td>
+
+</tr>
+<tr align="center">
+	<td bgcolor="#f8f9fc" colspan="10">
+<center><input type="button" value="上一步" onclick="history.go(-1)">&nbsp;&nbsp;<%= submit_tag '完成',:onclick=>"this.disabled=true;this.value='生成中，请等待'"%></center>		
+		</td>
+</tr>
+
+
+</tbody></table></td></tr></tbody></table>
+<% end %>

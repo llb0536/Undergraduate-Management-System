@@ -1,0 +1,1723 @@
+//TVSYSTEM = NTSC
+$FONTNAME = Arial
+$FONTSIZE = 36
+$BOLD = FALSE
+$ITALIC = FALSE
+$HORZALIGN = Center
+$VERTALIGN = Bottom
+$XOFFSET = 0
+$YOFFSET = 2
+$CONTRAST1 = 15
+$CONTRAST2 = 0
+$CONTRAST3 = 15
+$CONTRAST4 = 0
+$TAPEOFFSET = FALSE
+00:00:19:24,00:00:21:29,(siren blaring)
+00:00:34:03,00:00:37:22,(man) She shivers in the wind|like the last leaf on a dying tree.
+00:00:41:26,00:00:44:13,I let her hear my footsteps.
+00:00:46:28,00:00:49:21,She only goes stiff for a moment.
+00:00:49:24,00:00:52:17,Care for a smoke?
+00:00:54:24,00:00:58:13,Sure.|I'll take one.
+00:00:58:15,00:01:01:02,Are you as bored by that crowd as I am?
+00:01:02:05,00:01:06:15,I didn't come here for the party.|I came here for you.
+00:01:08:10,00:01:11:03,I've watched you for days.
+00:01:12:05,00:01:15:28,You're everything a man could ever want.
+00:01:16:00,00:01:18:14,It's not just your face,
+00:01:18:16,00:01:23:03,your figure, or your voice.
+00:01:26:10,00:01:28:04,It's your eyes.
+00:01:29:17,00:01:32:26,All the things I see in your eyes.
+00:01:35:04,00:01:37:16,What is it you see in my eyes?
+00:01:42:03,00:01:44:24,I see a crazy calm.
+00:01:46:17,00:01:48:16,You're sick of running.
+00:01:50:26,00:01:53:25,You're ready to face what you have to face.
+00:01:54:09,00:01:57:23,But you don't want to face it alone.
+00:01:57:25,00:01:59:24,No.
+00:01:59:28,00:02:02:02,I don't want to face it alone.
+00:02:09:24,00:02:12:22,The wind rises electric.
+00:02:12:24,00:02:16:15,She's soft and warm|and almost weightless.
+00:02:16:18,00:02:20:17,Her perfume a sweet promise|that brings tears to my eyes.
+00:02:22:03,00:02:24:19,I tell her that everything will be all right.
+00:02:26:15,00:02:31:11,That I'll save her from whatever|she's scared of and take her far. Far away.
+00:02:34:08,00:02:37:21,I tell her I love her.
+00:02:37:24,00:02:39:24,(gunshot through silencer)
+00:02:41:12,00:02:44:18,The silencer|makes a whisper of the gunshot.
+00:02:46:22,00:02:49:16,I hold her close until she's gone.
+00:02:52:09,00:02:55:03,I'll never know|what she was running from.
+00:02:57:22,00:02:59:22,I'll cash her check in the morning.
+00:04:53:14,00:04:57:06,(man) Just one hour to go. |My last day on the job.
+00:04:57:08,00:05:00:06,Early retirement. |Not my idea.
+00:05:00:08,00:05:03:06,Doctor's orders. |Heart condition.
+00:05:03:09,00:05:05:29,"Angina. " he calls it.
+00:05:06:24,00:05:10:10,I'm polishing my badge and getting myself|used to the idea of saying goodbye to it.
+00:05:10:13,00:05:14:03,It. And the 30-odd years|of protecting and serving and tears
+00:05:14:05,00:05:18:22,and the blood and terror|and triumph it represents.
+00:05:19:06,00:05:21:28,I'm thinking about Eileen's slow smile.
+00:05:22:00,00:05:26:24,About the thick. Fat steaks|she picked up at the butcher's today.
+00:05:26:26,00:05:30:08,And I'm thinking about|the one loose end I haven't tied up.
+00:05:30:10,00:05:35:10,A young girl who's out there somewhere.|helpless in the hands of a drooling lunatic.
+00:05:40:10,00:05:44:14,Damn it, Hartigan, I won't let you do this.|You're gonna get yourself killed.
+00:05:44:16,00:05:47:25,You're gonna get us both killed.|I won't let you. I'm warnin' you.
+00:05:47:27,00:05:49:24,Let go of my coat, Bob.
+00:05:49:27,00:05:51:26,You're draggin' me down with you.
+00:05:51:28,00:05:55:11,I'm your partner.|They can kill me, too.
+00:05:55:13,00:05:58:24,I ain't puttin' up with that. I'm gettin'|on the horn and calling for backup.
+00:05:58:26,00:06:01:09,Sure, Bob.|We'll just wait.
+00:06:01:11,00:06:05:09,Sit on our hands while that Roark brat gets|his sick thrills with victim number four.
+00:06:05:11,00:06:07:16,Victim number four!
+00:06:07:18,00:06:10:04,Nancy Callahan, age 11.
+00:06:10:07,00:06:12:14,And she'll be raped|and slashed to ribbons.
+00:06:12:27,00:06:16:14,And that backup that we're waitin' on|will just so happen to show up
+00:06:16:17,00:06:21:00,just late enough for Roark|to get back to his US Senator daddy.
+00:06:21:02,00:06:23:21,Take a deep breath, Hartigan.
+00:06:23:23,00:06:25:23,Settle down and think straight.
+00:06:26:20,00:06:30:21,You're pushin' 60|and you got a bum ticker.
+00:06:30:23,00:06:32:23,You ain't savin' anyone.
+00:06:34:11,00:06:36:19,You got a great attitude, Bob.
+00:06:37:11,00:06:40:06,Real credit to the force, you are.
+00:06:40:08,00:06:43:27,Eileen's at home waitin' for you.|Think about Eileen.
+00:06:46:25,00:06:48:24,Heck, Bob,
+00:06:51:08,00:06:52:25,maybe you are right.
+00:06:52:28,00:06:56:07,I'm glad to hear you're finally talkin' sense.
+00:06:57:08,00:06:59:26,Hell of a way to end a partnership.
+00:06:59:28,00:07:02:18,Hell of a way to start my retirement.
+00:07:02:20,00:07:05:14,Nancy Callahan. Age 11.
+00:07:05:16,00:07:08:01,For all I know. She's dead already.
+00:07:10:13,00:07:13:00,You've been a very good girl, Nancy.
+00:07:13:02,00:07:15:15,- You've been very quiet.|- (Nancy whimpers)
+00:07:15:17,00:07:17:24,Don't be scared.
+00:07:17:27,00:07:20:01,We're gonna be|taking you home really soon.
+00:07:20:19,00:07:25:04,But first,|we're going to introduce you to somebody.
+00:07:25:07,00:07:28:15,He's a very nice man.
+00:07:29:24,00:07:33:20,Halfway to the warehouse where|Weevil said they took her. And it hits.
+00:07:33:22,00:07:36:09,Wicked spot of indigestion.
+00:07:36:11,00:07:38:23,At least that's what I pray it is.
+00:07:38:25,00:07:41:05,(man)... lighthearted|and momentary digression.
+00:07:41:07,00:07:44:04,The briefest indulge-ment|in automotive pleasure.
+00:07:44:06,00:07:48:11,(man #2) For cheap thrills.|Such short-lived durability, Mr. Shlubb.
+00:07:48:13,00:07:52:26,You would risk engender-ating ill will|on the part of our employers.
+00:07:52:28,00:07:55:02,Burt Shlubb and Douglas Klump -
+00:07:55:05,00:07:59:12,two any-dirty-job-there-is thugs|with delusions of eloquence.
+00:07:59:24,00:08:02:09,This Jaguar you so pinheadedly covet -
+00:08:02:11,00:08:05:00,temporarily remanded|to our custody though it may be -
+00:08:05:02,00:08:08:09,remains the property|of the son of Senator Roark.
+00:08:08:11,00:08:11:19,Gotta keep this quiet. |Take 'em down fast.
+00:08:11:21,00:08:13:22,A single dent,|the merest scratch thereupon,
+00:08:13:24,00:08:16:24,and the before-mentioned consequences|of which I so recently made mention
+00:08:16:26,00:08:19:13,shall surely be athwart us.
+00:08:24:21,00:08:27:09,(heavy heartbeats)
+00:08:27:12,00:08:28:13,(groans)
+00:08:28:16,00:08:33:00,Catch your breath. |Give your heart time to slow down.
+00:08:33:03,00:08:35:03,But it won't slow down.
+00:08:37:05,00:08:39:05,Get over it.
+00:08:39:19,00:08:41:13,She needs you.
+00:08:41:15,00:08:43:07,We're all done here, Benny.
+00:08:43:09,00:08:46:25,Let's give them some time together.|Give them some privacy.
+00:08:46:27,00:08:48:23,Be with you in a minute, Lenny.
+00:08:48:25,00:08:51:05,I'm just making sure|they get along really well.
+00:08:51:07,00:08:57:01,And what kind of beast couldn't get along|with a precious little girl like this?
+00:08:57:03,00:09:00:06,You must be awfully scared now.
+00:09:00:09,00:09:03:20,But you've got nothing to be scared of.
+00:09:03:22,00:09:05:05,(Nancy whimpers)
+00:09:05:07,00:09:07:17,All we're gonna do is have a nice little talk.
+00:09:09:04,00:09:13:13,That's all. Just a nice talk.|Just you and me.
+00:09:13:15,00:09:17:00,- (sobbing)|- Don't you cry now.
+00:09:17:02,00:09:19:04,Doctor said it'd be like this.
+00:09:19:06,00:09:21:16,Just take the pill he gave you.
+00:09:25:07,00:09:27:08,(grunts)
+00:09:30:15,00:09:32:18,No need to play it quiet.
+00:09:32:21,00:09:34:21,Not anymore.
+00:09:36:03,00:09:39:24,Breathe steady. Old man. |Prove you're not completely useless.
+00:09:39:26,00:09:42:18,What the hell? |Go out with a bang.
+00:09:43:02,00:09:44:24,He likes to hear 'em scream.
+00:09:44:26,00:09:47:14,I've seen his victims|and their twisted little faces.
+00:09:47:16,00:09:52:12,all wide-mouthed and bug-eyed. Frozen|in their last horrible moment of living.
+00:09:52:14,00:09:57:04,No screams. |Either I'm just in time. Or I'm way too late.
+00:09:57:06,00:09:59:02,(grunts)
+00:10:01:20,00:10:03:12,Ooh!
+00:10:07:19,00:10:11:26,It's nothing. Barely a flesh wound. |On your feet. Old man.
+00:10:18:01,00:10:20:21,(Hartigan) Roark.|Give it up.
+00:10:21:06,00:10:23:02,Let the girl go.
+00:10:23:04,00:10:25:10,You can't do|a goddamn thing to me, Hartigan.
+00:10:25:12,00:10:27:13,You know who I am.
+00:10:27:15,00:10:29:22,You know who my father is!
+00:10:29:24,00:10:32:10,You can't touch me, you piece-of-shit cop.
+00:10:33:20,00:10:37:08,Look at you. You can't even lift|that cannon you're carrying.
+00:10:38:29,00:10:40:13,Sure, I can.
+00:10:41:10,00:10:43:26,(screams)
+00:10:48:01,00:10:50:29,Cover your eyes, Nancy.|I don't want you watching this.
+00:10:51:13,00:10:54:01,I mean it, baby.|Cover your eyes right now.
+00:10:56:18,00:10:58:07,I take his weapons away.
+00:10:58:19,00:11:00:06,(screams)
+00:11:01:00,00:11:02:18,Both of them.
+00:11:02:20,00:11:05:24,(shrieks)
+00:11:05:26,00:11:08:15,(groans)
+00:11:13:06,00:11:15:06,Hell of a way to end a partnership.
+00:11:15:09,00:11:18:07,(Bob) For God's sakes,|don't make it any worse.
+00:11:19:09,00:11:22:27,- Don't make me kill you.|- Doin' fine, Bob.
+00:11:23:08,00:11:25:06,Never better.
+00:11:25:08,00:11:26:28,(Roark grunting)
+00:11:27:00,00:11:29:13,I'm ready to kick your ass.
+00:11:30:06,00:11:32:11,Keep him talking. |Buy time.
+00:11:32:13,00:11:35:03,Just a few more minutes. |Just till the backup gets here.
+00:11:35:05,00:11:39:03,Sit down and stay down.|I'll kill you if I have to.
+00:11:39:05,00:11:43:03,Keep his mind off the girl -|skinny little Nancy.
+00:11:43:05,00:11:44:28,He can't kill her|once the backup gets here.
+00:11:45:01,00:11:47:17,Run home, Nancy.|Run for your life.
+00:11:47:20,00:11:50:16,Hey. Don't listen to him.|He's a crazy man.
+00:11:50:18,00:11:53:27,- What a tough man you are, huh?|- You stay right where you're at.
+00:11:53:29,00:11:56:26,You shoot your partner in the back...
+00:11:56:29,00:11:59:03,then you try to scare a little girl.
+00:11:59:05,00:12:03:14,Maybe I'll pull my spare rod, plug you|a couple of times, show you how it's done.
+00:12:03:16,00:12:05:21,We could've worked something out,|but you've blown that.
+00:12:05:23,00:12:08:24,Sit down or I'll blast you in half.
+00:12:09:09,00:12:12:09,- You're so slow, you'll never stop me.|- Sit down!
+00:12:13:04,00:12:15:05,You'll never be able to stop me.
+00:12:15:07,00:12:16:28,(screams)
+00:12:21:07,00:12:23:18,(sirens blaring)
+00:12:23:20,00:12:27:06,I finally sit down.|just like you told me to.
+00:12:29:01,00:12:31:00,The sirens are close now.
+00:12:32:02,00:12:34:11,She'll be safe.
+00:12:42:17,00:12:46:27,Things go dark. |I don't mind much.
+00:12:47:22,00:12:51:13,Getting sleepy. |It's OK.
+00:12:51:16,00:12:53:24,She'll be safe.
+00:12:53:27,00:12:56:09,An old man dies.
+00:12:56:11,00:12:58:29,a little girl lives.
+00:12:59:01,00:13:01:02,Fair trade.
+00:13:05:29,00:13:08:10,(man) The night is hot as hell.
+00:13:08:12,00:13:11:21,It's a lousy room|in a lousy part of a lousy town.
+00:13:12:29,00:13:15:11,I'm staring at a goddess.
+00:13:15:13,00:13:17:26,She's telling me she wants me.
+00:13:17:28,00:13:21:24,I'm not gonna waste one more second|wondering how I've gotten so lucky.
+00:13:21:26,00:13:23:14,I want you.
+00:13:26:07,00:13:29:02,She smells like angels ought to smell.
+00:13:33:01,00:13:34:21,The perfect woman.
+00:13:39:08,00:13:40:16,The goddess.
+00:13:45:13,00:13:47:04,I need you.
+00:13:49:14,00:13:51:16,Goldie.
+00:13:51:18,00:13:54:02,She says her name is Goldie.
+00:14:01:29,00:14:05:14,Three hours later and my head|is feeling several sizes too big.
+00:14:05:17,00:14:08:20,And that cold thing|happens to my stomach.
+00:14:08:22,00:14:12:24,And I realize Goldie's dead. |Not a mark on her.
+00:14:12:26,00:14:16:06,You'd have to check her pulse|or notice those perfect breasts of hers
+00:14:16:08,00:14:19:01,aren't moving like they would|if she was breathing.
+00:14:19:03,00:14:21:29,She was murdered|and I was right here when it happened.
+00:14:22:01,00:14:26:14,Lying next to her.|stone drunk. Just like she was.
+00:14:26:28,00:14:31:00,Damn it. Goldie. Who were you|and who wanted you dead?
+00:14:31:03,00:14:33:15,Who were you|besides an angel of mercy.
+00:14:33:17,00:14:36:27,giving a two-time loser like me|the night of his life?
+00:14:36:29,00:14:39:23,It sure as hell wasn't my looks.
+00:14:39:25,00:14:42:23,So why the sleazy saloon?
+00:14:42:25,00:14:45:05,Why the kindness. Goldie?
+00:14:45:07,00:14:47:07,(sirens blaring)
+00:14:47:09,00:14:50:26,The cops - they're telling me too much.
+00:14:50:28,00:14:52:25,showing up before anybody|but me and the killer
+00:14:52:27,00:14:55:04,could know there's been a murder.
+00:14:55:06,00:14:58:22,Somebody paid good money|for this frame.
+00:14:59:06,00:15:01:16,No reason at all to play it quiet.
+00:15:01:18,00:15:04:22,No reason to play it any way but my way.
+00:15:09:07,00:15:12:09,Whoever killed you is gonna pay. Goldie.
+00:15:17:04,00:15:19:10,(man banging on door)|Open up, police!
+00:15:19:12,00:15:21:05,I'll be right out.
+00:15:29:21,00:15:31:24,(gunfire)
+00:15:40:09,00:15:42:22,(sirens blaring)
+00:15:50:20,00:15:53:01,I don't know why you died. Goldie.
+00:15:55:25,00:16:00:04,I don't know why and I don't know how|I never even met you before tonight.
+00:16:00:06,00:16:03:29,but you were a friend and more|when I needed one.
+00:16:04:01,00:16:06:22,And when I find out who did it.
+00:16:06:24,00:16:09:28,it won't be quick and quiet|like it was with you.
+00:16:10:01,00:16:13:21,It'll be loud and nasty - my kind of kill.
+00:16:13:24,00:16:16:23,And when his eyes go dead.|the hell I send him to
+00:16:16:25,00:16:20:13,will seem like heaven|after what I've done to him.
+00:16:20:15,00:16:21:27,I love you. Goldie.
+00:16:28:22,00:16:30:03,(sirens blaring)
+00:16:30:05,00:16:33:16,(helicopter overhead)
+00:16:33:18,00:16:36:10,(sirens continue blaring)
+00:16:42:11,00:16:43:21,(latch squeaks)
+00:16:43:24,00:16:46:07,Claire?
+00:16:55:18,00:16:59:15,Now, don't worry, Lucille.|I was just grazed.
+00:16:59:17,00:17:04:15,- You got any beers around this place?|- No way am I giving you any alcohol.
+00:17:04:17,00:17:08:21,Besides, it's not what|you came here for anyway, is it?
+00:17:08:23,00:17:10:14,No.
+00:17:10:16,00:17:13:03,Go ahead.|You're worse without 'em.
+00:17:13:05,00:17:15:15,Thanks.|You're the best.
+00:17:16:00,00:17:18:04,Lucille's my parole officer.
+00:17:18:07,00:17:20:12,She's a dyke. But God knows why.
+00:17:20:15,00:17:24:00,With that body of hers|she could have any man she wants.
+00:17:24:03,00:17:27:06,The pills come from a girlfriend|who's a shrink.
+00:17:27:08,00:17:31:01,She tried to analyze me once|but she got too scared.
+00:17:31:25,00:17:35:05,Haven't seen you like this in a while.
+00:17:35:07,00:17:38:20,- Got in a fight with some cops.|- Didn't happen to kill any of them, did ya?
+00:17:38:23,00:17:43:10,Not that I know of. But they know they've|been in a fight, that's for damn sure.
+00:17:43:12,00:17:46:05,How the hell do you suppose|I'm gonna square this with the board?
+00:17:46:07,00:17:49:09,There ain't no squaring it.|Not this time.
+00:17:49:11,00:17:52:01,This isn't some barroom brawl.
+00:17:52:04,00:17:55:09,Or some creep with a gas can|trying to torch someone.
+00:17:55:12,00:17:56:29,Hey, hey.|This is big.
+00:17:57:02,00:18:00:23,- Settle down, Marv. Take another pill.|- Hey, there ain't no settlin' down!
+00:18:00:25,00:18:03:24,This is blood for blood, and by the gallons.
+00:18:03:26,00:18:08:11,This is the old days and the bad days,|the all-or-nothing days.
+00:18:08:13,00:18:11:17,They're back.|There's no choices left.
+00:18:11:19,00:18:13:13,And I'm ready for war.
+00:18:13:15,00:18:16:00,Prison was hell for you, Marv.|It's gonna be life this time.
+00:18:16:02,00:18:17:15,Ah.
+00:18:17:17,00:18:21:20,Hell's waking up every goddamn day|and not even knowing why you're here.
+00:18:23:04,00:18:24:24,But I'm out now.
+00:18:24:27,00:18:28:12,It took somebody who was kind to me|getting killed to do it.
+00:18:28:15,00:18:32:16,But I'm out.|I know exactly what I gotta do.
+00:18:34:26,00:18:36:10,(helicopter)
+00:18:36:29,00:18:39:10,So you were scared.|weren't you. Goldie?
+00:18:39:12,00:18:42:02,Somebody wanted you dead|and you knew it.
+00:18:42:04,00:18:44:27,So you hit the saloons. The bad places.
+00:18:44:29,00:18:49:08,Iooking for the biggest.|meanest lug around and finding me.
+00:18:49:10,00:18:52:00,Well. I'm gonna find|that son of a bitch that killed you.
+00:18:52:02,00:18:55:00,and I'm gonna give him the hard goodbye.
+00:18:56:10,00:18:59:10,Walk down|the right back alley in Sin City...
+00:18:59:13,00:19:02:17,- Leave your hands off Nancy.|- ... and you could find anything.
+00:19:02:20,00:19:05:11,That coat looks like Baghdad.
+00:19:05:13,00:19:09:00,So does your face.|Take off!
+00:19:09:02,00:19:10:25,(yelling)
+00:19:13:22,00:19:16:24,He's new here, Marv.|He didn't know.
+00:19:16:26,00:19:19:09,Kadie's is my kind of joint.
+00:19:21:04,00:19:26:16,Nancy's just getting started with her gig.|but already the crowd's breathing hard.
+00:19:26:18,00:19:28:24,Plenty of nights I've drooled over Nancy.
+00:19:28:26,00:19:32:19,shoulder to shoulder|with all the other losers like me.
+00:19:33:04,00:19:36:05,But that's not what I'm lookin' for tonight.
+00:19:37:07,00:19:38:20,What'll it be, Marv?
+00:19:38:22,00:19:41:19,A shot and a brew, Shellie,|and keep 'em comin'.
+00:19:41:21,00:19:45:10,Sure, honey.|You take it slow, now.
+00:20:00:01,00:20:03:04,(man) Most people think Marv is crazy.
+00:20:03:06,00:20:06:28,He just had the rotten luck|of being born in the wrong century.
+00:20:07:01,00:20:09:14,He'd be right at home|on some ancient battlefield.
+00:20:09:16,00:20:11:28,swinging an ax into somebody's face.
+00:20:12:13,00:20:16:27,Or in a Roman arena|taking a sword to other gladiators like him.
+00:20:16:29,00:20:20:26,They'd have tossed him girls|like Nancy back then.
+00:20:23:19,00:20:26:13,Show's over, dickwad.|Drink up.
+00:20:26:15,00:20:29:12,Now, that's one fine-looking coat|you're wearing there.
+00:20:32:12,00:20:37:04,Your killin' days are over,|you over-the-hill, do-gooder son of a bitch.
+00:20:37:07,00:20:42:06,I love hit men. No matter what|you do to them. You don't feel bad.
+00:20:50:06,00:20:52:18,- Take it off.|- What?
+00:20:52:20,00:20:55:03,A fine coat like that,|and you're bleeding all over it.
+00:20:55:05,00:20:57:20,All right, it's all yours.|Oh, God!
+00:20:57:22,00:21:01:08,It wasn't you losers who killed Goldie.
+00:21:01:10,00:21:05:24,The guy who did that,|he knew what he was doing.
+00:21:06:27,00:21:09:05,So tell me, man.|Who sent you?
+00:21:12:10,00:21:14:16,I don't hear you giving me any names.
+00:21:14:19,00:21:18:06,So I guess when I shot you in the belly|I aimed a little too high.
+00:21:18:09,00:21:19:20,(screams)
+00:21:21:06,00:21:25:28,You keep holding out on me like this,|and I'm gonna have to get really nasty.
+00:21:29:22,00:21:34:18,It was Telly...|Telly Stern passed me the order.
+00:21:35:16,00:21:38:18,He runs the tables over|to the Triple Ace Club.
+00:21:39:16,00:21:42:01,Thanks again.
+00:21:42:04,00:21:43:21,(gunshot)
+00:21:47:11,00:21:49:08,Then the damnedest thing happens.
+00:21:49:10,00:21:53:14,For a second. I smell the angel smell|that belonged to my Goldie.
+00:21:53:16,00:21:56:01,Just need my medicine. Is all.
+00:21:56:15,00:21:58:06,Bastard.
+00:21:58:08,00:22:01:11,You're gonna pay for what you did to me.
+00:22:04:07,00:22:05:28,Feel like talking, Louie?
+00:22:06:00,00:22:08:15,How many got paid off|for the frame, Louie? Huh?
+00:22:08:17,00:22:10:10,How many for the kill?
+00:22:10:12,00:22:13:00,It was Connelly.|He set me up.
+00:22:15:18,00:22:17:19,He'll never talk.
+00:22:20:19,00:22:23:25,I don't know about you,|but I'm havin' a ball.
+00:22:25:03,00:22:29:01,Connelly talks. |They all talk.
+00:22:29:27,00:22:32:06,(man) And what have been|your sins, my son?
+00:22:32:08,00:22:34:25,(Marv) Well, Padre,|I don't want to keep you up all night,
+00:22:34:27,00:22:37:29,so I'll just fill you in on the latest batch.
+00:22:38:01,00:22:41:01,These here hands of mine,|they got blood all over 'em.
+00:22:41:03,00:22:43:07,You're speaking figuratively.
+00:22:43:09,00:22:47:28,When I need to find something out,|I just go out and look for somebody
+00:22:48:00,00:22:50:15,that knows more than me,|and I go and I ask them.
+00:22:50:18,00:22:53:23,Sometimes, I ask pretty hard.
+00:22:53:26,00:22:59:22,By way of a "for instance",|I killed three men tonight.
+00:22:59:24,00:23:01:05,Tortured 'em first.
+00:23:01:07,00:23:05:16,You might say I been|working my way up the food chain.
+00:23:05:18,00:23:08:12,First two were minnows -|small-time messengers.
+00:23:08:14,00:23:13:10,But it was Connelly, the money man,|who fingered you, Padre.
+00:23:13:12,00:23:16:04,(whispering) Dear Lord, man,|this is a house of God.
+00:23:16:06,00:23:20:00,Just give me a damn name.
+00:23:20:02,00:23:23:12,- Roark.|- You really are pushing your luck, Padre,
+00:23:23:14,00:23:26:13,feeding me garbage like that.
+00:23:26:15,00:23:27:21,It can't be that big.
+00:23:27:24,00:23:30:03,There's a farm|at North Cross and Lennox.
+00:23:30:05,00:23:33:03,It's all there.|Find out for yourself.
+00:23:33:05,00:23:35:04,And while you're at it,
+00:23:35:06,00:23:40:16,ask yourself if that corpse of a slut|is worth dying for.
+00:23:40:29,00:23:43:01,Worth dying for.
+00:23:43:03,00:23:45:04,Worth killing for.
+00:23:45:06,00:23:47:17,Worth going to hell for.
+00:23:47:19,00:23:49:17,Amen.
+00:23:53:02,00:23:56:01,His keys say the padre drove a Mercedes.
+00:23:56:03,00:23:59:17,or at least that's what they're|passing off as a Mercedes these days.
+00:23:59:21,00:24:03:23,Modern cars -|they all look like electric shavers.
+00:24:03:26,00:24:06:15,(tires screeching)
+00:24:10:11,00:24:12:00,Goldie.
+00:24:14:21,00:24:15:29,Goldie!
+00:24:26:21,00:24:28:28,It couldn't be Goldie.
+00:24:29:00,00:24:33:09,It's my own fault. And nobody else's.|that I got confused.
+00:24:33:13,00:24:37:05,I've been having so much fun|I forgot to take my medicine.
+00:24:37:07,00:24:39:05,That wasn't Goldie back there.
+00:24:39:07,00:24:40:20,Goldie's dead.
+00:24:40:22,00:24:44:19,and that's the whole reason|that I've been doing what I've been doing.
+00:24:44:22,00:24:48:16,When you got a condition.|it's bad to forget your medicine.
+00:24:51:10,00:24:56:25,The cold thing. It creeps into my gut|and tells me one more time it won't let go.
+00:24:57:18,00:25:00:07,This is a bad place. This farm.
+00:25:00:09,00:25:02:01,People have died here...
+00:25:02:03,00:25:03:23,(growling)
+00:25:03:26,00:25:05:15,... the wrong way.
+00:25:08:07,00:25:10:06,I don't want to fight, pooch.
+00:25:13:23,00:25:16:01,I got no gripe with you.
+00:25:18:12,00:25:20:06,Easy, boy.
+00:25:21:05,00:25:22:12,(dog whimpers)
+00:25:23:07,00:25:26:04,No way I was gonna use|my gun on you. Buddy.
+00:25:26:06,00:25:28:28,It's whoever owns you I'm curious about.
+00:25:29:00,00:25:33:02,because there's blood on your breath.|and I think I know what kind.
+00:25:33:17,00:25:35:27,So I sniff around to see what's buried.
+00:25:39:25,00:25:41:09,Here we go.
+00:25:46:18,00:25:49:21,It's impossible. |Nobody can sneak up on me.
+00:25:55:09,00:26:00:03,I go blind. |Not a sound. Nobody's that quiet.
+00:26:00:05,00:26:03:24,Nobody except the one who snuck|into that hotel room two nights ago.
+00:26:04:06,00:26:07:26,It was you, you bastard.|You killed her.
+00:26:08:10,00:26:10:14,You killed Goldie.
+00:26:10:17,00:26:12:06,It was...
+00:26:13:24,00:26:15:10,I blew it. Goldie.
+00:26:16:00,00:26:18:14,I found your killer.|but he was better than me.
+00:26:19:03,00:26:21:05,Too quiet. Too quick.
+00:26:21:07,00:26:23:21,A killer born.
+00:26:23:23,00:26:26:08,Why didn't he finish the job?
+00:26:39:08,00:26:43:01,He keeps the heads.|He eats the rest.
+00:26:43:03,00:26:46:14,- Lucille?|- It's not just that wolf of his.
+00:26:48:07,00:26:51:12,The wolf just gets scraps.
+00:26:51:14,00:26:53:13,Bones.
+00:26:53:16,00:26:55:26,It's him.
+00:26:55:28,00:27:00:10,He eats people.
+00:27:01:07,00:27:04:23,- He cooks them like they were steaks.|- Let's get you warm.
+00:27:04:25,00:27:07:03,Just like they were steaks.
+00:27:07:05,00:27:09:15,Now he's got both of us.
+00:27:09:17,00:27:12:24,It's all right.|Take a nice, slow breath.
+00:27:13:17,00:27:16:14,Just look at the heads on the wall.
+00:27:16:17,00:27:18:20,The heads on the wall.
+00:27:19:10,00:27:21:09,The heads on the wall.
+00:27:21:12,00:27:25:10,Son of a bitch!|He kept smiling that damned smile.
+00:27:25:13,00:27:29:17,He made me watch him|suck the meat off my fingers.
+00:27:30:00,00:27:32:10,- He made me watch!|- Oh, Jesus.
+00:27:32:12,00:27:37:10,He made me watch!
+00:27:44:25,00:27:47:07,Christ, I could use a cigarette.
+00:27:47:29,00:27:51:25,Dames. |Sometimes all they gotta do is let it out.
+00:27:51:28,00:27:55:07,And a few buckets later.|there's no way you'd know.
+00:27:55:25,00:27:57:28,You've brought us|some big trouble this time, Marv.
+00:27:58:01,00:28:02:18,Whoever's behind this whole thing has|his connections right in the department.
+00:28:02:20,00:28:04:26,Any leads?
+00:28:04:28,00:28:08:20,One guy I talked to told me|it was Roark running the show.
+00:28:08:22,00:28:13:17,Whoever it is, he knew I was checking out|that hooker almost before I did.
+00:28:13:19,00:28:17:08,- What hooker?|- The one you've been obsessing over.
+00:28:17:10,00:28:19:14,The dead one.
+00:28:19:16,00:28:21:23,Goldie.
+00:28:21:25,00:28:24:09,I didn't know she was a hooker.
+00:28:24:12,00:28:27:16,Doesn't make any difference|about anything.
+00:28:29:16,00:28:34:08,- But I didn't know that.|- She was high-class stuff.
+00:28:34:10,00:28:36:00,She must have shown you quite a time.
+00:28:36:02,00:28:38:06,Quiet.|There's a car coming.
+00:28:42:03,00:28:44:17,(man) Kevin!
+00:28:45:17,00:28:49:11,All I've got is a face... and a name.
+00:28:49:13,00:28:51:13,I'll see you later, Kevin.
+00:29:01:12,00:29:02:15,Let's go.
+00:29:19:10,00:29:21:05,They're done checking the house.
+00:29:21:07,00:29:23:08,They're coming this way.
+00:29:23:10,00:29:26:13,Bastards.|I'll show them.
+00:29:31:17,00:29:35:19,You're not gonna get|either of us killed, Marv.
+00:29:35:22,00:29:38:14,No, don't shoot!|Please.
+00:29:38:16,00:29:40:24,Listen to me.|I'm his parole officer.
+00:29:40:26,00:29:43:09,He's unconscious and unarmed,
+00:29:43:11,00:29:46:11,so there's no need to kill him.
+00:29:52:18,00:29:54:26,Captain, the target-there's no sign of him.
+00:29:54:28,00:29:56:05,Here's a sign!
+00:30:10:29,00:30:14:21,That there is one|damn fine coat you're wearing.
+00:30:22:08,00:30:25:27,I keep coming back to that cop I just killed|and what he told me.
+00:30:25:29,00:30:28:23,I was pretty steamed about|what he'd done to Lucille.
+00:30:28:25,00:30:31:12,so I took my time|with that son of a bitch.
+00:30:31:29,00:30:35:23,It wasn't till I showed him|all those pieces of himself that he said it.
+00:30:36:10,00:30:41:15,Just a name -|Patrick Henry Roark. Man of the cloth.
+00:30:41:18,00:30:44:20,Could've become president.|but he chose to serve God.
+00:30:44:23,00:30:49:09,Along the way. He happened to become|the most powerful man in the state.
+00:30:49:11,00:30:53:08,He's brought down mayors and governors|like they were nothing.
+00:30:53:10,00:30:56:28,He even made his rotten brother|a US senator without breaking a sweat.
+00:30:57:15,00:31:02:00,And here he's gonna get killed|in the name of a dead hooker.
+00:31:02:02,00:31:07:00,I'm getting used to the idea. |More and more. I'm liking the sound of it.
+00:31:08:16,00:31:12:06,Then it hits me like a kick in the nuts.
+00:31:12:09,00:31:14:05,What if I'm wrong?
+00:31:14:07,00:31:16:03,I've got a condition.
+00:31:16:05,00:31:18:10,I get confused sometimes.
+00:31:18:12,00:31:22:10,And with Lucille dead.|I can't get my medicine.
+00:31:22:12,00:31:24:17,What if I've imagined all of this?
+00:31:24:19,00:31:29:28,What if I've finally turned into what|they've always said I was gonna turn into?
+00:31:30:00,00:31:32:12,A maniac.
+00:31:32:14,00:31:34:26,A psycho killer.
+00:31:34:28,00:31:38:02,Can't kill a man|without knowing for sure you ought to.
+00:31:38:04,00:31:40:06,I've gotta know for sure.
+00:31:43:08,00:31:47:23,The merchandise is on display|by the time I make my way to Old Town.
+00:31:47:26,00:31:50:18,For an hour or so.|I asked around about Goldie.
+00:31:50:20,00:31:53:14,I don't get any answers.|but I know I'm bound to.
+00:31:53:16,00:31:55:20,Lucille said Goldie was a hooker.
+00:31:55:22,00:31:58:14,and if she was. She has roots here -
+00:31:58:16,00:32:01:11,friends. Maybe even family.
+00:32:06:02,00:32:09:05,You can't be Goldie.|Goldie's dead.
+00:32:19:03,00:32:20:07,Ha.
+00:32:20:10,00:32:23:19,Goldie.|Yeah, sure, right.
+00:32:23:21,00:32:27:23,I haven't eaten anything|or taken my medicine for days now.
+00:32:27:25,00:32:30:11,No wonder I'm seeing things.
+00:32:30:13,00:32:31:27,Bastard!
+00:32:35:11,00:32:37:17,(Marv laughing)
+00:32:37:19,00:32:39:16,He's crazy.
+00:32:39:18,00:32:42:20,Hit him again, Wendy.|Harder.
+00:32:44:09,00:32:46:21,Wait a minute.|Why did she call you Wendy?
+00:32:46:23,00:32:49:04,Because that's my name, you ape.
+00:32:49:22,00:32:54:05,Goldie was my sister.|My twin sister.
+00:32:54:07,00:32:56:18,I guess she was the nice one.
+00:33:02:23,00:33:06:11,Goldie and the other six-where are they?
+00:33:06:13,00:33:08:12,What did you do to them?
+00:33:08:15,00:33:10:29,You crazy goddamn broad.
+00:33:11:01,00:33:13:01,Just take a look at this mug.
+00:33:13:03,00:33:17:09,Would any of you dames let me get|close enough to you to kill you?
+00:33:17:11,00:33:21:01,None of you would, but Goldie.
+00:33:21:03,00:33:24:08,And she only did because|she thought I could protect her.
+00:33:24:11,00:33:29:18,And I'll bet those cops didn't do a damn|thing about those other girls, did they?
+00:33:29:20,00:33:34:23,But as soon as they had me for a fall guy,|they showed up, guns blazing.
+00:33:35:11,00:33:40:07,But they didn't get me, and I've been killing|my way to the truth ever since.
+00:33:40:09,00:33:43:29,So, go ahead, doll.
+00:33:44:01,00:33:48:23,Shoot me now,|or get the hell out of my way.
+00:33:55:17,00:33:57:23,Aw, nuts.
+00:33:58:08,00:34:01:04,OK, I'm glad we got all that sorted out.
+00:34:02:16,00:34:07:09,- What the hell?|- I tied those knots! That's my specialty!
+00:34:07:11,00:34:09:07,You sat there and took it,
+00:34:09:09,00:34:12:07,when you could've taken my gun away|from me any time you wanted to.
+00:34:12:09,00:34:16:24,Well, sure. I thought I might be able|to talk some sense into you.
+00:34:16:26,00:34:20:04,And I probably would have had|to paste you one,
+00:34:20:06,00:34:22:09,and I don't hurt girls.
+00:34:22:29,00:34:24:21,I need a pair of handcuffs.
+00:34:24:23,00:34:27:26,What style do you want?|I got a collection.
+00:34:27:28,00:34:31:26,Just give him the ones|you got with you, Gail.
+00:34:32:09,00:34:34:26,It was a farm boy named Kevin|who killed Goldie,
+00:34:34:29,00:34:38:10,but it was Cardinal Roark|who was behind it, and I don't know why.
+00:34:38:12,00:34:40:26,I know that sounds crazy.
+00:34:40:28,00:34:44:07,No, it doesn't.|Goldie worked the clergy.
+00:34:44:09,00:34:48:25,Just like that. A whopper of a puzzle piece|falls smack in my lap.
+00:34:48:27,00:34:51:09,I'm too dumb to put|the whole picture together yet.
+00:34:51:11,00:34:56:09,but she fires up two cigarettes and hands|me one. And I taste her lipstick on it.
+00:34:56:12,00:35:00:29,And suddenly. My heart's pounding|so loud I can't hear anything else.
+00:35:01:01,00:35:05:18,I want to reach over and touch her|and taste Goldie's sweat one more time.
+00:35:05:21,00:35:07:25,But she isn't Goldie.
+00:35:07:28,00:35:09:29,Yeah. Yeah. |This'll do.
+00:35:10:02,00:35:15:15,I'm also gonna be needing a dozen|two-foot lengths of this rubber tubing...
+00:35:16:18,00:35:18:28,and a spool of razor wire...
+00:35:20:02,00:35:24:06,and a pair of those special gloves|that'll let me handle the wire.
+00:35:24:18,00:35:27:08,(man) Beefing up|the old home security, huh?
+00:35:27:10,00:35:28:25,(Marv) You can bet your ass.
+00:35:29:10,00:35:33:07,(Wendy) She was my sister,|so I'm in this one to the end.
+00:35:33:09,00:35:36:27,But why are you willing to go up against|Roark for someone you barely knew?
+00:35:37:00,00:35:42:04,She was nice to me, gave me|something I didn't even know existed.
+00:35:42:07,00:35:46:21,I wasn't never even able to buy a woman.
+00:35:46:24,00:35:49:18,You know, the way I look.
+00:35:50:09,00:35:54:05,I take my mind off her|and I crawl back inside myself.
+00:35:54:07,00:35:57:06,It's almost killing time.|and I'd better get sharp.
+00:35:57:08,00:36:01:15,I check the list -|rubber tubing. Gas. Saw.
+00:36:01:17,00:36:05:18,gloves. Cuffs. Razor wire. Hatchet.
+00:36:05:20,00:36:07:29,Gladys and my mitts.
+00:36:08:01,00:36:11:29,- We're close enough. Pull over.|- Yes, Marv.
+00:36:13:03,00:36:14:18,Keep the engine runnin'.
+00:36:14:22,00:36:19:15,If I'm not back in 20 minutes, you get|the hell outta here and don't look back.
+00:36:19:17,00:36:21:15,Kill him for me, Marv.
+00:36:23:14,00:36:25:19,Kill him good.
+00:36:25:21,00:36:27:14,I won't let you down, Goldie.
+00:36:43:18,00:36:45:18,Heading downstairs to the kitchen.
+00:36:45:21,00:36:50:08,Getting himself a midnight snack.|and I can guess what kind.
+00:37:04:04,00:37:06:23,Come on, you son of a bitch.
+00:37:07:10,00:37:09:18,Damn. He's slick.
+00:37:11:01,00:37:12:19,(yells)
+00:37:21:22,00:37:24:05,Is that the best you can do, creep?
+00:37:26:04,00:37:29:27,That's right. |Get personal. Get close. I can take it.
+00:37:31:02,00:37:35:14,I got you, you little bastard.|Let's see you hop around now.
+00:37:39:14,00:37:44:03,I try to slow my heart down|and breathe the fire out of my lungs.
+00:37:44:05,00:37:47:26,My muscles make me|a thousand promises of pain to come.
+00:37:47:28,00:37:51:22,Let me do it, Marv.|She was my sister. Let me finish him.
+00:37:51:25,00:37:54:10,You wasn't supposed|to come down here, Wendy.
+00:37:54:14,00:37:57:07,Oh, but I want to...
+00:37:57:09,00:38:01:11,I'm sorry. Kid.|but I haven't even started with this creep.
+00:38:01:13,00:38:05:19,and I don't want you watching the rest. |It'll give you nightmares.
+00:38:05:21,00:38:08:22,God, I gotta tell you, I'm good and bushed.
+00:38:08:24,00:38:12:00,And it's not that fight of ours|that did me in, either.
+00:38:12:02,00:38:14:29,It's all that sawing and tying.
+00:38:15:01,00:38:18:09,It's not as easy as it looks.
+00:38:18:11,00:38:23:21,Could have been a real mess around here|if I didn't have that tubing for tourniquets.
+00:38:25:15,00:38:30:10,I gotta admit,|there was a spurt or two,
+00:38:30:12,00:38:35:21,to get the scent in the air,|to get that friend of yours to come running.
+00:38:39:06,00:38:41:01,Well, what do you know?
+00:38:41:26,00:38:44:14,Look who's here.
+00:38:44:16,00:38:46:00,Here he comes.
+00:38:48:05,00:38:51:22,(dog growling)
+00:38:52:24,00:38:55:15,That's a good dog.
+00:38:55:17,00:38:59:18,He doesn't scream.|not even when the mutt's had its fill
+00:38:59:21,00:39:02:08,and Kevin's guts|are lying all over the place.
+00:39:02:11,00:39:06:07,Somehow the bastard is still alive.|still staring at me.
+00:39:06:09,00:39:10:13,Not even when I grab the saw|and finish the job.
+00:39:10:26,00:39:13:10,He never screams.
+00:39:16:07,00:39:19:13,I put in a call to Kadie's|and ask Nancy to get her clothes on
+00:39:19:15,00:39:22:28,and meet me at her place. |She says. "Yes. " like always.
+00:39:23:00,00:39:25:23,Hey, Nancy, you got any beers?
+00:39:25:25,00:39:28:25,Sure, Marv.|Who's the babe?
+00:39:28:27,00:39:31:25,There isn't much of anything|Nancy wouldn't do for me.
+00:39:31:27,00:39:34:18,Not since a year back|when a frat boy roughed her up
+00:39:34:21,00:39:37:01,and I straightened him out but good.
+00:39:37:03,00:39:40:24,It really gets my goat|when guys rough up dames.
+00:39:40:26,00:39:42:19,So, what do you want me to do with her?
+00:39:42:21,00:39:47:09,Well, your best bet is|drive her all the way up to Sacred Oaks.
+00:39:47:11,00:39:50:14,What about you?|Are you leaving town?
+00:39:50:16,00:39:53:09,Hell, no.|I like it here.
+00:39:54:26,00:39:56:06,(belches)
+00:39:56:08,00:39:59:03,I hot-wire a parked cab|and stay under the speed limit
+00:39:59:05,00:40:01:15,so as not to get any attention.
+00:40:01:28,00:40:05:25,My head starts to clear. |Things start to make sense.
+00:40:05:27,00:40:07:24,I owe you. Goldie.
+00:40:07:26,00:40:10:08,I owe you one and I'm gonna pay up.
+00:40:10:10,00:40:13:09,So. If going after Roark|means dying. Win or lose -
+00:40:13:12,00:40:17:26,hell. I'll die laughing|if I know I've done this one thing right.
+00:40:22:16,00:40:25:03,Quiet as a grave out here.|No sign of target.
+00:40:25:05,00:40:27:27,(man on radio)|All right. Keep a lookout.
+00:40:43:25,00:40:47:04,- Kevin?|- What's left of him, anyways.
+00:40:48:25,00:40:50:12,The dog ate the rest.
+00:40:58:01,00:41:02:08,Oh, my God.|You monster.
+00:41:02:10,00:41:05:04,You demon.
+00:41:05:16,00:41:07:21,Don't scream or I'll plug you.
+00:41:08:13,00:41:13:28,He had the voice of an angel,|yet he spoke only to me.
+00:41:14:11,00:41:17:27,And he's dead now|because of one stupid whore.
+00:41:18:16,00:41:23:18,It's not a real good idea for you to talk|about Goldie that way while I'm around.
+00:41:23:20,00:41:25:28,When he came to me...
+00:41:27:12,00:41:29:22,he was a tormented boy.
+00:41:31:17,00:41:34:09,Tormented by guilt.
+00:41:35:06,00:41:37:18,I tried to counsel him.
+00:41:39:04,00:41:43:18,But the eating-it filled him with white light.
+00:41:44:00,00:41:48:24,Tearful, he swore to me|that he felt the touch of God Almighty.
+00:41:49:19,00:41:51:24,What the hell do you know?
+00:41:51:26,00:41:54:10,I know it's pretty damn weird to eat people.
+00:41:54:12,00:41:57:09,He didn't just eat their bodies,
+00:41:57:21,00:41:59:26,he ate their souls.
+00:42:01:14,00:42:03:26,And I joined in.
+00:42:07:03,00:42:09:09,They were all whores.
+00:42:10:14,00:42:14:08,Nobody cared for them.|Nobody missed them.
+00:42:14:22,00:42:19:22,And then your Goldie|almost ruined everything.
+00:42:19:26,00:42:22:05,She stayed in public places.
+00:42:22:07,00:42:24:17,And then with you.
+00:42:24:19,00:42:26:02,You were so convenient.
+00:42:26:15,00:42:29:12,You'd broke a man's jaw that very night.
+00:42:29:14,00:42:32:00,Who would believe a thug like you?
+00:42:32:02,00:42:33:20,Kevin killed her.
+00:42:33:22,00:42:37:14,I ordered the police in for you.|but you wouldn't be caught.
+00:42:37:16,00:42:39:00,You wouldn't stop.
+00:42:39:02,00:42:42:00,And now he's dead and you're here to...
+00:42:43:18,00:42:45:15,eliminate me.
+00:42:46:07,00:42:49:24,Will that give you satisfaction, my son?
+00:42:51:17,00:42:56:15,Killing a helpless old fart?
+00:42:57:16,00:42:59:12,The killing, no.
+00:42:59:14,00:43:02:08,No satisfaction.
+00:43:03:03,00:43:06:27,Everything up until the killing will be a gas.
+00:43:10:08,00:43:12:01,Kevin...
+00:43:14:15,00:43:16:20,we're going home.
+00:43:19:26,00:43:22:26,You can scream now if you want to.
+00:43:30:13,00:43:35:07,It's beautiful. Goldie. |It's just like I promised. Only better.
+00:43:35:09,00:43:36:24,And when his eyes go dead.
+00:43:36:26,00:43:41:03,the hell I sent him to must seem like|heaven after what I've done to him.
+00:43:42:04,00:43:44:05,- (man) Freeze!|- (man #2) Oh, my God!
+00:43:50:22,00:43:51:18,(beeping)
+00:43:51:20,00:43:53:16,(sighs) Jerks.
+00:43:53:18,00:43:57:13,They should've shot me in the head.|and enough times to make sure.
+00:43:57:16,00:43:59:09,It's so stupid.
+00:43:59:12,00:44:03:10,Everybody knows what's coming.|but they go through the motions anyway.
+00:44:03:13,00:44:05:18,What a waste of time.
+00:44:06:07,00:44:10:03,Months fall off the calendar|while I breathe and eat through tubes.
+00:44:10:05,00:44:14:02,Night after night. I wait for somebody|to come and finish me off.
+00:44:14:04,00:44:17:29,After a while.|I realize it's not gonna be so easy as that.
+00:44:18:28,00:44:20:18,I'm on my feet for about ten minutes
+00:44:20:20,00:44:23:18,before the cops kick them out|from under me.
+00:44:23:20,00:44:25:21,They don't ask me any questions.
+00:44:25:23,00:44:30:07,They just keep knocking the crap out of|me and waving a confession in my face.
+00:44:30:11,00:44:32:10,And I keep spitting blood all over it
+00:44:32:14,00:44:36:00,and laughing at how many fresh copies|they come up with.
+00:44:36:03,00:44:40:16,Then along comes this worm assistant|district attorney who turns the recorder off
+00:44:40:20,00:44:45:02,and says if I don't sign their confession.|they'll kill my mom.
+00:44:45:04,00:44:48:17,I break his arm in three places|and I sign it.
+00:44:48:20,00:44:51:23,From then on.|it's the circus everybody wants it to be.
+00:44:52:13,00:44:56:07,They nail me for the works -|not just the people I did kill.
+00:44:56:09,00:45:00:17,but even Lucille and the girls|that Roark and Kevin ate.
+00:45:00:19,00:45:03:01,and even Goldie.
+00:45:03:21,00:45:08:09,The judge is all fire and brimstone|when she hands down the sentence.
+00:45:09:11,00:45:12:10,Midnight and my death|are only a few hours away.
+00:45:12:13,00:45:15:18,when I get my first surprise in 1 8 months.
+00:45:17:05,00:45:19:17,My only visitor.
+00:45:19:19,00:45:22:18,I'm ready for anything but that scent.
+00:45:22:21,00:45:25:25,I got 'em for you good,|didn't l, Goldie?
+00:45:30:29,00:45:33:18,Oh, I'm sorry, Wendy.
+00:45:33:20,00:45:36:28,I... I got confused again.
+00:45:37:00,00:45:39:19,Just seeing you like this.
+00:45:41:29,00:45:44:16,You can call me Goldie.
+00:45:53:18,00:45:56:18,She smells like angels ought to smell.
+00:45:56:21,00:45:59:10,The perfect woman.
+00:45:59:12,00:46:01:06,The goddess.
+00:46:02:15,00:46:04:21,Goldie.
+00:46:04:23,00:46:07:12,She says her name is Goldie.
+00:46:10:02,00:46:13:16,They fix me a pretty decent steak|for my last meal.
+00:46:13:20,00:46:18:05,They even throw in a brew. |It's the first I've had since back at Nancy's.
+00:46:18:08,00:46:22:28,Then they shave my head and fix me|with a rubber diaper and get to it.
+00:46:23:00,00:46:25:25,And it's about damned time.|if you ask me.
+00:46:25:27,00:46:28:14,"Yea, though I walk through the valley|of the shadow of death..."
+00:46:28:16,00:46:31:08,Would you get a move on?|I haven't got all night.
+00:46:31:10,00:46:34:01,You heard the man.|Hit it.
+00:46:34:21,00:46:36:27,(buzzing)
+00:46:43:11,00:46:46:10,Is that the best you can do, you pansies?
+00:46:59:15,00:47:00:19,He's gone.
+00:47:13:25,00:47:16:02,(knock on door)
+00:47:19:01,00:47:20:20,Forget it, man.
+00:47:20:23,00:47:22:25,You can bang on that door|all night if you want to.
+00:47:22:28,00:47:25:13,There is no way in hell I'm letting you in.
+00:47:25:17,00:47:29:00,I can't believe|you're doing this to me, Shellie.
+00:47:29:02,00:47:33:11,Everything we've shared -|it has to mean something to you.
+00:47:33:13,00:47:35:07,Ha. It meant plenty.
+00:47:35:09,00:47:38:16,Plenty of lost pay on account of how|nobody wants to flirt with a waitress
+00:47:38:18,00:47:41:07,whose face is all purple|and swollen up with bruises.
+00:47:41:09,00:47:42:27,I know you're angry, baby.
+00:47:42:29,00:47:46:04,And I forgive you for that|without you even asking me to.
+00:47:46:06,00:47:48:02,There's a difference|between getting honked off
+00:47:48:04,00:47:49:26,at a guy who's generally not so bad,
+00:47:49:29,00:47:54:03,and finding out that you've been|sweet-talked by a total jerk loser
+00:47:54:06,00:47:56:21,who skips out on a wife|that he doesn't even tell you about
+00:47:56:25,00:47:59:16,every time he gets drunk,|which is way too often!
+00:47:59:18,00:48:02:15,Especially the kind of total jerk loser
+00:48:02:17,00:48:05:15,who has to beat up on a girl|to make himself feel like a man.
+00:48:05:17,00:48:07:29,That hurt, Shellie.
+00:48:08:01,00:48:13:20,It's one thing for you to play hard to get,|but don't go trying to cut my nuts off.
+00:48:13:22,00:48:16:07,I am impossible to get.
+00:48:16:10,00:48:22:25,Do yourself a favor, Jackie Boy,|and get help, like a shrink.
+00:48:22:28,00:48:25:23,Get help and get lost.
+00:48:25:26,00:48:27:16,Just open the door.
+00:48:27:19,00:48:32:15,Go ahead and open the door, Shellie.|I'll take care of this.
+00:48:32:17,00:48:36:20,Just open the door and you'll see|how wrong you've been about me.
+00:48:38:08,00:48:41:19,Oblige him, Shellie.|I'm ready for him.
+00:48:41:21,00:48:45:11,No! If he knew that you were here with me,|you don't know how bad this could get!
+00:48:45:13,00:48:48:27,This clown's got a big, mean drunk on.
+00:48:49:00,00:48:51:04,And he's got four friends|out there in the hall,
+00:48:51:06,00:48:53:25,breathing hard|and just as drunk as he is.
+00:48:53:27,00:48:58:26,Hey, I could swear I heard somebody|in there with you just now.
+00:48:58:29,00:49:04:15,Somebody! Jackie Boy,|it's a regular African love fest in here!
+00:49:05:22,00:49:08:05,- I'm no racist.|- I mean, I got me all five starters,
+00:49:08:07,00:49:11:10,and half the bench of|the Basin City Blues keeping me company.
+00:49:11:12,00:49:13:16,You feel like taking them on?
+00:49:13:18,00:49:16:20,You are teasing me, baby.
+00:49:16:22,00:49:20:09,Some of my best friends...
+00:49:20:12,00:49:23:01,But you're really pushing my buttons.
+00:49:23:03,00:49:25:10,And the whole time|you've been doing me like this,
+00:49:25:12,00:49:28:08,I've been too polite to point out|that at any time I want to,
+00:49:28:10,00:49:31:16,I could kick this damn door to splinters.
+00:49:31:19,00:49:34:16,OK, baby, you know what I can do.
+00:49:34:18,00:49:36:27,- You know what I can do. One, two...|- All right, then!
+00:49:36:29,00:49:39:28,All right.|All right, all right!
+00:49:42:21,00:49:46:03,Troops, make yourself at home.
+00:49:54:24,00:49:57:24,You brought your whole pack with you?
+00:49:57:27,00:50:00:23,None of these bozos got lives,|they gotta hang out with you?
+00:50:00:25,00:50:02:15,You're gonna love this, baby.
+00:50:02:17,00:50:05:12,You're gonna call up some of your friends|who work the saloon.
+00:50:05:15,00:50:08:28,With you and the bunch of us,|we're gonna hit every joint in town,
+00:50:09:02,00:50:10:26,and it's gonna be great.
+00:50:10:28,00:50:13:02,I ain't calling up nobody.
+00:50:17:16,00:50:22:11,That's a man's shirt,|and I'm sure as hell it ain't one of mine.
+00:50:22:13,00:50:26:24,You got somebody's love stink all over you.
+00:50:26:26,00:50:30:07,You've been with another man|and you've been with him tonight.
+00:50:30:09,00:50:33:22,- Who is he?|- He's Superman.
+00:50:33:24,00:50:37:26,He flew out the window|just as soon as he heard you were coming,
+00:50:38:00,00:50:40:13,'cause you scared him so bad.
+00:50:40:15,00:50:42:16,(laughs)
+00:50:42:19,00:50:46:18,(Jackie Boy) You think|I have no feelings at all.
+00:50:46:22,00:50:48:26,(Shellie) If you're gonna slug me,
+00:50:48:28,00:50:51:27,just go ahead and get it over with,|you sick bastard.
+00:50:52:00,00:50:56:04,(Jackie Boy) There you go,|lying about me again,
+00:50:56:06,00:50:58:24,right in front of my friends.
+00:50:58:26,00:51:02:05,I have never hit a woman in my life.
+00:51:05:11,00:51:07:06,(laughter)
+00:51:07:25,00:51:10:01,That's showing her, man.
+00:51:10:03,00:51:14:18,You goddamn bastard.|You goddamn coward.
+00:51:14:22,00:51:17:20,- Baby, we're all here to have a good time.|- Yeah.
+00:51:17:22,00:51:21:16,- I gotta take a leak.|- Oh!
+00:51:21:18,00:51:24:01,Wish you'd dropped by earlier, Jackie Boy.
+00:51:24:13,00:51:27:22,Then you could've met my boyfriend.
+00:51:27:24,00:51:30:08,Could've seen what a real man looks like.
+00:51:30:11,00:51:34:06,There you go, after my nuts again.
+00:51:34:08,00:51:36:17,But I forgive you.
+00:51:36:19,00:51:38:18,I'm a generous guy.
+00:51:38:21,00:51:43:05,He is generous.|But that temper of his...
+00:51:43:08,00:51:46:12,You never should have|picked on him like you did.
+00:51:47:02,00:51:49:29,My temper you don't have to worry about.
+00:51:50:13,00:51:54:05,Shut up and keep your hands to yourself|or I'll cut your little pecker off.
+00:51:55:01,00:51:56:27,Ooh.|I've been told.
+00:51:59:03,00:52:03:26,Hey, baby,|I don't hear you making those calls.
+00:52:03:28,00:52:06:21,Answer me!
+00:52:06:23,00:52:08:26,Oh, I don't need this grief.
+00:52:08:28,00:52:14:25,Hi. I'm Shellie's new boyfriend|and I'm out of my mind.
+00:52:14:27,00:52:19:24,You ever so much as talk to Shellie again,|you even think her name,
+00:52:19:26,00:52:23:15,and I'll cut you in ways|that'll make you useless to a woman.
+00:52:23:18,00:52:28:01,You're making a big mistake, man.|A big mistake.
+00:52:28:04,00:52:33:13,Yeah?|You already made a big mistake yourself.
+00:52:33:15,00:52:35:26,You didn't flush.
+00:53:28:29,00:53:30:28,Troops, get outta here.
+00:53:31:01,00:53:33:05,No questions, damn it.|No questions.
+00:53:33:07,00:53:35:02,Now!
+00:53:49:21,00:53:52:03,(helicopter overhead)
+00:53:52:05,00:53:53:20,(sirens blaring)
+00:53:53:23,00:53:56:00,Dwight, what in the devil|did you do to him?
+00:53:56:02,00:53:59:00,I just gave him a taste of his own medicine.
+00:53:59:02,00:54:01:07,I don't think he'll be bothering you again.
+00:54:01:20,00:54:05:06,- How's your jaw?|- I've been slapped around worse.
+00:54:05:09,00:54:09:08,Dwight, he was from a while back,
+00:54:09:11,00:54:12:19,before you showed up again|with that new face of yours.
+00:54:12:21,00:54:16:14,And it was only 'cause I felt sorry for him.
+00:54:16:16,00:54:18:29,And it was only once.
+00:54:19:01,00:54:21:00,I've done some dumb things.
+00:54:21:03,00:54:23:02,Seeing as how|I'm one of those dumb things,
+00:54:23:05,00:54:25:26,I can't give you|too hard a time about that, Shellie.
+00:54:25:28,00:54:30:07,But this guy, he's a menace.
+00:54:30:10,00:54:33:05,He might kill somebody if I don't stop him.
+00:54:35:03,00:54:36:23,I'll call you later.
+00:54:36:26,00:54:38:10,No, don't go!
+00:54:38:13,00:54:40:22,Shellie shouts something|I can't quite make out
+00:54:40:24,00:54:43:14,over the racket of a passing police 'copter.
+00:54:43:17,00:54:47:06,- Stop!|- It sounds like "stop. " but I can't be sure.
+00:54:47:26,00:54:51:14,It's a chance I shouldn't be taking.|but I can't just go home and forget about it.
+00:54:51:16,00:54:54:27,and let Jackie Boy and his pals|find their fun.
+00:54:54:29,00:55:00:18,They're a pack of predators and they're|out for blood tonight - a woman's blood.
+00:55:00:20,00:55:03:29,Damn it, Dwight.|Damn it.
+00:55:04:02,00:55:07:00,You fool.
+00:55:07:02,00:55:09:10,You damned fool.
+00:55:09:13,00:55:11:05,I cut my Caddy across the park
+00:55:11:07,00:55:14:24,to pick up Jackie Boy heading|like a bat outta hell up the hill.
+00:55:14:26,00:55:16:24,I'm speeding.
+00:55:16:27,00:55:21:21,That's a good way to get yourself noticed. |And if you're a murderer with a new face
+00:55:21:23,00:55:26:04,who's one fingerprint check away from|the fast track to the gas chamber like I am.
+00:55:26:06,00:55:29:10,the last thing you want|is to get noticed.
+00:55:29:12,00:55:30:18,(siren blaring)
+00:55:30:20,00:55:35:04,I don't have nearly enough cash on me|to bribe this cop. And even if I did.
+00:55:35:07,00:55:38:12,there's always the outside chance|he's one of the honest ones.
+00:55:38:15,00:55:44:03,Do I try to talk my way out of this.|or do I take this cop down and risk it all?
+00:55:44:22,00:55:48:15,Then Jackie Boy saves me|a great. Big. Steaming pile of trouble.
+00:55:48:17,00:55:51:04,Watch it, Jack!
+00:55:51:06,00:55:53:06,(horns blaring)
+00:55:57:03,00:55:58:26,Cops!|They're right on our ass!
+00:55:58:28,00:56:02:12,Not for long.|Not where we're headed.
+00:56:02:15,00:56:05:16,My gut tightens up.
+00:56:05:19,00:56:10:01,Jackie Boy's leading us|straight to Old Town.
+00:56:12:18,00:56:14:14,The cop shuts off his siren.
+00:56:14:16,00:56:17:24,He knows he's not the law.|not in Old Town.
+00:56:17:26,00:56:22:04,The ladies are the law here.|beautiful and merciless.
+00:56:22:06,00:56:24:04,If you've got the cash|and you play by the rules.
+00:56:24:06,00:56:26:18,they'll make all your dreams come true.
+00:56:26:20,00:56:30:14,But if you cross 'em. You're a corpse.
+00:56:38:21,00:56:41:06,Hey, baby. Hey, baby.
+00:56:44:04,00:56:46:08,Hop in, sugar.|We'll get you there.
+00:56:46:21,00:56:51:04,Aw, sweetheart. I work the day shift|and it's been a long day.
+00:56:51:08,00:56:54:08,Besides, I don't do group jobs.
+00:56:54:29,00:56:58:09,Get in the car, baby.|We'll just talk. It'll be nice.
+00:56:58:11,00:57:00:14,I don't do talk jobs, either.
+00:57:00:16,00:57:05:18,Babydoll,|I've had me one hell of a bad day.
+00:57:05:20,00:57:09:11,I've been beat up every time I turn around.
+00:57:09:13,00:57:11:17,But the day I get turned down by a hooker
+00:57:11:19,00:57:15:08,when I got good,|hard-earned cash to pay her with...
+00:57:15:10,00:57:17:22,well...
+00:57:17:25,00:57:20:09,there's only so much a man can take.
+00:57:20:12,00:57:22:16,Go try the Alamo over on Dillon Street.
+00:57:22:19,00:57:25:00,That's the Alamo, not the Amigo.
+00:57:25:02,00:57:27:21,The Amigo's a fag joint.
+00:57:28:07,00:57:34:04,Are you having a good time humiliating me|like this for no damn reason at all?
+00:57:36:12,00:57:39:21,That's far enough, Dwight.|We've been on top of these peckerwoods
+00:57:39:23,00:57:42:10,since they first showed up|with that cop behind them.
+00:57:42:12,00:57:44:12,Everything's under control.
+00:57:45:16,00:57:47:21,Enjoy the show.
+00:57:47:23,00:57:50:21,There's no use arguing with her.
+00:57:50:24,00:57:53:20,The ladies are their own enforcers.
+00:57:53:22,00:57:56:21,So, how's the barmaid?|You know, the one that never shuts up?
+00:57:56:24,00:57:59:22,- Not right now, Gail.|- Ooh.
+00:58:00:00,00:58:01:17,Wound up a little tight, aren't we?
+00:58:02:04,00:58:05:27,That's your whole problem, Dwight.|You worry too much.
+00:58:05:29,00:58:08:29,That, and your lousy taste in women.|These days, anyway.
+00:58:09:02,00:58:12:02,Damn it, Gail.|Not right now.
+00:58:12:05,00:58:16:02,Those clowns down the way -|they some of the barmaid's boyfriends?
+00:58:16:04,00:58:18:07,One of them thinks he is.
+00:58:18:09,00:58:20:10,He's outta control.
+00:58:20:13,00:58:23:26,I followed them here to make sure|he didn't hurt any of the girls.
+00:58:23:28,00:58:27:17,Us helpless little girls.
+00:58:28:06,00:58:32:06,All kinds of death is about to hit|less than 20 yards ahead of us.
+00:58:32:10,00:58:35:27,and still it's hard to take my eyes off her.
+00:58:35:29,00:58:38:20,Us girls are safe as we can be, Lancelot.
+00:58:38:22,00:58:41:06,Those boys in that Chrysler|are one mistake away
+00:58:41:08,00:58:43:22,from seeing what Miho can do.
+00:58:43:24,00:58:47:23,And she's been aching for some practice.
+00:58:48:24,00:58:53:16,She guides my glance upwards|to the pixie perched on the roof's edge.
+00:58:53:18,00:58:57:24,- Deadly little Miho. |- (girl) You're running out of alley, cowboy.
+00:58:58:11,00:59:02:04,Turn around. Save yourself|and your buddies a ton of grief.
+00:59:02:07,00:59:04:27,(Jackie Boy) You're a sassy little thing.
+00:59:05:00,00:59:09:24,You ain't hardly in any kind|of position to be making threats.
+00:59:09:26,00:59:13:27,The trap is set.|Iocked and ready to spring.
+00:59:13:29,00:59:17:26,So what? They're scum. |They deserve what's coming.
+00:59:17:28,00:59:21:09,So why this rotten feeling in my gut|that something is awfully wrong?
+00:59:21:11,00:59:24:18,They haven't killed anybody I know about.
+00:59:24:20,00:59:29:12,It got pretty bad at Shellie's place,|but they didn't kill anybody.
+00:59:29:14,00:59:30:27,And they won't.
+00:59:30:29,00:59:33:03,Why this rotten feeling?
+00:59:33:06,00:59:36:19,Something Shellie said. |I can't place it.
+00:59:36:23,00:59:41:00,OK, OK, OK. I sounded off|a little more than I should have.
+00:59:41:02,00:59:44:00,- I'm a little on edge.|- Over the edge.
+00:59:44:03,00:59:47:10,It's not a woman you need.|It's a good night's sleep.
+00:59:47:12,00:59:51:07,You couldn't handle a woman,|the state you're in.
+00:59:51:09,00:59:53:22,She's saying you ain't got|what it takes, Jack.
+00:59:56:14,00:59:58:04,You wanna see it?
+00:59:59:07,01:00:02:21,You wanna see what I got? Huh?
+01:00:02:24,01:00:06:25,I've seen all shapes, all sizes.
+01:00:07:29,01:00:10:13,You seen this one?
+01:00:12:12,01:00:14:01,Get in the car.
+01:00:14:04,01:00:18:22,Oh, sugar, you just gone and done|the dumbest thing in your whole life.
+01:00:35:29,01:00:37:07,Oh, God, no!
+01:00:39:10,01:00:40:29,This is crazy!
+01:00:41:23,01:00:44:12,Out of nowhere, for no reason at all!
+01:00:52:04,01:00:53:05,Go ahead.
+01:00:53:08,01:00:56:16,Go ahead.|Go ahead.
+01:00:56:18,01:00:58:29,- He's got the drop on her.|- He's got squat.
+01:00:59:01,01:01:02:26,He's dead.|He's just too damn dumb to know it.
+01:01:05:20,01:01:09:16,I got you right where I want you.
+01:01:09:18,01:01:12:24,This is a career-ending wound, whore.
+01:01:12:26,01:01:16:10,- And there's gonna be hell to pay.|- Watch your step, Jackie Boy.
+01:01:19:17,01:01:20:26,Yeesh.
+01:01:28:16,01:01:30:15,This isn't funny.
+01:01:31:08,01:01:34:26,Don't anyone laugh.|I got friends you can't imagine.
+01:01:34:28,01:01:37:05,Every one of you is gonna burn.
+01:01:38:28,01:01:41:06,(Dwight) Hang it up.|She's just playing with you.
+01:01:41:08,01:01:44:17,- You're only making it worse.|- You shut the hell up.
+01:01:45:12,01:01:49:00,Don't pull the trigger.|She blocked the barrel. It'll backfire.
+01:01:49:03,01:01:52:27,I told you to shut up.
+01:01:57:24,01:02:00:01,I can't see.
+01:02:00:03,01:02:02:03,What's happening?
+01:02:03:21,01:02:06:03,I can't see.
+01:02:06:05,01:02:08:27,I can't hear anything.
+01:02:08:29,01:02:12:12,For God's sake, Miho, finish him.
+01:02:12:15,01:02:16:03,Yeah.|Make it quick, will you?
+01:02:18:12,01:02:21:01,She doesn't quite chop his head off.
+01:02:23:23,01:02:27:02,She makes a Pez dispenser out of him.
+01:02:28:29,01:02:32:16,Then it's straight to business - stretching|the corpses out on the alley floor
+01:02:32:18,01:02:36:26,and going through their pockets.|divvying up cash when they find it.
+01:02:36:28,01:02:38:29,I'm fishing around in Jackie Boy's pants.
+01:02:39:02,01:02:40:27,His wallet is packed.
+01:02:40:29,01:02:44:27,Mastercard. Discover.|Platinum American Express.
+01:02:45:00,01:02:47:09,and nearly 300 bucks worth of twenties
+01:02:47:11,01:02:51:09,that I'm not too proud|to stuff into my own pockets.
+01:02:51:11,01:02:53:07,Then I find an atom bomb.
+01:02:55:21,01:02:57:28,Jackie Boy.
+01:02:58:00,01:03:00:13,you son of a bitch.
+01:03:05:12,01:03:07:15,There was a helicopter|that kicked up such a racket.
+01:03:07:17,01:03:10:22,- I couldn't quite make out what she said. |- (mouthing)
+01:03:10:24,01:03:13:07,I thought Shellie said "stop. "
+01:03:13:09,01:03:15:28,She said "cop. "
+01:03:16:00,01:03:19:06,Detective Lieutenant Jack Rafferty.
+01:03:19:08,01:03:22:19,Iron Jack. The papers call him.
+01:03:22:21,01:03:25:14,A goddamn hero cop.
+01:03:27:28,01:03:30:24,It's held for years. The shaky truce.
+01:03:30:26,01:03:34:25,The cops get a slice of the profits and free|entertainment when they throw a party.
+01:03:34:29,01:03:37:22,The girls get to administer|their own brand of justice.
+01:03:38:08,01:03:42:23,They get to defend their own turf. |If a cop blunders into the neighborhood
+01:03:42:26,01:03:47:08,and he's not shopping for what the girls|are selling. They send him packing.
+01:03:47:10,01:03:50:00,but they send him back alive.
+01:03:50:02,01:03:52:06,That's the rules.
+01:03:52:08,01:03:54:06,That's the truce.
+01:03:54:08,01:03:56:23,The cops stay out.
+01:03:56:26,01:04:00:00,That keeps the girls free|to keep the pimps and the mob out.
+01:04:00:02,01:04:03:01,Old Town will be left wide open.
+01:04:03:05,01:04:05:02,It'll be war.
+01:04:05:04,01:04:08:18,The streets will run red with blood -
+01:04:08:22,01:04:11:00,women's blood.
+01:04:11:02,01:04:13:15,The cops!|The mob!
+01:04:13:17,01:04:16:08,Things are gonna go back|to the way they used to be!
+01:04:16:10,01:04:20:06,The hell they will!|We got guns.
+01:04:20:08,01:04:22:11,We'll fight the cops and the mob
+01:04:22:13,01:04:25:26,and anybody else|who tries to move in on us.
+01:04:25:28,01:04:27:18,- We'll go to war.|- Don't be stupid.
+01:04:27:20,01:04:30:29,You wouldn't stand a chance.|Get me a car.
+01:04:31:01,01:04:34:06,Make sure it's a hardtop|with a decent engine.
+01:04:34:09,01:04:35:20,I'll hide the bodies.
+01:04:35:23,01:04:39:06,Did you forget that cop car|that trailed them here?
+01:04:39:10,01:04:41:24,The cops know Rafferty came here.
+01:04:41:28,01:04:44:27,They'll check the river,|they'll check the sewer.
+01:04:45:00,01:04:46:27,They'll find him|and come gunning for us.
+01:04:46:29,01:04:49:26,I'll haul the bodies to the pits.|The cops won't check the pits.
+01:04:49:28,01:04:51:25,Get that gun out of my face or I'll smack ya.
+01:04:51:27,01:04:56:03,Who do you think you are, giving orders?
+01:04:56:05,01:04:58:23,- You got what you wanted out of us.|- Shut up, Gail.
+01:04:58:25,01:05:01:18,You got what you wanted out of me!
+01:05:01:20,01:05:05:09,And you were gone,|off playing with that barmaid.
+01:05:05:11,01:05:09:18,Gone until you brought|this unholy mess on us.
+01:05:09:21,01:05:12:12,Miho moves to my back.
+01:05:14:01,01:05:16:18,One word from Gail|and she'll cut me in half.
+01:05:16:20,01:05:20:09,They'll be watching the roads.|They'll catch you.
+01:05:20:11,01:05:23:18,It'll be the bad old days all over again.
+01:05:23:20,01:05:26:12,The pimps, the beatings,|the drugs, the rapes!
+01:05:26:14,01:05:30:12,They won't be watching the roads. Not yet,|they won't! Get me a damn hardtop!
+01:05:30:15,01:05:32:23,If I don't make it, you can have your war.
+01:05:32:25,01:05:35:14,Get that gun out of my face now!
+01:05:35:16,01:05:36:22,(yells)
+01:05:38:03,01:05:39:27,Bastard!
+01:05:44:19,01:05:46:26,I forgot how quick you are.
+01:05:48:26,01:05:50:15,My warrior woman.
+01:05:50:17,01:05:53:06,She almost yanks my head clean off.
+01:05:53:08,01:05:56:15,shoving my mouth into hers|so hard it hurts.
+01:05:56:17,01:06:00:00,An explosion that blasts away|the dull. Gray years
+01:06:00:02,01:06:04:11,between the now and that one fiery night|when she was mine.
+01:06:05:07,01:06:08:02,A hardtop with a decent engine.
+01:06:08:04,01:06:10:15,And make sure it's got a big trunk.
+01:06:12:17,01:06:15:22,I'll always love you, baby.
+01:06:15:25,01:06:19:21,Always... and never.
+01:06:27:20,01:06:29:23,(Dwight) Where'd you find that heap?
+01:06:29:25,01:06:33:10,Just look at that trunk.|We'll never fit 'em all in.
+01:06:33:13,01:06:36:28,Gail? Unless there's something else|you want me to do,
+01:06:37:01,01:06:39:00,you think maybe I could go home?
+01:06:39:03,01:06:43:09,All this blood and stuff's got me kind of|feeling like maybe I'm gonna hurl.
+01:06:43:11,01:06:45:17,Sure, Becky, go home.
+01:06:45:19,01:06:48:13,But don't you talk to anybody,|not even your mom.
+01:06:48:16,01:06:51:13,They'll never fit in that trunk.
+01:06:51:15,01:06:55:08,Not like this, they won't.|Miho.
+01:06:55:21,01:06:57:19,Dry your hair as soon as you get home!
+01:06:57:21,01:06:59:25,You'll catch cold if you don't.
+01:06:59:27,01:07:01:27,(squishing sounds)
+01:07:08:02,01:07:09:19,Yeesh.
+01:07:11:17,01:07:14:06,Hey, Becky.|Gail said no calls.
+01:07:14:08,01:07:18:01,I just want to hear my mom's voice.|I won't tell her nothing.
+01:07:18:03,01:07:20:22,Please, don't say nothing to Gail.
+01:07:23:08,01:07:24:23,Hey, Mom?
+01:07:28:20,01:07:30:11,Dizzy dames.
+01:07:30:13,01:07:34:13,What were they thinking. Sticking me|with a beat-up bucket of bolts like this?
+01:07:34:16,01:07:37:07,We were barely able to get the trunk|to stay closed as it was.
+01:07:37:09,01:07:38:29,we packed it so tight.
+01:07:39:01,01:07:43:28,There wasn't anything we could do|but pile Jackie Boy in right next to me.
+01:07:44:00,01:07:47:28,out where anybody who cares to look|will see him.
+01:07:49:04,01:07:53:02,Go ahead. Take one of his cigarettes.
+01:07:54:02,01:07:55:27,It'll help.
+01:08:20:11,01:08:24:22,It's got you smoking there, bud.
+01:08:29:09,01:08:32:09,You shut the hell up, Jackie Boy.
+01:08:32:13,01:08:34:18,You're dead.
+01:08:34:20,01:08:38:26,I'm just imagining this, so shut the hell up.
+01:08:38:28,01:08:43:26,Well, it tells you something|about your state of mind, don't it?
+01:08:43:28,01:08:46:11,It's got you hearing things.
+01:08:46:13,01:08:49:18,It's got your nerves shot.
+01:08:49:20,01:08:52:08,It's got you smoking.
+01:08:52:10,01:08:56:09,You know it's true.
+01:08:56:11,01:09:00:01,Nobody ever really quits.
+01:09:01:19,01:09:06:12,A smoker's a smoker|when the chips are down.
+01:09:06:14,01:09:11:10,- And your chips are down.|- I'm fine. You shut the hell up.
+01:09:12:21,01:09:15:11,Will you look at that?
+01:09:16:27,01:09:20:10,Ooh, those hookers let you down.
+01:09:21:21,01:09:26:25,What are you gonna do|when you run outta gas, call AAA?
+01:09:26:27,01:09:31:05,You sucker for the babes, you.
+01:09:31:07,01:09:34:06,You ain't even gonna make it to the pits.
+01:09:34:09,01:09:37:13,You shut the hell up.|I'll make it.
+01:09:37:16,01:09:40:29,Not unless you keep|your eyes on the road, sugar pie.
+01:09:41:15,01:09:45:02,- Watch it!|- (horn blaring)
+01:09:45:15,01:09:47:15,Ah, this is great.
+01:09:47:18,01:09:50:29,Just like being in a buddy movie.
+01:09:51:01,01:09:53:12,Shut up!
+01:09:53:14,01:09:55:01,(chuckles)
+01:09:56:03,01:09:57:25,(siren blaring)
+01:09:57:27,01:10:00:15,Boy, you're screwed.
+01:10:00:18,01:10:02:19,It's over.
+01:10:02:22,01:10:05:07,You're flushed.
+01:10:05:10,01:10:08:28,This time, I can't bring myself|to tell him to shut up.
+01:10:09:01,01:10:12:11,Sure, he's an asshole.
+01:10:12:13,01:10:15:02,Sure, he's dead.
+01:10:15:04,01:10:18:22,Sure, I'm just imagining that he's talking.
+01:10:18:24,01:10:22:25,None of that stops the bastard|from being absolutely right.
+01:10:22:28,01:10:26:11,I don't have a chance in hell|of outrunning this cop.
+01:10:26:14,01:10:28:21,Not in this heap.
+01:10:28:23,01:10:31:08,Pull over!
+01:10:32:24,01:10:36:10,The only question left|is whether I'm gonna kill him or not.
+01:10:36:13,01:10:38:27,Tough call.
+01:10:38:29,01:10:42:05,For all I know,|he's an honest cop, regular guy,
+01:10:42:08,01:10:46:14,a working stiff with a mortgage,|a wife and a pile of kids.
+01:10:46:16,01:10:48:25,My hand moves all on its own,
+01:10:48:27,01:10:52:26,sliding one of my guns to my lap|and thumbing back the hammer.
+01:10:55:02,01:10:59:28,- I don't know what to do.|- You better stop. You're making him mad.
+01:11:01:09,01:11:04:06,Whatever you say.
+01:11:04:08,01:11:06:12,(tires screeching)
+01:11:11:06,01:11:14:26,Your friend here...|party a little too hard tonight?
+01:11:16:14,01:11:19:05,I'm the designated driver.
+01:11:24:27,01:11:28:03,Well, you're driving with a busted tail light.
+01:11:33:11,01:11:35:15,I'll let you off with a warning.
+01:11:43:09,01:11:44:23,What next?
+01:11:49:01,01:11:53:23,The tank goes dry|a quarter mile from the pits.
+01:11:53:25,01:11:56:23,I shove the T-Bird the rest of the way.
+01:11:56:26,01:12:00:03,A few minutes' more work|and it'll all be over.
+01:12:00:05,01:12:03:16,Jackie Boy|will go into the damn tar pits.
+01:12:03:18,01:12:07:25,I'll catch a train out of Sacred Oaks.|go home and call it a...
+01:12:07:27,01:12:10:10,(gunshot)
+01:12:19:08,01:12:21:12,No more questions, Dallas.|Do what I say.
+01:12:21:15,01:12:25:06,Clear the streets.|We're in lockdown.
+01:12:25:09,01:12:27:29,We're not selling any tail in Old Town.
+01:12:28:01,01:12:30:11,Not tonight.
+01:12:33:23,01:12:37:11,Don't struggle.|You'll only hurt yourself.
+01:12:37:13,01:12:39:21,Your cause is lost.
+01:12:39:23,01:12:41:16,We know everything.
+01:12:41:18,01:12:45:19,Soon the corpse of Detective Rafferty|will be in our possession,
+01:12:45:22,01:12:50:22,and the truce between your prostitutes|and the police will be shattered.
+01:12:50:25,01:12:54:00,There'll be arrests.|There'll be deaths.
+01:12:54:03,01:12:57:29,My employer will seize|what remains of this neighborhood.
+01:12:58:02,01:13:02:18,You will all be slaves.|Nothing can stop this.
+01:13:02:21,01:13:07:19,But it is within your power|to save many lives
+01:13:07:22,01:13:12:04,by facilitating the process of transition,
+01:13:12:06,01:13:17:16,by negotiating the terms|of the surrender of Old Town.
+01:13:18:05,01:13:20:20,Son of a bitch!|I know you.
+01:13:20:23,01:13:25:27,I have suffered your kind before -|the dregs of Sin City.
+01:13:25:29,01:13:27:29,I serve a new master now,
+01:13:28:03,01:13:32:28,and soon you and all your wretched kind|will serve him as well.
+01:13:33:00,01:13:38:12,Now, get dressed and shed a tear|for Dwight McCarthy if you must,
+01:13:38:14,01:13:42:00,because, by now, he is surely dead.
+01:13:42:03,01:13:44:26,You don't know him.
+01:13:44:28,01:13:48:06,My man will find a way.
+01:13:48:08,01:13:51:09,He always finds a way.
+01:13:52:24,01:13:54:25,I can't fathom|these Americans always whining
+01:13:54:28,01:13:58:09,and going on about how they got it so bad.
+01:13:58:11,01:14:00:20,This is a fine, grand country.
+01:14:00:23,01:14:03:04,Guiding light of the modern world, it is.
+01:14:03:06,01:14:06:13,Low taxes, land of opportunity.
+01:14:06:15,01:14:10:03,Where else would one bullet buy us|the fortune that we're getting for this?
+01:14:10:05,01:14:12:24,Sure beats the living hell|out of blowing up airports and churches
+01:14:12:26,01:14:15:07,without shite to show for it.
+01:14:17:04,01:14:19:04,Yeesh.
+01:14:20:07,01:14:21:24,You find something, Murphy?
+01:14:21:27,01:14:25:06,Looks to be a poor, dead cop's badge.
+01:14:25:08,01:14:27:08,It's all bent up.
+01:14:27:11,01:14:30:07,What's this stuck in it?
+01:14:30:09,01:14:32:10,Bloody hell.|It's the bullet.
+01:14:41:17,01:14:45:06,You son of a bitch!|Bastard!
+01:14:46:18,01:14:48:25,They weren't cops. These four.
+01:14:48:27,01:14:50:26,They were mercenaries.
+01:14:50:29,01:14:53:07,And if they were hired|by who I think they were.
+01:14:53:16,01:14:56:07,the bad times haven't even started yet.
+01:14:56:09,01:14:59:23,And everything seemed|to be going so well.
+01:15:11:22,01:15:16:29,(man) Remember, we don't have to|deliver every last inch of the man, Brian.
+01:15:17:00,01:15:19:09,(Brian) You got a good point there, Ronnie.
+01:15:19:11,01:15:22:18,Lend me your knife.
+01:15:22:20,01:15:25:22,Should I take a nap|while I'm doing all this waiting?
+01:15:25:25,01:15:28:25,I'm at the bone, all right?
+01:15:31:02,01:15:33:05,There we go.
+01:15:36:02,01:15:40:10,Have you ever seen anything so pretty|in your whole life?
+01:15:41:09,01:15:44:27,We'll be back for the three of you,|and if anyone happens by,
+01:15:45:00,01:15:47:26,use your imagination, OK?
+01:15:57:19,01:15:59:29,Silence. Now.
+01:16:00:01,01:16:02:13,No air to breathe.
+01:16:02:15,01:16:06:16,Only the horrid. Oily tar taste|creeping up my nostrils.
+01:16:07:26,01:16:12:06,Let it in. |Let it fill your lungs.
+01:16:12:08,01:16:15:28,They were counting on you|and you blew it.
+01:16:16:27,01:16:21:07,Skinny. Steely fingers at my wrist.
+01:16:21:09,01:16:24:29,Miho. You're an angel.
+01:16:25:01,01:16:26:28,You're a saint.
+01:16:27:00,01:16:29:07,You're Mother Teresa.
+01:16:29:09,01:16:31:10,You're Elvis.
+01:16:31:13,01:16:33:20,You're God.
+01:16:34:11,01:16:40:00,And if you'd shown up ten minutes|earlier. We'd still have Jackie Boy's head.
+01:16:40:13,01:16:43:12,Dwight, they got Gail!
+01:16:44:14,01:16:47:21,It's a cinch.|You got yourselves a spy in Old Town.
+01:16:47:24,01:16:50:20,A stoolie who sold you out to the mob.
+01:16:50:22,01:16:53:05,We gotta find out who it is and rescue Gail.
+01:16:53:07,01:16:55:06,But first, we gotta get|our hands on Jackie Boy's head
+01:16:55:10,01:16:59:14,before it gets to wherever it's going|and this whole situation blows wide open.
+01:16:59:16,01:17:04:23,Miho, I hope to hell|you left one of 'em alive enough to talk.
+01:17:12:25,01:17:15:28,I let him know I'm not fooling around.
+01:17:16:01,01:17:19:03,(groans)
+01:17:20:22,01:17:22:23,We talk.
+01:17:31:24,01:17:35:18,Stay smart. |Stay cool.
+01:17:35:20,01:17:39:03,It's time to prove to your friends|that you're worth a damn.
+01:17:39:06,01:17:42:11,Sometimes. That means dying.
+01:17:42:13,01:17:45:27,Sometimes. It means killing|a whole lot of people.
+01:17:46:00,01:17:48:15,There they are.|What do we do?
+01:17:49:06,01:17:50:22,We stop 'em, Dallas.
+01:17:59:00,01:18:01:05,Jackie Boy's head is so close to me
+01:18:01:07,01:18:05:01,I could almost reach out|and grab it right then and there.
+01:18:06:06,01:18:07:18,(gunfire)
+01:18:10:09,01:18:12:15,Get the head!|Get the head!
+01:18:14:04,01:18:16:05,I got it!|I got it!
+01:18:22:29,01:18:25:27,Suck on this, you stupid slag!
+01:18:29:23,01:18:32:19,I can't tell if Miho is alive or dead.
+01:18:32:21,01:18:37:12,but I'm on my feet and every ounce of me|wants to get some killing done.
+01:18:40:05,01:18:44:19,You want the head now, sweetheart?|So come down and get it!
+01:18:49:12,01:18:51:18,Brave lad.
+01:18:51:20,01:18:55:17,I could've put a bullet|straight down your ear just now,
+01:18:55:19,01:18:59:12,if I hadn't got me revolver|all wet and useless.
+01:18:59:14,01:19:01:23,You got the drop on me, love.
+01:19:01:26,01:19:04:10,I'm as helpless as a baby.
+01:19:11:09,01:19:14:04,I got to come clean with you, sweetheart.
+01:19:14:06,01:19:19:06,It was an outright lie I was giving ya|about me revolver being wet.
+01:19:19:09,01:19:21:28,You see, I'm not too fond of shootin'.
+01:19:22:00,01:19:25:02,It's my preference to blow things up.
+01:19:25:05,01:19:27:18,Once you blast the roof off a pub
+01:19:27:20,01:19:31:13,and seen all the parts flying off people,
+01:19:31:15,01:19:35:13,a little bang bang's|never gonna match the sight of that.
+01:19:35:16,01:19:41:09,And here's me, with all these fine grenades|and such a sweet beauty of a remote.
+01:19:41:11,01:19:44:23,But it's me knife I'll be doing you with.
+01:19:44:27,01:19:47:15,You killed me mates.
+01:19:47:18,01:19:52:01,Someone shoulda told ya-never give|an Irishman good cause for revenge.
+01:19:54:01,01:19:56:06,Deadly little Miho.
+01:19:57:00,01:19:59:24,You won't feel a thing|unless she wants you to.
+01:19:59:26,01:20:02:21,She twists the blade.
+01:20:03:04,01:20:04:16,He feels it.
+01:20:07:12,01:20:11:04,I tell Miho what we're gonna do|and how we're gonna do it.
+01:20:11:07,01:20:15:20,I grab poor Dallas's car phone and make|the most important call of my life.
+01:20:15:24,01:20:20:21,First. We gotta rescue Gail.|then comes the kill.
+01:20:20:24,01:20:24:22,The big. Fat kill.
+01:20:33:27,01:20:35:00,(groans)
+01:20:35:03,01:20:37:29,Do we just gotta stand here|and watch this?
+01:20:38:01,01:20:40:05,What, are you kidding me, man?
+01:20:40:08,01:20:43:21,I could watch old Manute do his thing|all night long and not get tired of it.
+01:20:43:23,01:20:45:07,I mean, the man's an artist.
+01:20:45:10,01:20:50:12,Only an artist should be allowed|to touch such a beautiful subject.
+01:20:50:14,01:20:52:12,Your skin is perfect.
+01:20:52:14,01:20:55:16,Your nerves, responsive.
+01:20:55:19,01:20:56:28,Beautiful.
+01:20:57:00,01:21:00:02,Just give them what they want, Gail.
+01:21:04:04,01:21:07:06,- Becky?|- It's over, Gail.
+01:21:07:27,01:21:11:21,There's no fighting them.|Dwight's dead.
+01:21:11:23,01:21:13:29,They got what's left of that cop we killed.
+01:21:14:02,01:21:17:01,The mob's gonna turn it over to the police|chief, the cops are gonna mow us down.
+01:21:17:04,01:21:19:02,We gotta cut a deal.
+01:21:19:04,01:21:22:21,You little bitch!|You sold us out!
+01:21:22:24,01:21:25:23,I didn't have no choice!|They was gonna hurt my mom.
+01:21:25:26,01:21:28:02,You gotta cut a deal with these people.
+01:21:28:04,01:21:30:07,It's selfish, you holding out like this.
+01:21:30:10,01:21:32:28,You're gonna get a lot of girls killed|for no good reason.
+01:21:33:01,01:21:35:15,It wasn't your mom!
+01:21:35:18,01:21:38:23,We could have protected her|and you know it.
+01:21:38:25,01:21:41:17,It was the money, you stupid little bitch!
+01:21:41:19,01:21:45:16,Sure, there's money. Sure, you could've|moved my mom into Old Town
+01:21:45:18,01:21:48:11,and let her know|that her daughter's a goddamn whore.
+01:21:48:14,01:21:50:16,Breaks your heart, doesn't it?
+01:21:50:20,01:21:55:12,They offered me what you couldn't|never offer me-a way out.
+01:21:55:13,01:21:57:10,I had to watch out for my own neck.
+01:21:57:12,01:21:59:03,Your neck.
+01:21:59:05,01:22:03:09,Your precious, scrawny, little neck!
+01:22:03:11,01:22:04:28,(screams)
+01:22:07:12,01:22:11:13,You're crazy! You could have|ripped my throat out, you crazy whore!
+01:22:13:01,01:22:16:16,Schutz, fetch my blades.
+01:22:16:19,01:22:20:19,- Stuka, kill this one.|- No, I was promised!
+01:22:20:23,01:22:23:15,Stupid little bitch!|You deserve worse!
+01:22:23:18,01:22:27:02,I knew there was a reason|I got out of bed this morning.
+01:22:29:02,01:22:31:02,Hey.
+01:22:31:17,01:22:33:12,Hey.
+01:22:34:07,01:22:35:26,Nobody.|I don't see nobody.
+01:22:35:28,01:22:39:18,Will you look at that?|It's right through me. Guys, look.
+01:22:39:20,01:22:42:17,There's something wrapped around it.
+01:22:42:19,01:22:44:11,Some kind of note.
+01:22:44:13,01:22:46:21,Give it to me.
+01:22:46:23,01:22:49:21,It's poked right through me.|Guys, look.
+01:22:51:05,01:22:53:25,- It's starting to really hurt.|- Out back. Everyone.
+01:22:53:28,01:22:55:21,And bring the women.
+01:22:55:24,01:22:59:01,Do you think somebody|should call me a doctor or something?
+01:22:59:18,01:23:01:23,McCarthy, you fool.
+01:23:03:12,01:23:04:13,Hey.
+01:23:05:19,01:23:07:00,Guys?
+01:23:09:07,01:23:10:21,Aw.
+01:23:13:17,01:23:17:24,Dozens of them. Armed to the teeth.
+01:23:17:26,01:23:21:26,I'm outnumbered. Outgunned.
+01:23:21:29,01:23:27:16,But the alley is crooked.|dark and very narrow.
+01:23:27:20,01:23:30:09,They can't surround me.
+01:23:30:12,01:23:35:16,Sometimes. You can beat the odds|with the careful choice of where to fight.
+01:23:39:23,01:23:42:07,You can have Old Town, I don't care.
+01:23:43:01,01:23:46:29,- Just give me the woman.|- (muffled speaking)
+01:23:47:02,01:23:49:01,Shut up.
+01:23:49:04,01:23:52:03,Dwight, don't do this.
+01:23:52:06,01:23:56:16,- Hey, wait a minute. Something's not right.|- Shut up, or I'll plug you!
+01:23:56:18,01:24:00:03,Of course, Mr. McCarthy.|A fair trade.
+01:24:00:07,01:24:02:00,She's all yours.
+01:24:10:26,01:24:15:21,Now, if you'll explain to me why|we shouldn't blow both of you to pieces...
+01:24:15:23,01:24:19:17,Dwight, what have you done?
+01:24:19:19,01:24:21:19,Exactly what I had to.
+01:24:23:00,01:24:25:17,Every step of the way.
+01:24:28:04,01:24:31:05,No! It isn't right!|There wasn't no tape over his mouth!
+01:24:31:08,01:24:33:20,How come there's tape over his mouth?
+01:24:46:00,01:24:48:08,Where to fight counts for a lot.
+01:24:48:10,01:24:53:02,Cute trick, McCarthy,|but it will do you do good.
+01:24:53:04,01:24:57:04,But there's nothing like having|your friends show up with lots of guns.
+01:24:57:07,01:25:00:05,No!|McCarthy, you shit!
+01:25:02:21,01:25:05:15,The girls all know the score.
+01:25:06:20,01:25:12:04,No escape. No surrender. No mercy.
+01:25:12:08,01:25:16:05,We gotta kill every last|rat bastard one of 'em.
+01:25:16:07,01:25:18:12,Every last one.
+01:25:18:14,01:25:22:21,Not for revenge.|not because they deserve it.
+01:25:22:23,01:25:25:29,not because it'll make|the world a better place.
+01:25:27:03,01:25:28:28,We need a heap of bloody bodies
+01:25:29:00,01:25:33:00,so when mob boss Wallenquist|looks over his charts of profits and losses.
+01:25:33:03,01:25:37:14,he'll see what it cost him|to mess with the girls of Old Town.
+01:25:37:16,01:25:40:22,The Valkyrie at my side|is shouting and laughing
+01:25:40:25,01:25:46:06,with the pure. Hateful.|bloodthirsty joy of the slaughter.
+01:25:46:08,01:25:48:18,and so am I.
+01:25:53:16,01:25:55:15,The fire. Baby.
+01:25:55:17,01:25:58:11,It'll burn us both.
+01:25:58:13,01:26:02:11,There's no place in this world|for our kind of fire.
+01:26:02:14,01:26:06:25,my warrior woman. My Valkyrie.
+01:26:06:27,01:26:09:25,You'll always be mine.
+01:26:09:27,01:26:12:01,Always...
+01:26:12:04,01:26:13:25,and never.
+01:26:27:09,01:26:30:10,Evenin', officer.
+01:26:30:14,01:26:35:13,I don't have to introduce myself, do I?|You read the papers.
+01:26:35:17,01:26:39:00,This being an election year,|you've seen plenty of my picture.
+01:26:39:03,01:26:42:21,You know who I am and what I can do.
+01:26:42:24,01:26:45:16,And I'm doin' you, Hartigan.
+01:26:45:18,01:26:48:09,Cold and hard, I'm doing you.
+01:26:48:11,01:26:50:20,You blew my son's ear off.
+01:26:52:08,01:26:57:07,You blew his arm off.|You even blew his nuts and his pecker off.
+01:26:59:12,01:27:03:06,He's in a coma right now.|They say he may never come out of it.
+01:27:03:09,01:27:05:05,My boy.
+01:27:05:07,01:27:07:29,He could've been the first Roark to become|the President of the United States,
+01:27:08:01,01:27:12:08,but you went and turned him into|a brain-damaged, dickless freak.
+01:27:12:25,01:27:16:07,Pullin' that trigger make you feel powerful?
+01:27:17:01,01:27:21:06,Power don't come from a badge or a gun.
+01:27:22:01,01:27:24:23,Power comes from lying.
+01:27:24:25,01:27:29:19,Lying big, and gettin' the whole|damn world to play along with you.
+01:27:29:21,01:27:32:20,Once you got everybody agreeing with|what they know in their hearts ain't true,
+01:27:32:23,01:27:35:10,you've got 'em by the balls.
+01:27:35:14,01:27:40:27,There's what,|maybe 500 people in this hospital?
+01:27:43:03,01:27:47:04,I could pump you full of bullets right now,|and I wouldn't even be arrested.
+01:27:47:07,01:27:50:18,Everyone would lie for me -|everyone who counts.
+01:27:50:20,01:27:53:15,Otherwise, all their own lies -|everything that runs Sin City -
+01:27:53:17,01:27:57:15,it all comes tumbling down|like a pack of cards.
+01:27:58:08,01:28:00:28,(laughs)
+01:28:01:00,01:28:04:12,But I want you firm and fit and healthy.
+01:28:04:14,01:28:07:15,I'm even putting up cash of my own|to get you more surgery.
+01:28:07:19,01:28:10:25,Fix that heart condition of yours.
+01:28:12:22,01:28:16:11,You're gonna keep on living a long time.|I'm gonna make sure of that.
+01:28:17:28,01:28:23:00,You're gonna be convicted of raping|that little brat, and shooting my boy.
+01:28:23:03,01:28:25:15,And you're gonna spend|the rest of your life in prison,
+01:28:25:17,01:28:29:11,disgraced, destroyed...
+01:28:29:13,01:28:31:13,alone.
+01:28:32:11,01:28:34:10,Your wife?
+01:28:34:12,01:28:36:20,You tell her the truth and she's dead.
+01:28:36:21,01:28:39:23,You tell anybody the truth|and they're dead.
+01:28:41:20,01:28:43:14,They won't let me testify.
+01:28:43:17,01:28:47:27,I told the cops that you saved my life|and they just acted like I was crazy.
+01:28:47:29,01:28:50:24,They talked my parents|into keeping me away.
+01:28:50:26,01:28:53:12,They said that you'd done things|that you didn't do.
+01:28:53:15,01:28:56:00,I told them that you saved me|from that Roark creep,
+01:28:56:02,01:29:00:07,but they won't even check me out|to see that I'm still a virgin.
+01:29:00:09,01:29:04:26,I'm still a virgin, still alive -|thanks to you.
+01:29:05:13,01:29:07:08,They got it all backwards.
+01:29:07:10,01:29:10:29,Sometimes, the truth|doesn't matter like it ought.
+01:29:11:01,01:29:14:18,But you'll always remember things right.
+01:29:14:22,01:29:16:24,That's gonna mean a lot to me.
+01:29:18:15,01:29:23:13,But stay away, Nancy.|They'll kill you if you don't stay away.
+01:29:23:17,01:29:25:16,Don't visit me.
+01:29:25:19,01:29:27:14,Don't write me.
+01:29:27:16,01:29:29:22,Don't even say my name.
+01:29:30:05,01:29:34:07,Maybe you won't let me visit,|but I'll still write to you, Hartigan.
+01:29:34:10,01:29:36:09,I'll sign my letters "Cordelia."
+01:29:36:27,01:29:40:27,That's the name of a really cool|detective in books I read.
+01:29:41:00,01:29:45:11,I'll write you every week... for forever.
+01:29:45:13,01:29:48:07,Sure, kid.
+01:29:48:10,01:29:50:12,Now, run on home.
+01:29:50:16,01:29:52:26,It's not safe for you here.
+01:29:56:25,01:29:59:19,Bye, Nancy.
+01:30:02:00,01:30:04:10,I love you.
+01:30:12:17,01:30:14:20,John Hartigan.
+01:30:15:16,01:30:17:15,Mr. Law and Order.
+01:30:19:04,01:30:22:01,Mr. By the Book.
+01:30:22:04,01:30:24:08,Mr. High and Mighty.
+01:30:26:22,01:30:30:02,I gotta give you credit, being such|a straight arrow for so damn many years
+01:30:30:04,01:30:32:08,without it catching up with you.
+01:30:32:11,01:30:35:20,It's catching up with you now,|friend of mine.
+01:30:35:22,01:30:38:00,It's catching up with you but good.
+01:30:42:16,01:30:44:26,(woman) Maybe I oughta look at him.|He doesn't look too good.
+01:30:44:28,01:30:51:09,Ohh, he's hale and hearty, Tammy. See?
+01:30:51:11,01:30:54:22,He's the picture of health.
+01:30:54:25,01:30:58:06,That Tammy, there-she's fine, isn't she?
+01:30:58:09,01:31:00:17,I rented her out of Old Town.
+01:31:00:19,01:31:05:09,I wanted to show you what you won't|be getting any of, not in prison.
+01:31:05:11,01:31:06:22,You hear me, Hartigan?
+01:31:06:24,01:31:10:16,If you stop being stupid,|start playing along with us,
+01:31:10:18,01:31:13:14,you might just get some of Tammy.
+01:31:13:16,01:31:17:07,You see that?|She flinched.
+01:31:17:09,01:31:19:19,You make her sick.
+01:31:19:21,01:31:22:15,She heard about you and that little girl.
+01:31:22:17,01:31:26:27,This is nothing but a price I promised|myself I'd pay. And I'm paying it.
+01:31:26:29,01:31:31:11,You don't save a little girl's life. Then|turn around and throw her to the dogs.
+01:31:31:13,01:31:33:12,Not in my book. You don't.
+01:31:33:16,01:31:36:29,They want a confession. |They won't get it.
+01:31:40:01,01:31:43:29,There was a letter from Nancy waiting|when they put me in solitary.
+01:31:44:02,01:31:47:04,She calls herself "Cordelia. "|just like she promised.
+01:31:47:07,01:31:51:00,She makes no mention of anything|that would give her away.
+01:31:51:28,01:31:54:01,At first. I figure|she'll send another note or two
+01:31:54:04,01:31:57:10,before her young mind|moves on to better things.
+01:31:57:12,01:32:00:20,But every Thursday. Another one arrives.
+01:32:00:23,01:32:02:17,What a sweet kid.
+01:32:03:05,01:32:07:01,I do my best to keep my hand|from shaking when I reach for it.
+01:32:07:03,01:32:11:16,She's the only friend I've got -|the daughter I never had.
+01:32:11:19,01:32:13:18,My sweet Cordelia.
+01:32:13:21,01:32:16:09,Skinny little Nancy Callahan.
+01:32:18:04,01:32:20:18,Eight years pass.
+01:32:25:00,01:32:27:29,Then comes a Thursday|when I bound from my cot.
+01:32:28:02,01:32:30:02,excited as a kid at Christmas.
+01:32:30:05,01:32:33:21,only to find myself|staring at the damn floor of my damn cell.
+01:32:33:24,01:32:37:00,Iooking for a letter from Nancy|that isn't there.
+01:32:37:18,01:32:40:01,Then another Thursday with no letter.
+01:32:40:03,01:32:41:29,Is she all right?
+01:32:42:01,01:32:44:13,Did something happen to her?
+01:32:44:15,01:32:47:01,Nothing.
+01:32:47:04,01:32:50:25,Two months now -|not a word from Nancy.
+01:32:50:27,01:32:54:10,Did they find her? |Did they get to her?
+01:32:54:12,01:32:57:25,Of course! |Stupid old man.
+01:32:57:28,01:33:01:16,Do your math. |Nancy's 1 9 years old.
+01:33:01:19,01:33:04:02,How long did you expect her|to keep writing?
+01:33:04:05,01:33:07:26,She was a saint to keep it up|as long as she did.
+01:33:07:29,01:33:11:00,She's forgotten you. Old man.
+01:33:11:04,01:33:13:03,You're alone.
+01:33:13:05,01:33:15:17,You're all alone.
+01:33:23:02,01:33:26:29,This guy smells awful -|like bad food.
+01:33:27:01,01:33:30:13,Like a corpse left in a garbage dumpster|in the middle of summer.
+01:33:30:15,01:33:32:21,He stinks so bad. I want to throw up.
+01:33:43:17,01:33:46:18,Practically knocked my head off.|the bastard.
+01:33:47:06,01:33:49:16,When I come to. I see it.
+01:33:49:18,01:33:52:26,The same kind of envelope|Nancy always uses.
+01:33:52:28,01:33:55:13,but there's no letter inside of it.
+01:33:55:15,01:33:57:15,There's something soft.
+01:33:57:18,01:34:01:16,something that ought to be alive -|a hunk of meat and bone
+01:34:01:18,01:34:05:20,that ought to be the index finger|of the right hand of a 1 9-year-old girl.
+01:34:05:23,01:34:07:26,How the hell did they find her?
+01:34:07:29,01:34:09:23,She was so careful.
+01:34:09:24,01:34:12:20,She never gave away|where she lives or where she works.
+01:34:12:22,01:34:14:21,(screams)
+01:34:17:23,01:34:21:06,I've got to get out. |I've got to help her.
+01:34:21:09,01:34:26:11,Nothing else matters -|not my life and not my pride. Either.
+01:34:26:14,01:34:29:02,It's only one final surrender they want.
+01:34:29:05,01:34:32:26,You got me. Roark. |You beat me.
+01:34:33:15,01:34:37:02,I say everything they want to hear.|just the way they want to hear it.
+01:34:37:05,01:34:40:18,I tell them I'm a twisted.|wretched child molester.
+01:34:40:20,01:34:44:01,I agree to everything they want from me.
+01:34:44:03,01:34:46:04,I love you. Nancy.
+01:34:57:28,01:35:00:20,It's a lot of miles into town, Hartigan.
+01:35:03:09,01:35:07:26,- You care for a ride?|- Long as you stay in front of me.
+01:35:07:29,01:35:11:26,Prison's made you paranoid.|Talk about water under the bridge.
+01:35:11:28,01:35:14:13,Christ.
+01:35:14:16,01:35:17:10,Eight years.
+01:35:17:12,01:35:20:21,Yeah.|Eight years.
+01:35:22:02,01:35:25:01,Well, if it's any consolation to you...
+01:35:26:26,01:35:29:02,you made me hate myself.
+01:35:31:17,01:35:34:25,- Any word from Eileen?|- Yeah.
+01:35:35:06,01:35:39:02,She got remarried four years ago.
+01:35:41:12,01:35:45:17,She had two kids.|I'm sorry, John.
+01:35:45:19,01:35:47:19,Don't be.
+01:35:47:22,01:35:50:05,I'm glad.
+01:35:50:08,01:35:53:14,Eileen always wanted kids.
+01:35:53:16,01:35:55:14,She'll make a good mother.
+01:35:57:13,01:36:01:23,Like you said, Bob -|water under the bridge.
+01:36:12:19,01:36:16:00,Bob and I get on|with our fond farewells to each other.
+01:36:16:02,01:36:20:08,then I go looking for the only human being|on the planet who means a damn to me -
+01:36:20:10,01:36:21:22,Nancy.
+01:36:21:24,01:36:25:06,How could they have found out it was you|writing all those letters to me?
+01:36:25:19,01:36:28:02,How did they find out who you are?
+01:36:28:05,01:36:31:08,And what have they done to you. Baby?
+01:36:35:00,01:36:37:04,Not a sound.
+01:36:37:07,01:36:40:00,No sign of life.
+01:36:40:02,01:36:43:24,Has Roark gone to all this trouble|just to torture a broken old man.
+01:36:43:26,01:36:47:19,like a kid poking at a fly|when he's already torn his wings off?
+01:36:47:21,01:36:50:15,What has he done to Nancy?
+01:36:50:17,01:36:53:09,It's like all she ever does|is read and study and write.
+01:36:53:21,01:36:58:20,No diary. No phone numbers|or addresses written down anywhere.
+01:36:59:22,01:37:03:20,Closest thing to a clue|is a pack of matches from a lousy saloon.
+01:37:04:13,01:37:09:00,It's a long shot.|but maybe she's got some friends there.
+01:37:15:20,01:37:17:26,A dead end.
+01:37:17:28,01:37:21:19,Nancy wouldn't have anything to do|with a pack of drunks and losers like this.
+01:37:21:21,01:37:25:19,But if there's anything to be found here.|the faintest lead to wherever Nancy is
+01:37:25:21,01:37:28:22,or whoever kidnapped her|and mutilated her. This is the place.
+01:37:29:05,01:37:33:25,Excuse me, miss. Wondering if you|could help me. I'm looking for somebody.
+01:37:33:28,01:37:37:07,Cold night like this, everybody's|looking for somebody, stranger.
+01:37:37:10,01:37:40:06,It's not like that.|Her name is Nancy.
+01:37:40:08,01:37:42:22,Eyes to the stage, pilgrim.
+01:37:42:25,01:37:46:02,She's just warming up.
+01:37:54:05,01:37:57:03,Skinny little Nancy Callahan.
+01:37:57:05,01:37:59:02,She grew up.
+01:37:59:04,01:38:02:02,She filled out.
+01:38:02:04,01:38:05:21,Nancy Callahan. 19 years old.
+01:38:07:20,01:38:10:21,And here I was.|expecting a skinny little bookworm.
+01:38:10:25,01:38:14:18,maybe a bit too shy for her own good.
+01:38:14:20,01:38:20:18,How little she told me about herself|in all her letters for all those years.
+01:38:24:23,01:38:27:04,How the hell did they find her?
+01:38:27:06,01:38:29:21,Then it hits me.
+01:38:29:24,01:38:32:02,They were bluffing.
+01:38:32:27,01:38:35:24,I've led them straight to her.
+01:38:44:02,01:38:47:01,She hasn't spotted you yet.
+01:38:47:05,01:38:49:20,Turn around and walk out the door.
+01:38:50:25,01:38:52:16,Lead the creep outside.
+01:38:52:18,01:38:57:25,Get that Beretta away from him somehow.|and kill him.
+01:38:57:27,01:39:01:25,I'm just a horny ex-con|watching an exotic dancer.
+01:39:01:28,01:39:04:27,Just a few seconds and she'll be safe.
+01:39:05:19,01:39:08:13,No. Nancy. |Don't notice me.
+01:39:08:15,01:39:11:25,Don't recognize me.
+01:39:21:17,01:39:23:16,There's no time to explain.
+01:39:23:20,01:39:26:19,I've made a terrible mistake,|put you in terrible danger.
+01:39:26:22,01:39:29:04,We need to get out of here|right this second.
+01:39:29:06,01:39:33:02,Whatever you say, Hartigan.|Let me throw some clothes on.
+01:39:35:05,01:39:40:00,And here I'd figured you'd forgotten|all about me. Me and my dumb letters.
+01:39:40:02,01:39:42:14,Kept me going.
+01:39:43:20,01:39:46:00,Kept me from killing myself.
+01:39:47:20,01:39:49:21,Hurry up, will you?
+01:39:55:12,01:39:58:07,- (Hartigan) Maybe I should drive.|- (Nancy) Not a chance.
+01:39:59:01,01:40:01:25,Nobody but me|can keep this heap running.
+01:40:07:19,01:40:11:08,Besides, from the sound of things,|you might have to shoot somebody.
+01:40:11:11,01:40:14:10,- I don't have a gun.|- Under the seat.
+01:40:16:00,01:40:17:24,It's loaded and it works.
+01:40:19:24,01:40:22:12,Yeah, this'll do.
+01:40:22:16,01:40:25:29,Taken it to the range a couple of times.|Kicks like a mule.
+01:40:30:04,01:40:35:13,Hartigan, there's so much|I've wanted to say to you.
+01:40:35:15,01:40:38:01,You've never been far from my thoughts.
+01:40:38:04,01:40:41:22,I've lain awake nights, thinking of you.
+01:40:41:25,01:40:44:19,- What are you talking about?|- (gunshot)
+01:40:44:21,01:40:49:14,Keep driving, Nancy.|Keep driving and keep the car on the road!
+01:40:52:07,01:40:54:05,She's counting on you. Old man.
+01:40:54:07,01:40:56:00,What are you doing?
+01:40:56:03,01:40:58:15,Prove you're still worth a damn.
+01:41:04:14,01:41:07:06,Try and keep it on the road, Nancy!
+01:41:09:29,01:41:11:18,He's a decent shot.
+01:41:11:21,01:41:14:18,He's got skill.|but he's in too much of a hurry.
+01:41:14:20,01:41:17:19,Throwing away bullets|like they were candy.
+01:41:21:21,01:41:23:21,He doesn't know how to take his time.
+01:41:23:24,01:41:27:03,Aim careful and look the devil in the eye.
+01:41:35:19,01:41:38:00,Stop the car, Nancy.|Gotta confirm the kill.
+01:41:38:02,01:41:40:05,- What?|- Stop the car, now!
+01:41:40:08,01:41:43:10,Right.|Stop the car, confirm the kill.
+01:41:50:00,01:41:52:26,Sorry. I got a little rattled.
+01:41:52:28,01:41:57:05,It's OK. You did great.|Sit tight. I'll be right back.
+01:41:57:07,01:41:59:12,No!|Let me stay close.
+01:41:59:15,01:42:02:00,Nothing can happen to me|when I'm with you.
+01:42:02:04,01:42:05:09,Please?|Let me stay close.
+01:42:14:29,01:42:18:22,The stink - I almost gag.
+01:42:18:24,01:42:20:22,His blood smells|even worse than he does.
+01:42:20:24,01:42:23:23,- Jesus.|- And it's all over the place.
+01:42:23:26,01:42:28:10,- But the creep himself. He's gone. |- (siren blaring)
+01:42:28:13,01:42:30:13,We're out of time.
+01:42:30:16,01:42:34:29,The sirens - I used to welcome the sound.
+01:42:35:16,01:42:38:12,There's nothing to do now|but find a place to hole up for the night.
+01:42:38:14,01:42:42:07,get Nancy calmed down. And figure out|what on Earth I'm going to do next.
+01:42:42:09,01:42:45:25,The stink - somehow it stays with us|all the way to the motel.
+01:42:46:19,01:42:48:20,Nancy, I went to your apartment.
+01:42:48:23,01:42:52:21,Your window was thrown wide open.|The rooms looked almost empty.
+01:42:52:23,01:42:55:01,That's why I was sure|you'd been kidnapped.
+01:42:55:03,01:42:58:26,My window? Robbed again?|That's the third time this year!
+01:42:58:28,01:43:02:16,I swore if I ever saw you again,|I'd show you I grew up strong.
+01:43:02:19,01:43:06:06,But there I was, just like before,|scared and helpless.
+01:43:06:09,01:43:08:25,- I'm such an asshole.|- You should sit down.
+01:43:10:03,01:43:13:02,You'll feel a little bit better if you sit down.
+01:43:13:22,01:43:16:01,I've never been all that good with people.
+01:43:16:03,01:43:19:14,When it comes to reassuring|a traumatized 1 9-year-old.
+01:43:19:16,01:43:23:14,I'm as expert as a palsy victim|doing brain surgery with a pipe wrench.
+01:43:23:16,01:43:26:13,It's always been you, Hartigan.
+01:43:26:15,01:43:28:14,All these years.
+01:43:29:17,01:43:32:06,It's just nerves|making you say that, Nancy.
+01:43:32:09,01:43:35:16,You're just exhausted.|You need to sleep.
+01:43:35:18,01:43:38:23,- Sleep with me.|- Stop it, Nancy!
+01:43:39:06,01:43:41:08,Eight years.
+01:43:41:12,01:43:44:29,Why do you think|I kept writing you those letters?
+01:43:45:03,01:43:47:07,It wasn't just gratitude.
+01:43:47:11,01:43:50:13,I tried to fall in love with boys.
+01:43:50:16,01:43:52:27,Even thought I did once or twice.
+01:43:52:29,01:43:57:00,But I was already in love... with you.
+01:43:57:03,01:43:59:23,That's enough.|Jesus Christ!
+01:43:59:26,01:44:02:06,I'm old enough to be your grandfather!
+01:44:02:08,01:44:04:28,- You're just scared.|- I'm not scared.
+01:44:05:20,01:44:07:12,No.
+01:44:42:17,01:44:45:22,There's wrong and there's wrong|and then there's this.
+01:44:45:24,01:44:48:09,For God's sakes, you're just a kid!
+01:44:49:08,01:44:51:09,I love you.
+01:44:55:29,01:44:58:13,I love you, too.
+01:44:58:15,01:45:00:13,With all my heart.
+01:45:01:21,01:45:04:27,Cold shower - it helps.
+01:45:04:29,01:45:06:08,No, Nancy.
+01:45:09:24,01:45:12:02,Recognize my voice, Hartigan?
+01:45:12:04,01:45:15:29,Recognize my voice,|you piece of shit cop?
+01:45:16:01,01:45:19:25,I look different,|but I bet you can recognize my voice.
+01:45:19:27,01:45:23:26,Sure.|I recognize your voice, Junior.
+01:45:26:29,01:45:29:13,Everything's gone straight to hell.
+01:45:29:16,01:45:31:29,I've been suckered|into betraying the only friend I've got.
+01:45:32:01,01:45:35:23,and put her in the hands of a murdering|rapist I thought I'd put down for good.
+01:45:36:11,01:45:40:00,Suckered by a spoiled brat|son of a senator.
+01:45:40:03,01:45:42:02,It's all gone to hell.
+01:45:42:05,01:45:44:04,Klump, it's me.
+01:45:44:06,01:45:47:02,I got a dead man needs to be fetched.
+01:45:47:04,01:45:49:04,I want you to set me up for a party.
+01:45:49:07,01:45:51:19,I've already got the girl, you dumb shit!
+01:45:51:21,01:45:54:17,Hey, it better be perfect|or I'm calling my dad!
+01:45:54:20,01:45:57:04,My tools better be clean and sharp.
+01:45:57:08,01:46:00:00,It better be ready!|It better be perfect!
+01:46:01:27,01:46:07:13,I get to do whatever I want,|however I want, whenever I want it!
+01:46:08:00,01:46:11:08,My dad - I'd love him if I didn't hate him.
+01:46:11:10,01:46:14:03,He spent a fortune|hiring every expert on the planet
+01:46:14:05,01:46:17:11,to grow back that equipment|you blew off from between my legs,
+01:46:17:13,01:46:21:24,just so the old fart can hold out|some kind of hope of having a grandkid.
+01:46:21:26,01:46:25:24,Although, as you can see,|there were some side effects.
+01:46:25:27,01:46:28:02,I'm not complaining, though.|Since you've been gone,
+01:46:28:06,01:46:29:28,I've been having the time of my life.
+01:46:30:01,01:46:33:15,And now you've led me back|to your darling Cordelia.
+01:46:33:19,01:46:35:21,We all wondered|who wrote all those letters.
+01:46:35:25,01:46:37:24,She left not a clue.
+01:46:39:05,01:46:42:14,Clever girl.|And so pretty, so pretty.
+01:46:45:04,01:46:49:03,A little old for my taste,|but I can forgive that just this once.
+01:46:49:06,01:46:52:12,Nancy, don't scream.
+01:46:52:14,01:46:54:26,Whatever he does to you, don't scream.
+01:46:54:28,01:46:59:07,She'll scream. I'm gonna take|all night doing dear old Nancy.
+01:46:59:09,01:47:02:19,And you're gonna die knowing|that it's all your fault.
+01:47:02:22,01:47:05:11,They've all screamed, Hartigan.
+01:47:05:15,01:47:08:09,Dozens of them-maybe a hundred.
+01:47:08:11,01:47:11:16,Eight years' worth.|Every one of them has screamed.
+01:47:11:18,01:47:13:26,And if there weren't|so many people hereabout,
+01:47:13:28,01:47:17:28,I would show you how|I'm gonna make dear old Nancy scream.
+01:47:18:01,01:47:20:22,It's gonna be one hell of a show!
+01:47:24:08,01:47:26:18,(he chokes)
+01:47:29:23,01:47:33:10,This is it. |No way to fight it now.
+01:47:33:13,01:47:35:14,No hope left.
+01:47:35:18,01:47:37:10,No chance.
+01:47:37:13,01:47:41:07,This is it. |This is the end.
+01:47:43:29,01:47:45:01,No.
+01:47:45:21,01:47:50:00,Give it a shot. Old man. |Keep your neck tight. Move.
+01:47:50:02,01:47:53:28,The window - maybe there's an alarm. |The window.
+01:47:54:00,01:47:56:19,Keep your neck tight. Goddamn it! |Stay conscious!
+01:47:56:22,01:47:59:16,Stay conscious.
+01:47:59:18,01:48:00:23,No alarm.
+01:48:00:26,01:48:03:18,The glass! Cut the rope.
+01:48:03:20,01:48:06:15,You can do it. |You can do it.
+01:48:06:17,01:48:08:08,(Klump) It is inclement upon me
+01:48:08:11,01:48:12:21,to comment with marked displeasure|on your rash impulsiveness
+01:48:12:23,01:48:19:16,in selecting such an eye-catching|and impractical car to heist, Mr. Shlubb.
+01:48:19:18,01:48:25:09,Irrelevant to said mission is the following|query, which I now put forth to you.
+01:48:25:25,01:48:31:16,Wherein this most streamlined|and trunkless of transports -
+01:48:31:18,01:48:34:04,boner-inspiring though it may be -
+01:48:34:07,01:48:39:03,wherein are we to reposit|our recently deceased cargo?
+01:48:42:16,01:48:45:28,I can only express puzzlement|that borders on alarm.
+01:48:50:14,01:48:54:04,Tell me where Roark takes the girls|or I'll cut your damn head off!
+01:48:54:07,01:48:55:28,In plain English, creep!
+01:48:56:00,01:48:59:23,The answer you seek is rural,|even agrarian.
+01:49:01:03,01:49:03:05,The farm!
+01:49:04:01,01:49:07:00,That's all I need to hear. |Every cop on the force
+01:49:07:02,01:49:11:03,knows about the Roark family's farm|and to stay away from it.
+01:49:11:07,01:49:13:15,Shlubb and Klump|were packing an arsenal.
+01:49:13:17,01:49:16:20,Once things get loud.|I'll probably have use for the cannons.
+01:49:16:24,01:49:19:23,But at first. I'll have to play it quiet.
+01:49:19:25,01:49:22:02,Quiet and nasty.
+01:49:22:19,01:49:26:00,Nancy's car - six miles from the farm.
+01:49:26:02,01:49:29:11,"Nobody but me can keep|this heap running. " she told me.
+01:49:29:13,01:49:32:27,Good girl. |The car stalled out on that yellow bastard
+01:49:33:00,01:49:35:11,and you didn't tell him|how to start it up again.
+01:49:35:13,01:49:39:11,You kept your mouth shut. |I'll bet Junior was furious.
+01:49:39:13,01:49:42:00,I'll bet he slapped you around|something fierce.
+01:49:42:03,01:49:46:00,But you stayed strong. |You bought a few extra minutes.
+01:49:46:03,01:49:48:10,There's still a chance. Nancy.
+01:49:48:13,01:49:50:12,Don't scream.
+01:49:51:14,01:49:55:00,I ditch the car a mile or so from the farm|and make my way through the woods.
+01:49:55:17,01:49:59:01,I'm not halfway there when it hits.
+01:50:00:01,01:50:03:18,My heart. |Can't be my heart.
+01:50:03:21,01:50:06:16,I was cured.
+01:50:06:18,01:50:09:18,Bad cough - blood in it.
+01:50:10:04,01:50:11:22,Doesn't matter now.
+01:50:11:25,01:50:14:29,I don't have to stay alive|that much longer. Anyway.
+01:50:19:19,01:50:22:03,Rotten way to kill a man. But it's quiet.
+01:50:28:02,01:50:31:04,Hate yourself later.
+01:50:39:05,01:50:41:10,(slapping)
+01:50:42:24,01:50:45:24,You're only making this worse for yourself,|you stupid cow!
+01:50:54:25,01:50:57:08,Do you think I'm tired?
+01:50:57:10,01:50:59:13,Is that it?|Do you think I'm getting tired?
+01:50:59:17,01:51:01:29,You're the one who's gonna crack!
+01:51:02:01,01:51:04:00,You'll crack!
+01:51:04:03,01:51:07:04,You'll cry and beg!
+01:51:07:07,01:51:08:29,You'll scream!
+01:51:09:01,01:51:13:23,Oh, yeah, you'll scream,|you big, fat, ugly cow!
+01:51:13:25,01:51:15:09,You'll scream!
+01:51:20:28,01:51:23:14,You're thinking the whip|was the worst I could do?
+01:51:24:02,01:51:26:16,That was foreplay.
+01:51:27:19,01:51:30:17,Hartigan was right about you.
+01:51:30:19,01:51:33:03,You can't get it up unless I scream.
+01:51:34:23,01:51:36:16,You're pathetic!
+01:51:37:25,01:51:39:27,You're pathetic.
+01:51:42:10,01:51:45:12,It's not wise at all|to make fun of me like that.
+01:51:46:27,01:51:49:11,It brings out the worst in me.
+01:51:55:27,01:51:57:19,Stupid old man!
+01:51:57:21,01:51:59:25,In too much of a hurry.
+01:52:01:15,01:52:04:12,Damn!|It can't be!
+01:52:04:27,01:52:08:11,Charging in like Galahad.|just like I told myself I wouldn't!
+01:52:08:15,01:52:09:24,Stupid old man!
+01:52:09:26,01:52:14:03,- You tagged him good!|- Don't take no chances. Perforate the fool.
+01:52:18:25,01:52:20:20,Good advice.
+01:52:30:26,01:52:33:03,Give it up, Junior.
+01:52:33:05,01:52:35:04,It's over.|Let her go.
+01:52:35:08,01:52:36:29,You're dreaming, Hartigan!
+01:52:37:02,01:52:42:00,I get to see your eyes while I fillet the|woman of your dreams right in front of you!
+01:52:42:02,01:52:45:07,Look at you!|You're about to keel over!
+01:52:45:10,01:52:48:04,You can't even lift that cannon!
+01:52:48:06,01:52:50:17,Sure, I can.
+01:52:53:19,01:52:55:07,(laughs)
+01:52:57:13,01:53:00:02,You gave me a scare there|for a second there, old man.
+01:53:00:05,01:53:03:03,Nancy, I'm sorry.
+01:53:03:23,01:53:06:17,I'm taking no chances with you.
+01:53:09:03,01:53:12:17,First I soften you up,|and then it's showtime.
+01:53:15:25,01:53:18:08,Here it comes.
+01:53:19:26,01:53:21:22,It's gonna hurt.
+01:53:21:24,01:53:23:24,You're right about that.
+01:53:27:20,01:53:29:18,Sucker.
+01:53:32:26,01:53:34:20,I take away his weapon.
+01:53:36:18,01:53:37:28,Both of them.
+01:53:38:00,01:53:40:12,(screaming)
+01:53:49:23,01:53:53:12,Eight long years, son of a bitch!
+01:53:54:15,01:53:58:13,After a while. All I'm doing is pounding|wet chunks of bone into the floorboards.
+01:53:58:16,01:53:59:21,so I stop.
+01:54:01:08,01:54:03:22,So long, Junior.
+01:54:03:25,01:54:06:10,Been a pleasure.
+01:54:11:21,01:54:15:05,I didn't scream, Hartigan, not once.
+01:54:16:19,01:54:18:05,I didn't scream.
+01:54:18:09,01:54:20:12,I know it, baby.
+01:54:20:16,01:54:22:26,You grew up strong.
+01:54:34:10,01:54:37:21,By the time I get her to the car.|Nancy stops shaking.
+01:54:37:23,01:54:41:21,Her skin is warm again. |She's herself again.
+01:54:41:23,01:54:44:06,Thanks for remembering my coat.
+01:54:45:16,01:54:47:18,And for all the little things.
+01:54:48:10,01:54:51:23,Like saving my life, twice.
+01:54:52:25,01:54:55:24,- You better get rolling.|- You're not coming along?
+01:54:55:28,01:55:00:27,No. I have friends on their way,|to collect evidence.
+01:55:01:00,01:55:03:21,I'm gonna blow|this whole sick mess wide open.
+01:55:03:24,01:55:06:04,I'm gonna clear my name.
+01:55:06:06,01:55:10:07,I'm gonna put Senator Roark|behind bars where he belongs.
+01:55:10:10,01:55:13:28,I can't lose you, not again.
+01:55:16:10,01:55:19:08,You'll never lose me, Nancy.
+01:55:32:00,01:55:35:25,Nancy Callahan. The love of my life.
+01:55:37:07,01:55:41:21,Shame to lie to her. |I hope she forgives me for it.
+01:55:41:24,01:55:45:11,Get Senator Roark behind bars? |Sure.
+01:55:45:14,01:55:49:00,And maybe after I've pulled off|that miracle. I'll go and punch out God.
+01:55:49:03,01:55:52:26,There isn't a prosecutor in the state|who'll go after Senator Roark.
+01:55:52:28,01:55:55:00,I killed his only son.
+01:55:55:04,01:55:57:06,The bloodline is cut.
+01:55:57:10,01:56:00:04,Roark's lost his goddamn legacy.
+01:56:00:10,01:56:03:00,He'll use all his power|to get revenge on me.
+01:56:03:03,01:56:06:20,He'll go after me through Nancy. |He'll find her again.
+01:56:07:06,01:56:09:08,There'll be no end to it.
+01:56:09:11,01:56:11:16,She'll never be safe.
+01:56:11:19,01:56:14:06,Not as long as I'm alive.
+01:56:14:09,01:56:16:26,There's only one way to beat him.
+01:56:17:16,01:56:20:05,An old man dies.
+01:56:20:08,01:56:22:15,a young woman lives.
+01:56:23:17,01:56:25:25,Fair trade.
+01:56:28:24,01:56:31:22,I love you. Nancy.
+01:56:36:08,01:56:38:02,(Becky) Uh-huh.
+01:56:38:21,01:56:40:23,Yes.
+01:56:40:26,01:56:43:07,Oh, Mom, don't go on like that.
+01:56:43:09,01:56:48:13,It's not the city. I could've gotten|in a traffic accident anywhere.
+01:56:48:16,01:56:52:03,Yeah, just a fracture.|The doctor said it's a clean break.
+01:56:52:06,01:56:54:17,It should be right as rain in no time.
+01:56:58:07,01:57:00:07,Uh-huh.
+01:57:08:27,01:57:10:20,Mm-hm.
+01:57:13:23,01:57:17:04,(man) Turn the right corner in Sin City
+01:57:17:06,01:57:21:20,and you can find anything.
+01:57:21:23,01:57:23:13,Becky.
+01:57:25:15,01:57:28:04,Care for a smoke?
+01:57:30:05,01:57:32:12,Love you, too, Mom.
+01:57:34:21,01:57:35:20,Anything.

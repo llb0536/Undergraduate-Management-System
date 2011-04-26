@@ -1,0 +1,79 @@
+
+<%= form_tag request.request_uri,:method=>'get' do %>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tbody><tr><td bgcolor="#dde3ec">
+<table border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr class="header"><td colspan="5">视图选项</td></tr>
+<tr align="center"><td bgcolor="#f8f9fc" width="15%">每页显示数量:</td>
+<td bgcolor="#ffffff" width="28%"><input name="per" value="<%= params[:per] %>" size="20" type="text"></td>
+<td bgcolor="#f8f9fc" width="15%">排序字段:</td>
+<td bgcolor="#ffffff" width="27%"><select name="order">
+<option value="number" <%= "selected=\"selected\"" if params[:order]=="number" %> > 编号 </option>
+<option value="name" <%= "selected=\"selected\"" if params[:order]=="name" %>>名称</option>
+<option value="credit" <%= "selected=\"selected\"" if params[:order]=="credit" %>>学分</option>
+<option value="assignments_count" <%= "selected=\"selected\"" if params[:order]=="assignments_count" %>>已修人数</option>
+</select>
+<input name="page" value="1" type="hidden" />
+</td>
+<td bgcolor="#f8f9fc" width="15%"><input name="forumsubmit" value="提 交" type="submit"></td></tr>
+<tr align="center"><td bgcolor="#f8f9fc" width="15%">按编号前缀筛选:</td>
+<td bgcolor="#ffffff" colspan="4" style="text-align:left">
+
+<% Course.group('number_prefix').each do |fn| %>
+<% if params[:number_prefix]==fn.number_prefix %>
+	<% style="text-decoration:underline" %>
+<% else %>
+	<% style='text-decoration:none'  %>
+<% end %>
+	<%= link_to "#{fn.number_prefix}","/courses?number_prefix=#{fn.number_prefix}",:style=>style %>
+<% end %>
+<input name="page" value="1" type="hidden" />
+</td>
+</tr>
+</tbody></table></td></tr></tbody></table>
+<% end %>
+
+
+
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+	<font class="mediumtxt"><br>
+		
+		
+		
+	<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center"><tbody>
+		
+		<tr><td bgcolor="#dde3ec"><table width="100%" cellspacing="1" cellpadding="4" border="0" class="smalltxt"><tbody><tr class="header"><td colspan="99">课程列表</td></tr>
+	<tr align="center" class="category">
+		<td width="90"><%= a_href_order '编号','number' %></td>
+		<td><%=a_href_order '课程名称','name' %></td>
+		<td width="25"><%= a_href_order '学分','credit'%></td>
+		<td width="50"><%= a_href_order '已修人数','assignments_count'%></td>
+		<td colspan="2">操作</td>
+	</tr>
+		<% @courses.each do |course| %>
+		  <tr align="center" class="pointable">
+				<td bgcolor="#f8f9fc"><%= course.number %></td>
+				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'">
+					<%= link_to course.name,"/courses/#{course.id}/students" %>
+				</td>
+				<td bgcolor="#f8f9fc"><%= course.credit %></td>
+				<td bgcolor="#ffffff"><%= course.assignments_count %></td>
+		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_props.png"/>'.html_safe, "/courses/#{course.id}/students" %></td>
+		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_drop.png"/>'.html_safe, course, :confirm => '确认吗?', :method => :delete %></td>
+		  </tr>
+		<% end %>
+		</tbody></table></td></tr>
+			<tr class="multi"><td><%= paginate @courses %></td></tr>
+	</tbody></table></font>
+	<table width="99%" cellspacing="0" cellpadding="0" align="center">
+	<tbody><tr>
+	</tr></tbody></table>
+	
+</table>

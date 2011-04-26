@@ -1,0 +1,21 @@
+<h1>Listing import4_logs</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @import4_logs.each do |import4_log| %>
+  <tr>
+    <td><%= link_to 'Show', import4_log %></td>
+    <td><%= link_to 'Edit', edit_import4_log_path(import4_log) %></td>
+    <td><%= link_to 'Destroy', import4_log, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Import4 log', new_import4_log_path %>

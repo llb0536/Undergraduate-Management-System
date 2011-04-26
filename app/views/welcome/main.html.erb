@@ -1,0 +1,90 @@
+<b>本科生立体化管理系统</b><br>
+Copyright&copy; <a href="http://202.204.208.109/mathpage/" target="_blank">School of Mathematical Sciences</a>, CNU.<br><br><br>
+
+<% @unread_msg.each do |m| %>
+<table cellspacing="0" cellpadding="0" border="0" width="85%" align="center">
+<tr><td bgcolor="#DDE3EC">
+<table border="0" cellspacing="1" cellpadding="0" width="100%">
+<tr><td>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr class="header" style="background-color:yellow !important;color:black !important;background-image:none">
+	<td colspan="2">来自<%= m.sender.name %>的未读消息[<a href="/messages/<%= m.id %>/set_read?index=1">标记已读</a>]
+	</td>
+</tr>
+<tr bgcolor="#FFFFFF"><td><%= m.body %></td></tr>
+</table></td></tr></table></td></tr></table><br><br>
+<% end %>
+
+<table cellspacing="0" cellpadding="0" border="0" width="85%" align="center">
+<tr><td bgcolor="#DDE3EC">
+<table border="0" cellspacing="1" cellpadding="0" width="100%">
+<tr><td>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr class="header"><td colspan="3">快捷方式</td></tr>
+
+
+<form method="get" action="/students">
+<tr bgcolor="#F8F9FC"><td>直达学生页</td>
+<td><input type="text" size="30" name="goto"></td><td><input type="submit" name="searchsubmit" value="提 交"></td></tr></form>
+<form method="post" action="admincp.php?action=usergroups">
+<input type="hidden" name="formhash" value="afcc6df4">
+
+<tr bgcolor="#FFFFFF"><td>观察列表学生</td>
+<td>
+	<select name="edit"><option value="1">无</option></td><td><input type="submit" value="提 交"></td></tr>
+</form>
+
+
+<form method="post" action="admincp.php?action=forumdetail">
+<input type="hidden" name="formhash" value="afcc6df4">
+<tr bgcolor="#F8F9FC"><td>年级预警信息</td>
+<td>
+	<select name="fid"><option value="1">2009级</option><option value="1">2010级</option></select>
+	</td><td><input type="submit" value="提 交"></td></tr></form>
+</table></td></tr></table></td></tr></table><br><br>
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" width="85%" align="center">
+<tr><td bgcolor="#DDE3EC">
+<table border="0" cellspacing="1" cellpadding="0" width="100%">
+<tr><td>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+
+<tr class="header"><td colspan="2">数据库信息</td></tr>
+<tr bgcolor="#FFFFFF"><td width="50%">用户数</td><td><%= link_to User.count,'/users' %> 个用户(<%= link_to User.where(is_admin:true).count,'/users?is_admin=1' %>个管理员)</td></tr>
+<tr bgcolor="#F8F9FC"><td width="50%">年级班级数</td><td><%= link_to Grade.count,grades_path %> 个年级，<%= link_to Klass.count,klasses_path %> 个班级</td></tr>
+<tr bgcolor="#FFFFFF"><td>学生数量</td><td><%= link_to Student.count,students_path %> 个学生</td></tr>
+<tr bgcolor="#F8F9FC"><td>预警数量</td><td><%= link_to Warning.count,warnings_path %> 个预警</td></tr>
+<tr bgcolor="#FFFFFF"><td>末次导入时间</td><td>
+	<a href="/import2/">基础信息</a>: <% if Import2Log.count==0 %>无<% else %><%= Import2Log.order('created_at DESC').first.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %><% end %>
+| 
+	<a href="/import/">课程成绩</a>: <% if ImportLog.count==0 %>无<% else %><%= ImportLog.order('created_at DESC').first.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %><% end %>
+</td></tr>
+<tr bgcolor="#F8F9FC"><td>&nbsp;</td><td>
+	<a href="/import3/">获奖情况</a>: <% if Import3Log.count==0 %>无<% else %><%= Import3Log.order('created_at DESC').first.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %><% end %>
+| 
+	<a href="/import4/">讲座情况</a>: <% if Import4Log.count==0 %>无<% else %><%= Import4Log.order('created_at DESC').first.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %><% end %>
+</td></tr>
+<tr bgcolor="#FFFFFF"><td>末次评论时间</td><td><% if Comment.count==0 %>无<% else %><%= Comment.order('created_at DESC').first.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %><% end %></td></tr>
+</table></td></tr></table></td></tr></table><br><br>
+
+
+
+
+
+<table cellspacing="0" cellpadding="0" border="0" width="85%" align="center">
+<tr><td bgcolor="#DDE3EC">
+<table border="0" cellspacing="1" cellpadding="0" width="100%">
+<tr><td>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr class="header"><td colspan="2">服务器信息</td></tr>
+<tr bgcolor="#FFFFFF"><td width="50%">服务器平台</td><td><%= RUBY_PLATFORM %></td></tr>
+<tr bgcolor="#F8F9FC"><td>Ruby解释器版本</td><td><%= RUBY_VERSION %> (<%= RUBY_RELEASE_DATE %>)</td></tr>
+<tr bgcolor="#FFFFFF"><td>Rails运行环境</td><td><%= Rails.env %></td></tr>
+<tr bgcolor="#F8F9FC"><td>数据库引擎</td><td><%= ActiveRecord::Base.configurations["development"]["adapter"] %></td></tr>
+<tr bgcolor="#FFFFFF"><td>I18n</td><td><%= I18n.locale %></td></tr>
+</table></td></tr></table></td></tr></table>
+
+

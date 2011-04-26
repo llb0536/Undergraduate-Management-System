@@ -1,0 +1,20 @@
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :id=>'signinform',:class=>"form xj_FormFocus") do |f| %>
+        <h2>请使用您的内部帐号登录</h2>
+        <p>忘记密码? <%= link_to "找回密码", new_password_path(resource_name) %>.</p>
+  <div class="">
+	          <label class="label" for="user_name">账号名</label>
+								<%= f.text_field :name,:class=>'text' %>
+            </div>
+            <div class="">
+                <label class="label" for="user_password">密码</label>
+                <%= f.password_field :password,:class=>'text' %>
+								<%= f.hidden_field :remember_me,:value=>0 %>
+						</div>
+            <div class="clear"></div>
+            <div class="clear"></div>
+
+
+    <p><br>
+        <button class="create" type="submit">登录</button>
+    </p>
+<% end %>

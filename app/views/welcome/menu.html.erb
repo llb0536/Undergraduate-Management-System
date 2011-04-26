@@ -1,0 +1,126 @@
+<html>
+<head>
+	<%= javascript_include_tag :defaults %>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<style type="text/css">
+	a:link,a:visited	{ text-decoration: none; color: #003366 }
+	a:hover			{ text-decoration: underline }
+	body			{ scrollbar-base-color: #F8F9FC; scrollbar-arrow-color: #DDE3EC; font-size: 12px; background-color: #E9EDF7 }
+	table			{ font-family: Tahoma, Verdana; color: #000000; font-size: 12px }
+	textarea,input,object	{ font-family: Tahoma, Verdana; font-size: 12px;  color: #000000; font-weight: normal; background-color: #F8F9FC }
+	select			{ font-family: Tahoma; font-size: 11px;  color: #000000; font-weight: normal; background-color: #F8F9FC }
+	.nav			{ font-family: Tahoma, Verdana; font-size: 12px; font-weight: bold }
+	.header			{ font-family: Tahoma, Verdana; font-size: 12px; color: #FFFFFF; font-weight: bold; background-image: url("/images/default/headerbg.gif") }
+	.category		{ font-family: Tahoma; font-size: 12px; color: #000000; background-image: url("/images/default/catbg.gif") }
+	.multi			{ font-family: Tahoma; font-size: 11px; color: #003366; }
+	.smalltxt		{ font-family: Tahoma; font-size: 11px }
+	.mediumtxt		{ font-family: Tahoma, Verdana; font-size: 12px; color: #000000 }
+	.bold			{ font-weight: bold }
+	blockquote { margin-left:20px;  margin-right:20px; border:#DDE3EC  dashed  1px; padding:5px; background-color:#FFFFFF}
+	.code { margin-left:20px;  margin-right:20px; padding:5px; background-color:#FFFFFF}
+	</style>
+</head>
+
+<body leftmargin="3" topmargin="3">
+
+<br><table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="table-layout: fixed"><tr><td bgcolor="#DDE3EC"><table width="100%" border="0" cellspacing="1" cellpadding="0"><tr><td bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="3" cellpadding="4" >
+
+<tr><td bgcolor="#f8f9fc" align="center" class="smalltxt">[ <%= link_to  current_user.name,current_user,:target=>'main' %> ]</td></tr>
+	
+<tr><td bgcolor="#F8F9FC"><a name="#0"></a>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center"> 
+<tr><td bgcolor="#DDE3EC"> 
+
+<table border="0" cellspacing="1" cellpadding="4" width="100%" > 
+<tr><td width="100%" class="header"><img src="/images/common/plus.gif"><a href="/main" target="main" style="color: #FFFFFF">首页</a></td></tr>
+</table></td></tr></table></td></tr><tr><td bgcolor="#F8F9FC"><a name="#1"></a>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center"> 
+<tr><td bgcolor="#DDE3EC"> 
+<table border="0" cellspacing="1" cellpadding="4" width="100%" > 
+<tr><td width="100%" class="header"><img src="/images/common/minus.gif"><a href="#"  style="color: #FFFFFF" onclick="$('.yujingxinxi').toggle()">预警信息</td></tr>
+<tr class="yujingxinxi"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/warnings/credit" target="main">学分预警</a></td></tr>
+<tr class="yujingxinxi"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/warnings/score" target="main">成绩预警</a></td></tr>
+<tr class="yujingxinxi"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/warnings/event" target="main">事件预警</a></td></tr>
+<tr class="yujingxinxi"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/warnings/event" target="main">心理预警 <!-- 有些心理上有问题的同学需要特别关注的 --></a></td></tr>
+</table></td></tr></table></td></tr>
+
+<tr><td bgcolor="#F8F9FC"><a name="#2"></a>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center"> 
+<tr><td bgcolor="#DDE3EC"> 
+<table border="0" cellspacing="1" cellpadding="4" width="100%" > 
+<tr><td width="100%" class="header"><img src="/images/common/minus.gif"><a href="#" style="color: #FFFFFF" onclick="$('.xueshengxinxi').toggle()">学生信息</td></tr>
+<tr class="xueshengxinxi"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/inquiry/watchlist" target="main">观察列表</a></td></tr>
+<tr class="xueshengxinxi"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/inquiry/talk" target="main">谈话记录</a></td></tr>
+<tr class="xueshengxinxi"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/inquiry/graduate" target="main">毕业生信息</a></td></tr>
+</table></td></tr></table></td></tr>
+
+<tr><td bgcolor="#F8F9FC"><a name="#2"></a>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center"> 
+<tr><td bgcolor="#DDE3EC"> 
+<table border="0" cellspacing="1" cellpadding="4" width="100%" > 
+<tr><td width="100%" class="header"><img src="/images/common/minus.gif"><a href="#" style="color: #FFFFFF" onclick="$('.keyanxiangmu').toggle()">科研项目</td></tr>
+<tr class="keyanxiangmu"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/research/chuangye" target="main">创业行动</a></td></tr>
+<tr class="keyanxiangmu"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/research/lixiang" target="main">科研立项</a></td></tr>
+<tr class="keyanxiangmu"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/research/jijin" target="main">开放基金</a></td></tr>
+</table></td></tr></table></td></tr>
+
+<tr><td bgcolor="#F8F9FC"><a name="#2"></a>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center"> 
+<tr><td bgcolor="#DDE3EC"> 
+<table border="0" cellspacing="1" cellpadding="4" width="100%" > 
+<tr><td width="100%" class="header"><img src="/images/common/minus.gif"><a href="#" style="color: #FFFFFF" onclick="$('.biaogepaiming').toggle()">表格排名</td></tr>
+<tr class="biaogepaiming"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/inquiry/table" target="main">生成表格</a></td></tr>
+<tr class="biaogepaiming"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/tables" target="main">历史表格</a></td></tr>
+</table></td></tr></table></td></tr>
+
+
+<tr><td bgcolor="#F8F9FC"><a name="#2"></a>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center"> 
+<tr><td bgcolor="#DDE3EC"> 
+<table border="0" cellspacing="1" cellpadding="4" width="100%" > 
+<thead><tr><td width="100%" class="header"><img src="/images/common/minus.gif"><a href="#" style="color: #FFFFFF" onclick="$('.shujudaoru').toggle()">数据导入</td></tr></thead>
+<tbody>
+<tr class="shujudaoru"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/import2" target="main">基础信息</a></td></tr>
+<tr class="shujudaoru"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/import" target="main">成绩信息</a></td></tr>
+<tr class="shujudaoru"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/import3" target="main">获奖情况</a></td></tr>
+<tr class="shujudaoru"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/import4" target="main">讲座情况</a></td></tr>
+</tbody>
+</table></td></tr></table></td></tr>
+
+
+
+<tr><td bgcolor="#F8F9FC"><a name="#2"></a>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center"> 
+<tr><td bgcolor="#DDE3EC"> 
+<table border="0" cellspacing="1" cellpadding="4" width="100%" > 
+<thead><tr><td width="100%" class="header"><img src="/images/common/minus.gif"><a href="#" style="color: #FFFFFF"  onclick="$('.hexinshuju').toggle()">核心数据</td></tr></thead>
+<tbody>
+<tr class="hexinshuju"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/students" target="main">学生管理</a></td></tr>
+<tr class="hexinshuju"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/courses" target="main">课程管理</a></td></tr>
+<tr class="hexinshuju"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/grades" target="main">年级管理</a></td></tr>
+<tr class="hexinshuju"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/klasses" target="main">班级管理</a></td></tr>
+<tr class="hexinshuju"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/modify/student" target="main">培养方案</a></td></tr>
+</tbody>
+</table></td></tr></table></td></tr>
+
+
+
+<tr><td bgcolor="#F8F9FC"><a name="#2"></a>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center"> 
+<tr><td bgcolor="#DDE3EC"> 
+<table border="0" cellspacing="1" cellpadding="4" width="100%" > 
+<thead><tr><td width="100%" class="header"><img src="/images/common/minus.gif"><a href="#" style="color: #FFFFFF" onclick="$('.neibuguanli').toggle()">内部管理</td></tr></thead>
+<tbody>
+<tr class="neibuguanli"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/users" target="main">用户管理</a></td></tr>
+<tr class="neibuguanli"><td bgcolor="#FFFFFF" onMouseOver="this.style.backgroundColor='#F8F9FC'" onMouseOut="this.style.backgroundColor='#FFFFFF'"><img src="/images/common/spacer.gif"><a href="/messages" target="main">消息箱</a></td></tr>
+</tbody>
+</table></td></tr></table></td></tr>
+
+<tr><td bgcolor="#F8F9FC"><a name="#13"></a>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" align="center"> 
+<tr><td bgcolor="#DDE3EC"> 
+<table border="0" cellspacing="1" cellpadding="4" width="100%" > 
+<tr><td width="100%" class="header"><img src="/images/common/plus.gif"><a href="/users/sign_out" target="_parent" style="color: #FFFFFF">退出</a></td></tr>
+</table></td></tr></table></td></tr></table></td></tr></table></td></tr></table>
+</body>
+</html>

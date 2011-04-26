@@ -1,0 +1,16 @@
+a:link,a:visited	{ text-decoration: none; color: #003366 }
+a:hover			{ text-decoration: underline }
+body			{ scrollbar-base-color: #F8F9FC; scrollbar-arrow-color: #DDE3EC; font-size: 12px; background-color: #E9EDF7 }
+table			{ font-family: Tahoma, Verdana; color: #000000; font-size: 12px }
+textarea,input,object	{ font-family: Tahoma, Verdana; font-size: 12px;  color: #000000; font-weight: normal; background-color: #F8F9FC }
+select			{ font-family: Tahoma; font-size: 11px;  color: #000000; font-weight: normal; background-color: #F8F9FC }
+.nav			{ font-family: Tahoma, Verdana; font-size: 12px; font-weight: bold }
+.header			{ font-family: Tahoma, Verdana; font-size: 12px; color: #FFFFFF; font-weight: bold; background-image: url("/images/default/headerbg.gif") }
+.category		{ font-family: Tahoma; font-size: 12px; color: #000000; background-image: url("/images/default/catbg.gif") }
+.multi			{ font-family: Tahoma; font-size: 11px; color: #003366; }
+.smalltxt		{ font-family: Tahoma; font-size: 11px }
+.mediumtxt		{ font-family: Tahoma, Verdana; font-size: 12px; color: #000000 }
+.bold			{ font-weight: bold }
+blockquote { margin-left:20px;  margin-right:20px; border:#DDE3EC  dashed  1px; padding:5px; background-color:#FFFFFF}
+.code { margin-left:20px;  margin-right:20px; padding:5px; background-color:#FFFFFF}
+img{border:none;}

@@ -1,0 +1,2 @@
+<% url+='&page=1' unless url.include?('page=') %>
+<%= link_to raw('&laquo; 上一页'), url, :remote => remote -%>

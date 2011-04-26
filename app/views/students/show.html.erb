@@ -1,0 +1,77 @@
+
+<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr><td bgcolor="#dde3ec">
+<table width="100%" cellspacing="1" cellpadding="4" border="0">
+<tbody><tr><td class="header" colspan="2"><%= @student.name %> 的个人资料</td>
+</tr><tr><td bgcolor="#ffffff">
+
+<table width="98%" cellspacing="0" cellpadding="6" border="0">
+<tbody><tr><td width="70%">
+
+<table width="98%" cellspacing="0" cellpadding="4" border="0">
+<tbody><tr><td align="center" class="smalltxt" colspan="2"><a target="_blank" href="#">[ 预警消息 ]</a> 
+&nbsp; &nbsp; <a href="#">[ 谈话记录 ]</a> &nbsp; &nbsp; 
+<a href="#">[ 信息编辑 ]</a> &nbsp; &nbsp;
+<a href="/students">[ 返回列表 ]</a>
+
+<br><br></td></tr>
+<tr><td width="45%" class="bold">属于班级:</td><td width="55%"><%= link_to @student.klass.grade.name,@student.klass.grade if @student.klass and @student.klass.grade %>级<%= link_to @student.klass.name,@student.klass  if @student.klass%>班</td></tr>
+<tr><td width="45%" class="bold">已修学分:</td><td width="55%"><%= @yixiu %></td></tr>
+<tr><td width="45%" class="bold">不及格学分:</td><td width="55%"><%= @bujige %></td></tr>
+<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
+<% t_courses = @student.assignments.where('score>=90').order('score desc') %><tr><td width="45%" class="bold" valign="top">优秀科目(<%= t_courses.count %>):</td><td width="55%"><% t_courses.each do |ass|%><%= ass.course.name %>(<span style="color:green"><%= ass.score %></span>)<br><% end %></td></tr>
+<% t_courses = @student.assignments.where('score<60').order('score') %><tr><td width="45%" class="bold" valign="top">不及格科目(<%= t_courses.count %>):</td><td width="55%"><% t_courses.each do |ass|%><%= ass.course.name %>(<span style="color:red"><%= ass.score %></span>)<br><% end %></td></tr>
+<tr><td width="45%" class="bold">平均学期获得学分:</td><td width="55%"><%= @yixiu %>学分 / <%= @has_xueqi %>学期 = <%= @yixiu*1.0/@has_xueqi %> </td></tr>
+<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
+<tr><td width="45%" class="bold">考生号:</td><td width="55%"><%= @student.ksh %></td></tr>
+<tr><td width="45%" class="bold">专业门:</td><td width="55%"><%= @student.zym %></td></tr>
+<tr><td width="45%" class="bold">考区:</td><td width="55%"><%= @student.kq %></td></tr>
+<% if @student.fenshuxian %><tr><td width="45%" class="bold">分数线:</td><td width="55%"><%= @student.fenshuxian %></td></tr><% end %>
+<tr><td width="45%" class="bold">外语语种:</td><td width="55%"><%= @student.wyyz %></td></tr>
+<tr><td width="45%" class="bold">考生类别:</td><td width="55%"><%= @student.kslb %></td></tr>
+<tr><td width="45%" class="bold">入学总分:</td><td width="55%"><%= @student.rxzf %></td></tr>
+<tr><td width="45%" class="bold">高考总分:</td><td width="55%"><%= @student.gkzf %></td></tr>
+<tr><td width="45%" class="bold">附加分:</td><td width="55%"><%= @student.fjf %></td></tr>
+<tr><td width="45%" class="bold">语文:</td><td width="55%"><%= @student.yw %></td></tr>
+<tr><td width="45%" class="bold">数学:</td><td width="55%"><%= @student.sx %></td></tr>
+<tr><td width="45%" class="bold">外语:</td><td width="55%"><%= @student.wy %></td></tr>
+<tr><td width="45%" class="bold">物理:</td><td width="55%"><%= @student.wl %></td></tr>
+<tr><td width="45%" class="bold">化学:</td><td width="55%"><%= @student.hx %></td></tr>
+<tr><td width="45%" class="bold">政治:</td><td width="55%"><%= @student.zz %></td></tr>
+<tr><td width="45%" class="bold">历史:</td><td width="55%"><%= @student.ls %></td></tr>
+<tr><td width="45%" class="bold">综合:</td><td width="55%"><%= @student.zh %></td></tr>
+<% if @student.ksjl %><tr><td width="45%" valign="top" class="bold">考生经历:</td><td width="55%"><% @student.ksjl.split(';').each do |s|%><%= t=s.split(':');t[0]%><br><%= t[1] %><br><% end %></td></tr><% end %>
+
+
+<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
+<% @student.assignments.each do |ass| %>
+	<tr><td width="45%" class="bold"><%= ass.course.name %>:</td><td width="55%"><%= ass.score %></td></tr>
+<% end %>
+
+</tbody></table>
+
+</td><td width="30%" valign="TOP">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr><td bgcolor="#dde3ec">
+<table width="100%" cellspacing="1" cellpadding="4" border="0">
+<tbody><tr class="header"><td colspan="2">个人信息</td></tr>
+<tr bgcolor="#ffffff"><td align="center" colspan="2"><br><br><br><br><br><br></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">性别:</td><td bgcolor="#ffffff"><%= @student.xb %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">民族:</td><td bgcolor="#ffffff"><%= @student.mz %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">学号:</td><td bgcolor="#ffffff"><%= @student.number %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">身份证号:</td><td bgcolor="#ffffff"><%= @student.sfh %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">政治身份:</td><td bgcolor="#ffffff"><%= @student.sbzzmm %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">毕业中学:</td><td bgcolor="#ffffff"><%= @student.byzx %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">本人特长:</td><td bgcolor="#ffffff"><%= @student.brtc %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">奖励荣誉:</td><td bgcolor="#ffffff"><%= @student.jlcc %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">体检情况:</td><td bgcolor="#ffffff"><%= @student.tjjljs %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">联系人姓名:</td><td bgcolor="#ffffff"><%= @student.lxrxm %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">联系人地址:</td><td bgcolor="#ffffff"><%= @student.lxrdz %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">联系人邮编:</td><td bgcolor="#ffffff"><%= @student.lxryb %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">联系人电话:</td><td bgcolor="#ffffff"><%= @student.lxrdh %></td></tr>
+</tbody></table></td></tr></tbody></table>
+
+</td></tr></tbody></table>
+
+
+</td></tr></tbody></table></td></tr></tbody></table>

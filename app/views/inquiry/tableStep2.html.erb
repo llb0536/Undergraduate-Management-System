@@ -1,0 +1,44 @@
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%"><tr class="header"><td>生成表格：第三步</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+<ul><li>请选择参与数据筛选的学生。</ul>
+</td></tr></table></td></tr></table>
+<br><br>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+	<font class="mediumtxt"><br>
+<%= form_tag '/inquiry/tableStep3' do %>
+<input type="hidden" name="checked_grades" value="<%= params[:checked_grades] %>">
+<input type="hidden" name="checked_klasses" value="<%= params[:checked_klasses] %>">
+
+	<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center"><tbody>
+		
+		<tr><td bgcolor="#dde3ec"><table width="100%" cellspacing="1" cellpadding="4" border="0" class="smalltxt"><tbody><tr class="header"><td colspan="99">学生列表</td></tr>
+	<tr align="center" class="category">
+		<td width="120"><input type="checkbox" checked="checked" onclick="checkall(this.form)" class="category" name="chkall">选？</td>
+		<td width="100">班级</td>
+		<td>名称</td>
+	</tr>
+		<% @students.each do |student| %>
+		  <tr align="center" class="pointable">
+				<td bgcolor="#f8f9fc"><input type="checkbox" checked="checked" value="1" name="checked_students[<%= student.id %>]"></td>
+				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"><%= student.klass.grade.name %>级<%= student.klass.name %>班</td>
+				<td bgcolor="#ffffff"><%= student.name %></td>
+		  </tr>
+		<% end %>
+		</tbody></table></td></tr>
+	</tbody></table></font>
+	<table width="99%" cellspacing="0" cellpadding="0" align="center">
+	<tbody><tr>
+	</tr></tbody></table>
+	<br>
+	<center><input type="button" value="上一步" onclick="history.go(-1)">&nbsp;&nbsp;<%= submit_tag '下一步',:onclick=>'if(!checknotnil_inner(this.form)){alert(\'请至少选择一个。\');return false;}else{return true}'%></center>
+</table>
+
+
+<% end %>

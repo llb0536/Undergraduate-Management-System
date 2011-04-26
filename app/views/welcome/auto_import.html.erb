@@ -1,0 +1,21 @@
+<body background-color: #E9EDF7 text="#000000" leftmargin="10" topmargin="10">
+<br><br><br><br><br><br><br><table cellspacing="0" cellpadding="0" border="0" width="460" align="center">
+<tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr class="header"><td>操作结果</td></tr><tr><td bgcolor="#FFFFFF" align="center">
+<table border="0" width="90%" cellspacing="0" cellpadding="0"><tr><td width="100%" align="center">
+<br>导入中，请稍候
+<br><br>
+</td></tr></table></td></tr></table></td></tr></table><br><br><br>
+
+
+
+
+<%= form_tag @action,:id=>'auto_form' do %>
+<input type="hidden" name="filepath" value="<%= @filepath %>">
+<input type="hidden" name="from" value="server">
+<% end %>
+
+
+<script type="text/javascript" charset="utf-8">
+setTimeout("$('#auto_form').submit()",0)
+</script>
