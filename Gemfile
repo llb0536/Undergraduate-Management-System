@@ -36,4 +36,5 @@ gem 'cancan'
 gem 'spreadsheet'
 gem 'kaminari'
 gem 'to_xls'
-gem 'mysql'
+gem 'mysql2','0.2.6'
+
