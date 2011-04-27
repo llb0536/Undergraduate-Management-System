@@ -37,22 +37,21 @@
 	<tr align="center" class="category">
 		<td width="90">ID</td>
 		<td width="50">是否已读</td>
-		<td width="50">更改状态</td>
 		<td>标题</td>
 		<td width="150">发送日期</td>
 		<td width="70">发送人</td>
 
-		<td colspan="2" width="40">删除</td>
+		<td colspan="3" width="40">操作</td>
 	</tr>
 		<% @messages = @messages.order('created_at DESC')  %>
 		<% @messages.each do |m| %>
 		  <tr align="center" class="pointable">
 				<td bgcolor="#f8f9fc"><%= m.id %></td>
 				<td bgcolor="#ffffff"><% if m.has_read %>是<% else %><span style="color:red">否</span><% end %></td>
-				<td bgcolor="#ffffff"><% if m.has_read %><%= link_to '设为未读',"/messages/#{m.id}/set_unread" %><% else %><span style="color:red"><%= link_to '设为已读',"/messages/#{m.id}/set_read" %></span><% end %></td>
 				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"><%= link_to m.title,m %></td>
 				<td bgcolor="#f8f9fc"><%= m.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %></td>
 				<td bgcolor="#ffffff"><%= m.sender.name %></td>
+				<td bgcolor="#f8f9fc" width="50"><% if m.has_read %><%= link_to '标记未读',"/messages/#{m.id}/set_unread" %><% else %><span style="color:red"><%= link_to '标记已读',"/messages/#{m.id}/set_read" %></span><% end %></td>
 				<td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_props.png"/>'.html_safe, m %></td>
 		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_drop.png"/>'.html_safe, m, :confirm => '确认吗?', :method => :delete %></td>
 		  </tr>

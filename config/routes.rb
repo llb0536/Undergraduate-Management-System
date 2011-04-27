@@ -1,5 +1,8 @@
 # -*- encoding : utf-8 -*-
 Stuinfo::Application.routes.draw do
+
+  resources :programs
+
   resources :messages
 
   resources :yonghus
@@ -54,6 +57,10 @@ Stuinfo::Application.routes.draw do
   get '/inquiry/watchlist' => 'inquiry#watchlist'
   get '/inquiry/talk' => 'inquiry#talk'
   get '/inquiry/graduate' => 'inquiry#graduate'
+  get '/researches/chuangye' => 'researches#chuangye'
+  get '/researches/keyan' => 'researches#keyan'
+  get '/researches/jijin' => 'researches#jijin'
+  resources :researches
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
