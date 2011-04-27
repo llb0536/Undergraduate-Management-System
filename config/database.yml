@@ -16,11 +16,11 @@ test:
   timeout: 5000
 
 production:
-  adapter:mysql2
-  encoding:utf8
-  reconnect:false
-  database:stuinfo
-  pool:5
-  username:root
-  password:pmqpmq55
-  host:localhost
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: stuinfo
+  pool: 5
+  username: root
+  password: pmqpmq55
+  host: localhost
