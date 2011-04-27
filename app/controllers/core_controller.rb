@@ -253,5 +253,4 @@ class CoreController < ApplicationController
     import2Log.save!
     render :template=>'core/showmsg'
   end
-  
 end

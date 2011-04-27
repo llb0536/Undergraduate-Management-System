@@ -1,26 +1,41 @@
+
+<% if @user.errors.any? %>
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr style="background-color:red !important;color:white !important;background-image:none" class="header"><td>错误</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+    <% @user.errors.full_messages.each do |msg| %>
+			<ul><li><%= msg %></ul>
+    <% end %>
+</td></tr></table></td></tr></table>
+<br>
+<% end %>
+
+
+
 <table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%"><tr class="header"><td>技巧提示</td></tr>
 <tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
 <ul><li>此页用于管理使用本系统的内部用户。</ul>
 <ul><li>本系统是内部系统，不开放注册，您可以通过本页手动添加用户。</ul>
+<ul><li>若想提升某用户为管理员，请访问用户编辑页。</ul>
 </td></tr></table></td></tr></table>
 <br>
 
-<%= form_tag request.request_uri,:method=>'get' do %>
+<%= form_for @user do |f|%>
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
 <tbody><tr><td bgcolor="#dde3ec">
 <table border="0" cellpadding="4" cellspacing="1" width="100%">
 <tbody><tr class="header"><td colspan="5">添加用户</td></tr>
 <tr align="center"><td bgcolor="#f8f9fc" width="15%">用户名:</td>
-<td bgcolor="#ffffff" width="28%"><input name="per" value="" size="20" type="text" TABINDEX=1></td>
+<td bgcolor="#ffffff" width="28%"><%= f.text_field :name,:tabindex=>1 %></td>
 <td bgcolor="#f8f9fc" width="15%">密码:</td>
-<td bgcolor="#ffffff" width="27%"><input name="page" value="1" type="password" TABINDEX=3/></td>
-<td bgcolor="#f8f9fc" rowspan="2"><%= submit_tag '提交',:TABINDEX=>5 %></td>
+<td bgcolor="#ffffff" width="27%"><%= f.password_field :password,:tabindex=>3 %></td>
+<td bgcolor="#f8f9fc" rowspan="2"><%= f.submit '确认添加',:tabindex=>5 %></td>
 </tr>
 <tr align="center">
 <td bgcolor="#f8f9fc" width="15%">E-mail:</td>
-<td bgcolor="#ffffff" width="27%"><input name="page" value="1" type="text" TABINDEX=2/></td>
+<td bgcolor="#ffffff" width="27%"><%= f.text_field :email,:tabindex=>2 %></td>
 <td bgcolor="#f8f9fc" width="15%">确认密码:</td>
-<td bgcolor="#ffffff" width="28%"><input name="per" value="" size="20" type="password" TABINDEX=4></td>
+<td bgcolor="#ffffff" width="28%"><%= f.password_field :password_confirmation,:tabindex=>4 %></td>
 </tr>
 </tbody></table></td></tr></tbody></table>
 <% end %>
@@ -52,7 +67,7 @@
 				<td bgcolor="#f8f9fc"><%= user.id %></td>
 				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"><%= link_to user.name,user %></td>
 				<td bgcolor="#ffffff"><%= user.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %></td>
-				<td bgcolor="#ffffff"><%= user.is_admin %></td>
+				<td bgcolor="#ffffff"><% if user.is_admin %>是<%else%>否<%end%></td>
 		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_props.png"/>'.html_safe, user %></td>
 		    <td bgcolor="#ffffff" width="20"><%= link_to '<img src="/images/b_edit.png"/>'.html_safe, edit_user_path(user) %></td>
 		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_drop.png"/>'.html_safe, user, :confirm => '确认吗?', :method => :delete %></td>

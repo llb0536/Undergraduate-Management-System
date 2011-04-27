@@ -64,7 +64,7 @@
 <tr align="center">
 
 		<td bgcolor="#FFFFFF"><%= importLog.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %></td>
-		<td bgcolor="#F8F9FC"><% if importLog.user %> <%= importLog.user.name %> <% else %> 未登录用户 <% end %></td>
+		<td bgcolor="#F8F9FC"><% if importLog.user %> <%= link_to importLog.user.name,importLog.user %> <% else %> 未登录用户 <% end %></td>
 		<td bgcolor="#FFFFFF"><%= importLog.grade_created %></td>
 		<td bgcolor="#F8F9FC"><%= importLog.klass_created %></td>
 		<td bgcolor="#FFFFFF"><%= importLog.course_created_count %></td>

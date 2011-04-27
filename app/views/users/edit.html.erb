@@ -1,6 +1,52 @@
-<h1>Editing yonghu</h1>
 
-<%= render 'form' %>
 
-<%= link_to 'Show', @yonghu %> |
-<%= link_to 'Back', yonghus_path %>
+
+<% if @user.errors.any? %>
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr style="background-color:red !important;color:white !important;background-image:none" class="header"><td>错误</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+    <% @user.errors.full_messages.each do |msg| %>
+			<ul><li><%= msg %></ul>
+    <% end %>
+</td></tr></table></td></tr></table>
+<br>
+<% end %>
+
+
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%"><tr class="header"><td>技巧提示</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+<ul><li>若不修改密码，请将密码输入框留空。</ul>
+</td></tr></table></td></tr></table>
+<br>
+
+
+
+
+<%= form_for @user do |f| %>
+<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr><td bgcolor="#dde3ec">
+<table width="100%" cellspacing="1" cellpadding="4" border="0">
+<tbody><tr><td class="header" colspan="2"><%= @user.name %></td>
+</tr><tr><td bgcolor="#ffffff">
+
+<table width="98%" cellspacing="0" cellpadding="6" border="0">
+<tbody><tr><td width="70%">
+
+<table width="98%" cellspacing="0" cellpadding="4" border="0">
+<tbody>
+<tr><td width="45%" class="bold">用户名:</td><td width="55%"><%= f.text_field :name,:style=>"width:50%" %></td></tr>
+<tr><td width="45%" class="bold">E-mail:</td><td width="55%"><%= f.text_field :email,:style=>"width:50%" %></td></tr>
+<tr><td width="45%" class="bold">密码:</td><td width="55%"><%= f.password_field :password,:style=>"width:50%" %></td></tr>
+<tr><td width="45%" class="bold">密码确认:</td><td width="55%"><%= f.password_field :password_confirmation,:style=>"width:50%" %></td></tr>
+<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
+<tr><td width="45%" class="bold">是否管理员:</td><td width="55%"><%= f.radio_button :is_admin,true %>是&nbsp;&nbsp;<%= f.radio_button :is_admin,false %>否</td></tr>
+</tbody></table>
+
+</td>
+</tr></tbody></table>
+<tr align="center">
+<td bgcolor="#f8f9fc" colspan="20"><%= f.submit '提交编辑' %></td>
+</tr>
+
+</td></tr></tbody></table></td></tr></tbody></table>
+<% end %>

@@ -28,7 +28,7 @@
 				<td bgcolor="#ffffff"><%= table.id %></td>
 				<td bgcolor="#f8f9fc"><%= table.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %></td>
 				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"><%= link_to table.name,table %></td>
-				<td bgcolor="#f8f9fc"><%= table.user.name %></td>
+				<td bgcolor="#f8f9fc"><%= link_to table.user.name,table.user %></td>
 				<td bgcolor="#ffffff" width="20"><%= link_to '<img src="/images/b_props.png"/>'.html_safe, table %></td>
 		    <td bgcolor="#ffffff" width="20"><%= link_to '<img src="/images/b_drop.png"/>'.html_safe, table, :confirm => '确认吗?', :method => :delete %></td>
 		  </tr>

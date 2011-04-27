@@ -5,7 +5,6 @@ Stuinfo::Application.routes.draw do
 
   resources :messages
 
-  resources :yonghus
 
   resources :tables
 
@@ -19,8 +18,9 @@ Stuinfo::Application.routes.draw do
 
   resources :comments
 
-  devise_for :users
   resources :users
+  devise_for :users,:path => 'accounts'
+
 
   resources :import_logs
 
@@ -33,6 +33,8 @@ Stuinfo::Application.routes.draw do
   get 'main' => 'welcome#main'
   get 'import' => 'welcome#import'
   get 'import2' => 'welcome#import2'
+  get 'import3' => 'welcome#import3'
+  get 'import4' => 'welcome#import4'
   get '/welcome/menu' => 'welcome#menu'
   get '/welcome/top' => 'welcome#top'
   get '/auto_import' => 'welcome#auto_import'

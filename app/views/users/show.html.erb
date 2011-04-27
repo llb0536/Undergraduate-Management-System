@@ -1,5 +1,44 @@
-<p id="notice"><%= notice %></p>
 
+<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr><td bgcolor="#dde3ec">
+<table width="100%" cellspacing="1" cellpadding="4" border="0">
+<tbody><tr><td class="header" colspan="2"><%= @user.name %></td>
+</tr><tr><td bgcolor="#ffffff">
 
-<%= link_to 'Edit', edit_yonghu_path(@yonghu) %> |
-<%= link_to 'Back', yonghus_path %>
+<table width="98%" cellspacing="0" cellpadding="6" border="0">
+<tbody><tr><td width="70%">
+
+<table width="98%" cellspacing="0" cellpadding="4" border="0">
+<tbody>
+<tr><td width="45%" class="bold">登录次数:</td><td width="55%"><%= @user.sign_in_count %></td></tr>
+<tr><td width="45%" class="bold">目前登录于:</td><td width="55%"><%= @user.current_sign_in_at %></td></tr>
+<tr><td width="45%" class="bold">目前登录IP:</td><td width="55%"><%= @user.current_sign_in_ip %></td></tr>
+<tr><td width="45%" class="bold">上次登录于:</td><td width="55%"><%= @user.last_sign_in_at %></td></tr>
+<tr><td width="45%" class="bold">上次登录IP:</td><td width="55%"><%= @user.last_sign_in_ip %></td></tr>
+<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
+<tr><td width="45%" class="bold">基础信息导入次数:</td><td width="55%"><%= link_to @user.import_logs.count,'/import' %>次</td></tr>
+<tr><td width="45%" class="bold">成绩信息导入次数:</td><td width="55%"><%= link_to @user.import2_logs.count,'/import2' %>次</td></tr>
+<tr><td width="45%" class="bold">生成表格次数:</td><td width="55%"><%= link_to @user.tables.count,'/tables' %>次</td></tr>
+<tr><td width="45%" class="bold">信息箱已用:</td><td width="55%"><%= link_to @user.messages.count,'/messages' %>条</td></tr>
+<tr><td width="45%" class="bold">发送信息数:</td><td width="55%"><%= link_to @user.sent_messages.count,'/messages' %>条</td></tr>
+</tbody></table>
+
+</td><td width="30%" valign="TOP">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr><td bgcolor="#dde3ec">
+<table width="100%" cellspacing="1" cellpadding="4" border="0">
+<tbody><tr class="header"><td colspan="2">用户信息</td></tr>
+<tr bgcolor="#ffffff"><td align="center" colspan="2"><br><br><br>赞无照片<br><br><br><br></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">ID:</td><td bgcolor="#ffffff"><%= @user.id %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">是否管理员:</td><td bgcolor="#ffffff"><% if @user.is_admin %>是<%else%>否<%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">E-mail:</td><td bgcolor="#ffffff"><%= @user.email %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">创建日期:</td><td bgcolor="#ffffff"><%= @user.created_at %></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">更新日期:</td><td bgcolor="#ffffff"><%= @user.updated_at %></td></tr>
+</tbody></table></td></tr></tbody></table>
+
+</td></tr></tbody></table>
+<tr align="center">
+<td bgcolor="#f8f9fc" colspan="20"><%= link_to '编辑此用户',edit_user_path(@user) %> | <%= link_to '返回用户列表','/users' %></td>
+</tr>
+
+</td></tr></tbody></table></td></tr></tbody></table>

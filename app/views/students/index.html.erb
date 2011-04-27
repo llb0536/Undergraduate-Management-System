@@ -94,7 +94,6 @@
 
 				<td bgcolor="#ffffff"><%= student.klass.name if student.klass %></td>
 		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_props.png"/>'.html_safe, student %></td>
-		    <td bgcolor="#ffffff" width="20"><%= link_to '<img src="/images/b_edit.png"/>'.html_safe, edit_student_path(student) %></td>
 		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_drop.png"/>'.html_safe, student, :confirm => '确认吗?', :method => :delete %></td>
 		  </tr>
 		<% end %>

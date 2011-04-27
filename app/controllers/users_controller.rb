@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
+    @user = User.new
     @users = User.all
 
     respond_to do |format|
@@ -46,10 +47,10 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to(@user, :notice => 'Yonghu was successfully created.') }
+        format.html { redirect_to(@user, :notice => '用户成功建立！') }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else
-        format.html { render :action => "new" }
+        format.html {  @users = User.all and render :action => "index" }
         format.xml  { render :xml => @user.errors, :status => :unprocessable_entity }
       end
     end
@@ -59,10 +60,20 @@ class UsersController < ApplicationController
   # PUT /users/1.xml
   def update
     @user = User.find(params[:id])
-
+    if params[:user][:password].empty?
+      params[:user].delete :password 
+      params[:user].delete :password_confirmation
+    end
+    suc = @user.update_attributes(params[:user])
+    if suc
+      if params[:user][:is_admin]=="true"
+        @user.is_admin = true
+        @user.save!
+      end
+    end
     respond_to do |format|
       if @user.update_attributes(params[:user])
-        format.html { redirect_to(@user, :notice => 'Yonghu was successfully updated.') }
+        format.html { redirect_to(@user, :notice => '用户信息成功修改！') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

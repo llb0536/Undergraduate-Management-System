@@ -22,6 +22,14 @@ class WelcomeController < ApplicationController
   
   def import2
   end
+
+  def import3
+    render text:'开发中'
+  end
+  def import4
+    render text:'开发中'
+  end
+
   
   def auto_import
     if 2==params[:type].to_i

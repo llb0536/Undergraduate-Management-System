@@ -9,12 +9,7 @@
 <tbody><tr><td width="70%">
 
 <table width="98%" cellspacing="0" cellpadding="4" border="0">
-<tbody><tr><td align="center" class="smalltxt" colspan="2"><a target="_blank" href="#">[ 预警消息 ]</a> 
-&nbsp; &nbsp; <a href="#">[ 谈话记录 ]</a> &nbsp; &nbsp; 
-<a href="#">[ 信息编辑 ]</a> &nbsp; &nbsp;
-<a href="/students">[ 返回列表 ]</a>
-
-<br><br></td></tr>
+<tbody>
 <tr><td width="45%" class="bold">属于班级:</td><td width="55%"><%= link_to @student.klass.grade.name,@student.klass.grade if @student.klass and @student.klass.grade %>级<%= link_to @student.klass.name,@student.klass  if @student.klass%>班</td></tr>
 <tr><td width="45%" class="bold">已修学分:</td><td width="55%"><%= @yixiu %></td></tr>
 <tr><td width="45%" class="bold">不及格学分:</td><td width="55%"><%= @bujige %></td></tr>
@@ -55,7 +50,7 @@
 <tbody><tr><td bgcolor="#dde3ec">
 <table width="100%" cellspacing="1" cellpadding="4" border="0">
 <tbody><tr class="header"><td colspan="2">个人信息</td></tr>
-<tr bgcolor="#ffffff"><td align="center" colspan="2"><br><br><br><br><br><br></td></tr>
+<tr bgcolor="#ffffff"><td align="center" colspan="2"><br><br><br>赞无照片<br><br><br><br></td></tr>
 <tr><td width="30%" bgcolor="#f8f9fc">性别:</td><td bgcolor="#ffffff"><%= @student.xb %></td></tr>
 <tr><td width="30%" bgcolor="#f8f9fc">民族:</td><td bgcolor="#ffffff"><%= @student.mz %></td></tr>
 <tr><td width="30%" bgcolor="#f8f9fc">学号:</td><td bgcolor="#ffffff"><%= @student.number %></td></tr>
@@ -72,6 +67,9 @@
 </tbody></table></td></tr></tbody></table>
 
 </td></tr></tbody></table>
+<tr align="center">
+<td bgcolor="#f8f9fc" colspan="20"><%= link_to '返回学生列表','/students' %></td>
+</tr>
 
 
 </td></tr></tbody></table></td></tr></tbody></table>

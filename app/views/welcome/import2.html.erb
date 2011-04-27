@@ -59,7 +59,7 @@
 <tr align="center">
 
 		<td bgcolor="#FFFFFF"><%= importLog.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %></td>
-		<td bgcolor="#F8F9FC"><%= importLog.user.name %></td>
+		<td bgcolor="#F8F9FC"><%= link_to importLog.user.name,importLog.user %></td>
 		<td bgcolor="#FFFFFF"><%= importLog.students_created %></td>
 		<td bgcolor="#F8F9FC"><%= importLog.students_updated %></td>
 	<td bgcolor="#FFFFFF"><% if importLog.erroneous %> <span style="color:red">失败</span> <% else %> <span style="color:green">成功</span> <% end %></td>
