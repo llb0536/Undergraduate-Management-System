@@ -3,6 +3,7 @@ require 'json'
 require 'spreadsheet'
 
 class TablesController < ApplicationController
+  before_filter :authenticate_user!
   # GET /tables
   # GET /tables.xml
   def index

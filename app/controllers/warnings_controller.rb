@@ -1,6 +1,20 @@
 # -*- encoding : utf-8 -*-
 class WarningsController < ApplicationController
   before_filter :authenticate_user!
+  def index_credit
+    render text:'开发中'
+  end
+  def index_score
+    render text:'开发中'
+  end
+  def index_event
+    render text:'开发中'
+  end
+  def index_psychological
+    render text:'开发中'
+  end
+
+
   # GET /warnings
   # GET /warnings.xml
   def index

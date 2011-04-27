@@ -16,8 +16,6 @@ Stuinfo::Application.routes.draw do
 
   resources :comments
 
-  resources :warnings
-
   devise_for :users
   resources :users
 
@@ -48,6 +46,14 @@ Stuinfo::Application.routes.draw do
   get '/courses/:course_id/students' => 'students#index'
   get "/messages/:message_id/set_read" => 'messages#set_read'
   get "/messages/:message_id/set_unread" => 'messages#set_unread'
+  get '/warnings/credit' => 'warnings#index_credit'
+  get '/warnings/score' => 'warnings#index_score'
+  get '/warnings/event' => 'warnings#index_event'
+  get '/warnings/psychological' => 'warnings#index_psychological'
+  resources :warnings
+  get '/inquiry/watchlist' => 'inquiry#watchlist'
+  get '/inquiry/talk' => 'inquiry#talk'
+  get '/inquiry/graduate' => 'inquiry#graduate'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

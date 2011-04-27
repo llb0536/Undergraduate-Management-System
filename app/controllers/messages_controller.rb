@@ -1,5 +1,6 @@
 # -*- encoding : utf-8 -*-
 class MessagesController < ApplicationController
+  before_filter :authenticate_user!
   # GET /messages
   # GET /messages.xml
   def index

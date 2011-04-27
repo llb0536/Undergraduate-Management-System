@@ -1,6 +1,18 @@
 # -*- encoding : utf-8 -*-
 require 'set'
 class InquiryController < ApplicationController
+  before_filter :authenticate_user!
+  
+  def watchlist
+    render text:'开发中'
+  end
+  def talk
+    render text:'开发中'
+  end
+  def graduate
+    render text:'开发中'
+  end
+  
   def table
     @grades=Grade.all
   end

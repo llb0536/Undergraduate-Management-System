@@ -1,5 +1,6 @@
 # -*- encoding : utf-8 -*-
 class Import2LogsController < ApplicationController
+  before_filter :authenticate_user!
   # GET /import2_logs
   # GET /import2_logs.xml
   def index
