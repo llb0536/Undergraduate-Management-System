@@ -1,17 +1,16 @@
 set :application, "stuinfo"
 set :deploy_to, "/stuinfo"
-
 set :scm, :git
-set :repository, "psvr@192.168.201.141:stuinfo.git"
+set :repository, "."
 set :branch, "master"
-set :deploy_via, :remote_cache
+set :deploy_via, :copy
 
 set :user,'root'
 set :ssh_options, {:forward_agent=>true}
 
-role :app, "Nginx/mod_rails - stuinfo"
-role :web, "Nginx/mod_rails - stuinfo"
-role :db,  "MySQL - stuinfo", :primary=>true
+server "192.168.145.253", :app, :web, :db, :primary => true
+set :user,'root'
+set :use_sudo, false
 
 namespace :deploy do
   desc "Restarting mod_rails with restart.txt"
