@@ -32,7 +32,7 @@ class Table < ActiveRecord::Base
           total += ass.score*discourse[ass.course_id.to_s].to_i
           reason[student.id] += ' + ' unless count == 0
           reason[student.id] += "#{ass.score}*#{discourse[ass.course_id.to_s].to_i}"
-          count += ass.course.credit
+          count += discourse[ass.course_id.to_s].to_i 
         end
       end
       reason[student.id] += ") / #{count}"
