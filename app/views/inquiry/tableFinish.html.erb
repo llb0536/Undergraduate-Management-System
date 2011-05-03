@@ -4,7 +4,7 @@
 </td></tr></table></td></tr></table>
 <br><br>
 
-<%= form_tag '/inquiry/tableConfirmed' do %>
+<%= form_tag '/inquiry/tableConfirmed',id:'tableConfirmed' do %>
 <input type="hidden" name="checked_grades" value="<%= params[:checked_grades] %>">
 <input type="hidden" name="checked_klasses" value="<%= params[:checked_klasses] %>">
 <input type="hidden" name="checked_students" value="<%= params[:checked_students] %>">
@@ -38,7 +38,7 @@
 </tr>
 <tr align="center">
 	<td bgcolor="#f8f9fc" colspan="10">
-<center><input type="button" value="上一步" onclick="history.go(-1)">&nbsp;&nbsp;<%= submit_tag '完成',:onclick=>"this.disabled=true;this.value='生成中，请等待';return true"%></center>		
+<center><input type="button" value="上一步" onclick="history.go(-1)">&nbsp;&nbsp;<%= submit_tag '完成',:onclick=>"this.disabled=true;this.value='生成中，请等待';$('#tableConfirmed').submit();return false;"%></center>		
 		</td>
 </tr>
 
