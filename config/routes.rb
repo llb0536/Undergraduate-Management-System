@@ -1,6 +1,10 @@
 # -*- encoding : utf-8 -*-
 Stuinfo::Application.routes.draw do
 
+  resources :talk_records
+
+  resources :watch_list_items
+
   resources :programs
 
   resources :messages

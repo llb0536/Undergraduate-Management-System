@@ -7,7 +7,6 @@ class InquiryController < ApplicationController
     render text:'开发中'
   end
   def talk
-    render text:'开发中'
   end
   def graduate
     render text:'开发中'

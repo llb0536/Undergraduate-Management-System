@@ -34,6 +34,7 @@ class StudentsController < ApplicationController
     @has_xueqi = Time.now.strftime("%y").to_i - @student.klass.grade.name.to_i if @student.klass and @student.klass.grade
     @has_xueqi *= 2
     @has_xueqi -= 1 if Time.now.strftime("%m").to_i < 9
+    @talk_record = TalkRecord.new(student_id:@student.id)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @student }

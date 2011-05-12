@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110427051721) do
+ActiveRecord::Schema.define(:version => 20110512122047) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "course_id"
@@ -191,6 +191,14 @@ ActiveRecord::Schema.define(:version => 20110427051721) do
     t.text     "reason"
   end
 
+  create_table "talk_records", :force => true do |t|
+    t.integer  "student_id"
+    t.string   "about"
+    t.text     "memo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "name"
     t.boolean  "is_admin"
@@ -213,6 +221,12 @@ ActiveRecord::Schema.define(:version => 20110427051721) do
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
   create_table "warnings", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "watch_list_items", :force => true do |t|
+    t.integer  "student_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
