@@ -1,0 +1,34 @@
+
+
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%"><tr class="header"><td>技巧提示</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+<ul><li>您可以通过“学生管理”栏目先导航到某位学生，再进行查看、添加谈话记录等操作。</ul>
+</td></tr></table></td></tr></table>
+<br>
+
+
+
+<%= form_for @talk_record do |f|%>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tbody><tr><td bgcolor="#dde3ec">
+<table border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr class="header"><td colspan="5">新增谈话记录</td></tr>
+<tr align="center">
+<td bgcolor="#f8f9fc" width="15%">学号或姓名:</td>
+<td bgcolor="#ffffff" width="27%"><%= f.text_field :about ,style:'width:100%'%></td>
+<td bgcolor="#f8f9fc">	<%= f.submit '新增谈话记录' %></td>
+</tr>
+<tr><td bgcolor="#f8f9fc" width="15%" style="text-align:center">
+	备注:
+</td>
+<td bgcolor="#ffffff" colspan="40">
+	<%= f.text_area :memo,style:'width:100%;height:100px'%>
+</td>
+</tr>
+<tr>
+<td bgcolor="#f8f9fc" colspan="40" style="text-align:center">
+
+</td>
+</tr>
+</tbody></table></td></tr></tbody></table>
+<% end %>

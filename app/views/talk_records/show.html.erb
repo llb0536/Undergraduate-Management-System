@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Student:</b>
+  <%= @talk_record.student_id %>
+</p>
+
+<p>
+  <b>About:</b>
+  <%= @talk_record.about %>
+</p>
+
+<p>
+  <b>Memo:</b>
+  <%= @talk_record.memo %>
+</p>
+
+
+<%= link_to 'Edit', edit_talk_record_path(@talk_record) %> |
+<%= link_to 'Back', talk_records_path %>
