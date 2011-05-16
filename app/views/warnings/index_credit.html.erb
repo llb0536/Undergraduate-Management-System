@@ -31,8 +31,8 @@
 		<% student = Student.find(warning_xuefen_student.student_id) %>
 		  <tr align="center" class="pointable">
 				<td bgcolor="#ffffff"><% if student.klass %> <%= student.klass.grade.name %>级<%= student.klass.name %>班<%end %></td>
-				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"><%= link_to student.name,student %></td>
-				<td bgcolor="#ffffff" ><%= student.yixiu %>学分 / <%= student.has_xueqi %>学期 = <%= sprintf("%.3f",student.yixiu*1.0/student.has_xueqi) %></td>
+				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"><span style="float: right; margin-right: .3em;background-image: url('/images/ui-icons_cc0000_256x240.png');background-position: 0 -144px;height: 16px;width: 16px;background-repeat: no-repeat;display: block;overflow: hidden;"></span><%= link_to student.name,student %></td>
+				<td bgcolor="#ffffff" ><%= student.yixiu %>学分 / <%= student.has_xueqi %>学期 = <span style="color:red"><%= sprintf("%.3f",student.yixiu*1.0/student.has_xueqi) %></a></td>
 		  </tr>
 		<% end %>
 		</tbody></table></td></tr>

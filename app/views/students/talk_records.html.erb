@@ -12,7 +12,7 @@
 
 
 
-<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%" class="smalltxt"><tr class="header"><td colspan="99"><%= @student.name %>的谈话记录</td></tr>
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%" class="smalltxt"><tr class="header"><td colspan="99"><span style="color:black;text-decoration:underline"><%= @student.name %></span>的谈话记录</td></tr>
 <tr align="center" class="category">
 	<td width="150">发生日期</td>
 	<td width="100">谈话人</td>
@@ -40,7 +40,7 @@
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
 <tbody><tr><td bgcolor="#dde3ec">
 <table border="0" cellpadding="4" cellspacing="1" width="100%">
-<tbody><tr class="header"><td colspan="5">新增<%= @student.name %>的谈话记录</td></tr>
+<tbody><tr class="header"><td colspan="5">新增<span style="color:black;text-decoration:underline"><%= @student.name %></span>的谈话记录</td></tr>
 <tr align="center">
 <td bgcolor="#f8f9fc" width="15%">谈话人:</td>
 <td bgcolor="#ffffff" width="27%"><%= f.text_field :talker,style:'width:100%'%></td>
