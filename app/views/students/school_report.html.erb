@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>首都师范大学学生中文成绩单</title>
+	<style type="text/css" media="screen">
+		h1{
+			text-align:center;
+			font-size:14px;
+		}
+	</style>
+</head>
+<body>
+<h1>首都师范大学学生中文成绩单</h1>
+<table >
+<tr><!-- 第一行 -->
+	<td>姓名</td>
+	<td><%= @student.name %></td>
+	<td>学号</td>
+	<td><%= @student.number %></td>
+	<td>性别</td>
+	<td><%= @student.xb %></td>
+	<td>身份证号</td>
+	<td><%= @student.sfh %></td>
+</tr>		
+</table>
+</body>

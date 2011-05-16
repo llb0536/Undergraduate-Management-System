@@ -1,6 +1,43 @@
-<h1>Editing talk_record</h1>
 
-<%= render 'form' %>
+<% if @talk_record.errors.any? %>
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr style="background-color:red !important;color:white !important;background-image:none" class="header"><td>错误</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+    <% @talk_record.errors.full_messages.each do |msg| %>
+			<ul><li><%= msg %></ul>
+    <% end %>
+</td></tr></table></td></tr></table>
+<br><br>
+<% end %>
 
-<%= link_to 'Show', @talk_record %> |
-<%= link_to 'Back', talk_records_path %>
+
+
+<%= form_for @talk_record do |f|%>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<tbody><tr><td bgcolor="#dde3ec">
+<table border="0" cellpadding="4" cellspacing="1" width="100%">
+<tbody><tr class="header"><td colspan="5">编辑<%= @talk_record.student.name %>的谈话记录</td></tr>
+<tr align="center">
+<td bgcolor="#f8f9fc" width="15%">谈话人:</td>
+<td bgcolor="#ffffff" width="27%"><%= f.text_field :talker,style:'width:100%'%></td>
+<td bgcolor="#f8f9fc" width="15%">发生日期:</td>
+<td bgcolor="#ffffff" width="28%"><%= date_select(:talk_record,:happened_at) %></td>
+</tr>
+<tr>
+	<td bgcolor="#f8f9fc" width="15%" style="text-align:center">内容摘要:</td>
+	<td bgcolor="#ffffff" colspan="4"><%= f.text_field :about ,style:'width:100%'%></td>
+</tr>
+<tr><td bgcolor="#f8f9fc" width="15%" style="text-align:center">
+	备注:
+</td>
+<td bgcolor="#ffffff" colspan="40">
+	<%= f.text_area :memo,style:'width:100%;height:100px'%>
+</td>
+</tr>
+<tr>
+<td bgcolor="#f8f9fc" colspan="40" style="text-align:center">
+	<%= f.submit '提交编辑' %>
+</td>
+</tr>
+</tbody></table></td></tr></tbody></table>
+<% end %>

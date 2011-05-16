@@ -1,4 +1,62 @@
-<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
+<style type="text/css" media="screen">
+	form.button_to,form.button_to div{
+		display:inline;
+	}
+</style>
+<div style="width:90%;margin:0 auto" id="big_wrapper">
+<%= form_for(@student) do |f| %>
+
+<div style="width:49%;float:left;">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr><td bgcolor="#dde3ec">
+<table width="100%" cellspacing="1" cellpadding="4" border="0">
+<tbody><tr class="header"><td colspan="2"><%= @student.name %>的个人信息<span style="float:right"><%= raw table_edit_tag('personal_info') %></span></td></tr>
+<tr bgcolor="#ffffff"><td align="center" colspan="2" style="padding:31px 0">赞无照片</td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">性别:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.radio_button :is_male,true%>男 <%=f.radio_button :is_male,false%>女<%else%><%= @student.xb %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">民族:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :mz,style:'width:100%'%><%else%><%= @student.mz %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">学号:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :number,style:'width:100%'%><%else%><%= @student.number %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">身份证号:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :sfh,style:'width:100%'%><%else%><%= @student.sfh %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">政治身份:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :sbzzmm,style:'width:100%'%><%else%><%= @student.sbzzmm %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">毕业中学:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :byzx,style:'width:100%'%><%else%><%= @student.byzx %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">本人特长:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :brtc,style:'width:100%'%><%else%><%= @student.brtc %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">奖励荣誉:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :jlcc,style:'width:100%'%><%else%><%= @student.jlcc %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">体检情况:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :tjjljs,style:'width:100%'%><%else%><%= @student.tjjljs %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">联系人姓名:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :lxrxm,style:'width:100%'%><%else%><%= @student.lxrxm %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">联系人地址:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :lxrdz,style:'width:100%'%><%else%><%= @student.lxrdz %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">联系人邮编:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :lxryb,style:'width:100%'%><%else%><%= @student.lxryb %><%end%></td></tr>
+<tr><td width="30%" bgcolor="#f8f9fc">联系人电话:</td><td bgcolor="#ffffff"><% if @editing['personal_info'] %><%=f.text_field :lxrdh,style:'width:100%'%><%else%><%= @student.lxrdh %><%end%></td></tr>
+<% if @editing['personal_info'] %><tr><td bgcolor="#f8f9fc" style="width:100%;text-align:center" colspan="20"><%= f.submit '提交' %></td></tr><% end %>
+</tbody></table></td></tr></tbody></table>
+</div>
+<div style="width:49%;float:right;">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr><td bgcolor="#dde3ec">
+<table width="100%" cellspacing="1" cellpadding="4" border="0">
+<tbody><tr class="header"><td colspan="2"><%= @student.name %>的高考信息<span style="float:right"><%= raw table_edit_tag('gk_info') %></span></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">考生号:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :ksh,style:'width:100%'%><%else%><%= @student.ksh %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">专业门:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :zym,style:'width:100%'%><%else%><%= @student.zym %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">考区:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :kq,style:'width:100%'%><%else%><%= @student.kq %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">分数线:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :fenshuxian,style:'width:100%'%><%else%><%= @student.fenshuxian %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">外语语种:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :wyyz,style:'width:100%'%><%else%><%= @student.wyyz %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">考生类别:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :kslb,style:'width:100%'%><%else%><%= @student.kslb %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">入学总分:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :rxzf,style:'width:100%'%><%else%><%= @student.rxzf %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">高考总分:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :gkzf,style:'width:100%'%><%else%><%= @student.gkzf %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">附加分:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :fjf,style:'width:100%'%><%else%><%= @student.fjf %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">语文:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :yw,style:'width:100%'%><%else%><%= @student.yw %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">数学:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :sx,style:'width:100%'%><%else%><%= @student.sx %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">外语:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :wy,style:'width:100%'%><%else%><%= @student.wy %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">物理:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :wl,style:'width:100%'%><%else%><%= @student.wl %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">化学:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :hx,style:'width:100%'%><%else%><%= @student.hx %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">政治:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :zz,style:'width:100%'%><%else%><%= @student.zz %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">历史:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :ls,style:'width:100%'%><%else%><%= @student.ls %><%end%></td></tr>
+	<tr><td width="30%" bgcolor="#f8f9fc">综合:</td><td bgcolor="#ffffff"><% if @editing['gk_info'] %><%=f.text_field :zh,style:'width:100%'%><%else%><%= @student.zh %><%end%></td></tr>
+	<% if @editing['gk_info'] %><tr><td bgcolor="#f8f9fc" style="width:100%;text-align:center" colspan="20"><%= f.submit '提交' %></td></tr><% end %>
+</tbody></table></td></tr></tbody></table>
+</div>
+<% end %>
+<br style="clear:both"/><br />
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
 <tbody><tr><td bgcolor="#dde3ec">
 <table width="100%" cellspacing="1" cellpadding="4" border="0">
 <tbody><tr><td class="header" colspan="2"><%= @student.name %> 的成绩概览</td>
@@ -48,149 +106,111 @@
 </td></tr></tbody></table></td></tr></tbody></table>
 <br /><br />
 
-<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
-<tbody><tr><td bgcolor="#dde3ec">
-<table width="100%" cellspacing="1" cellpadding="4" border="0">
-<tbody><tr><td class="header" colspan="2"><%= @student.name %> 的个人资料</td>
-</tr><tr><td bgcolor="#ffffff">
 
-<table width="98%" cellspacing="0" cellpadding="6" border="0">
-<tbody><tr><td width="70%">
 
-<table width="98%" cellspacing="0" cellpadding="4" border="0">
-<tbody>
-<tr><td width="45%" class="bold">属于班级:</td><td width="55%"><%= link_to @student.klass.grade.name,@student.klass.grade if @student.klass and @student.klass.grade %>级<%= link_to @student.klass.name,@student.klass  if @student.klass%>班</td></tr>
-<tr><td width="45%" class="bold">已修学分:</td><td width="55%"><%= @yixiu %></td></tr>
-<tr><td width="45%" class="bold">不及格学分:</td><td width="55%"><%= @bujige %></td></tr>
-<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
-<% t_courses = @student.assignments.where('score>=90').order('score desc') %><tr><td width="45%" class="bold" valign="top">优秀科目(<%= t_courses.count %>):</td><td width="55%"><% t_courses.each do |ass|%><%= ass.course.name %>(<span style="color:green"><%= ass.score %></span>)<br><% end %></td></tr>
-<% t_courses = @student.assignments.where('score<60').order('score') %><tr><td width="45%" class="bold" valign="top">不及格科目(<%= t_courses.count %>):</td><td width="55%"><% t_courses.each do |ass|%><%= ass.course.name %>(<span style="color:red"><%= ass.score %></span>)<br><% end %></td></tr>
-<tr><td width="45%" class="bold">平均学期获得学分:</td><td width="55%"><%= @yixiu %>学分 / <%= @has_xueqi %>学期 = <%= @yixiu*1.0/@has_xueqi %> </td></tr>
-<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
-<tr><td width="45%" class="bold">考生号:</td><td width="55%"><%= @student.ksh %></td></tr>
-<tr><td width="45%" class="bold">专业门:</td><td width="55%"><%= @student.zym %></td></tr>
-<tr><td width="45%" class="bold">考区:</td><td width="55%"><%= @student.kq %></td></tr>
-<% if @student.fenshuxian %><tr><td width="45%" class="bold">分数线:</td><td width="55%"><%= @student.fenshuxian %></td></tr><% end %>
-<tr><td width="45%" class="bold">外语语种:</td><td width="55%"><%= @student.wyyz %></td></tr>
-<tr><td width="45%" class="bold">考生类别:</td><td width="55%"><%= @student.kslb %></td></tr>
-<tr><td width="45%" class="bold">入学总分:</td><td width="55%"><%= @student.rxzf %></td></tr>
-<tr><td width="45%" class="bold">高考总分:</td><td width="55%"><%= @student.gkzf %></td></tr>
-<tr><td width="45%" class="bold">附加分:</td><td width="55%"><%= @student.fjf %></td></tr>
-<tr><td width="45%" class="bold">语文:</td><td width="55%"><%= @student.yw %></td></tr>
-<tr><td width="45%" class="bold">数学:</td><td width="55%"><%= @student.sx %></td></tr>
-<tr><td width="45%" class="bold">外语:</td><td width="55%"><%= @student.wy %></td></tr>
-<tr><td width="45%" class="bold">物理:</td><td width="55%"><%= @student.wl %></td></tr>
-<tr><td width="45%" class="bold">化学:</td><td width="55%"><%= @student.hx %></td></tr>
-<tr><td width="45%" class="bold">政治:</td><td width="55%"><%= @student.zz %></td></tr>
-<tr><td width="45%" class="bold">历史:</td><td width="55%"><%= @student.ls %></td></tr>
-<tr><td width="45%" class="bold">综合:</td><td width="55%"><%= @student.zh %></td></tr>
-<% if @student.ksjl %><tr><td width="45%" valign="top" class="bold">考生经历:</td><td width="55%"><% @student.ksjl.split(';').each do |s|%><%= t=s.split(':');t[0]%><br><%= t[1] %><br><% end %></td></tr><% end %>
-
-</tbody></table>
-
-</td><td width="30%" valign="TOP">
+<%= form_tag "/students/#{@student.id}/update_scores" do  %>
 <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
 <tbody><tr><td bgcolor="#dde3ec">
 <table width="100%" cellspacing="1" cellpadding="4" border="0">
-<tbody><tr class="header"><td colspan="2">个人信息</td></tr>
-<tr bgcolor="#ffffff"><td align="center" colspan="2"><br><br><br>赞无照片<br><br><br><br></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">性别:</td><td bgcolor="#ffffff"><%= @student.xb %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">民族:</td><td bgcolor="#ffffff"><%= @student.mz %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">学号:</td><td bgcolor="#ffffff"><%= @student.number %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">身份证号:</td><td bgcolor="#ffffff"><%= @student.sfh %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">政治身份:</td><td bgcolor="#ffffff"><%= @student.sbzzmm %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">毕业中学:</td><td bgcolor="#ffffff"><%= @student.byzx %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">本人特长:</td><td bgcolor="#ffffff"><%= @student.brtc %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">奖励荣誉:</td><td bgcolor="#ffffff"><%= @student.jlcc %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">体检情况:</td><td bgcolor="#ffffff"><%= @student.tjjljs %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">联系人姓名:</td><td bgcolor="#ffffff"><%= @student.lxrxm %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">联系人地址:</td><td bgcolor="#ffffff"><%= @student.lxrdz %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">联系人邮编:</td><td bgcolor="#ffffff"><%= @student.lxryb %></td></tr>
-<tr><td width="30%" bgcolor="#f8f9fc">联系人电话:</td><td bgcolor="#ffffff"><%= @student.lxrdh %></td></tr>
-</tbody></table></td></tr></tbody></table>
-
-</td></tr></tbody></table>
-
-</td></tr></tbody></table></td></tr></tbody></table>
-<br /><br />
-
-<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center">
-<tbody><tr><td bgcolor="#dde3ec">
-<table width="100%" cellspacing="1" cellpadding="4" border="0">
-<tbody><tr><td class="header" colspan="2"><%= @student.name %> 的成绩列表</td>
-</tr><tr><td bgcolor="#ffffff">
-
+<tbody><tr><td class="header" colspan="2">成绩列表<span style="float:right"><%= raw table_edit_tag('chengji') %></span></td>
+</tr>
+<tr><td bgcolor="#ffffff">
 <table width="98%" cellspacing="0" cellpadding="6" border="0">
-<tbody><tr><td width="50%">
+<tbody><tr><td width="50%" valign="TOP">
 
-<table width="98%" cellspacing="0" cellpadding="4" border="0">
+<table width="98%" cellspacing="0" cellpadding="4" border="0" id="the_left_table">
 <tbody>
-	<% i = 0 %>	
+	<% i = -1 %>	
 	<% @student.assignments.each do |ass| %>
 	<% i += 1  %>
 	<% next if i%2==1 %>
-		<tr><td width="45%" class="bold"><%= ass.course.name %>:</td><td width="55%"><%= ass.score %></td></tr>
+		<tr id="to_be_seen_<%= i %>"><td width="45%" class="bold"><%= ass.course.name %><% if @editing['chengji'] %> [<a href="#" onclick="$('#to_be_seen_<%= i %>').hide('fade');$('#to_be_seen_<%= i %>_2').val('-1');return false">删除</a>]<%end %>:</td><td width="55%"><% if @editing['chengji'] %><input name="course_<%= ass.course.id %>" id="to_be_seen_<%= i %>_2" value="<%= ass.score %>" style="width:100%" type="text"/><%else%><%= ass.score %><%end%></td></tr>
 	<% end %>
 </tbody></table>
 
 </td><td width="50%" valign="TOP">
 	
 
-	<table width="98%" cellspacing="0" cellpadding="4" border="0">
+	<table width="98%" cellspacing="0" cellpadding="4" border="0" id="the_right_table">
 	<tbody>
-		<% i = 0 %>
+		<% i = -1 %>
 		<% @student.assignments.each do |ass| %>
 		<% i += 1  %>
 		<% next if i%2==0 %>
-			<tr><td width="45%" class="bold"><%= ass.course.name %>:</td><td width="55%"><%= ass.score %></td></tr>
+			<tr id="to_be_seen_<%= i %>"><td width="45%" class="bold"><%= ass.course.name %><% if @editing['chengji'] %> [<a href="#" onclick="$('#to_be_seen_<%= i %>').hide('fade');$('#to_be_seen_<%= i %>_2').val('-1');return false">删除</a>]<%end %>:</td><td width="55%"><% if @editing['chengji'] %><input name="course_<%= ass.course.id %>" id="to_be_seen_<%= i %>_2" value="<%= ass.score %>" style="width:100%" type="text"/><%else%><%= ass.score %><%end%></td></tr>
 		<% end %>
 	</tbody></table>
 
 </td></tr></tbody></table>
-
+	
 <tr align="center">
-<td bgcolor="#f8f9fc" colspan="20"><%= link_to '返回学生列表','/students' %></td>
+<td bgcolor="#f8f9fc" colspan="20" style="line-height:20px">
+<% if @editing['chengji'] %>
+<script type="text/javascript" charset="utf-8">
+	var options_from_collection_for_select = '<%= escape_javascript options_from_collection_for_select(Course.all,:id,:name) %>'
+	var number = <%= i %>;
+	function add_new_item(){
+		number += 1;
+		var selector = '#the_left_table > tbody';
+		if(number%2==1){
+			selector = '#the_right_table > tbody'	
+		}
+		$(selector).append('<tr><td width="45%" class="bold"><select name="new_course_'+number+'">'+options_from_collection_for_select+'</select></td><td width="55%"><input type="text" value="" name="new_course_score_'+number+'" style="width:100%"></td></tr>');
+	}
+</script>
+<input type="button" value="新增成绩条目" onclick="add_new_item();return false" />
+	<%= submit_tag '提交' %>
+<% else %>
+<%= link_to '导出成绩单...',"/students/#{@student.id}/school_report",target:'_blanks' %>
+<% end %>
+</td>
 </tr>
 
 
 </td></tr></tbody></table></td></tr></tbody></table>
+<% end %>
 <br /><br />
 
-<% if @talk_record.errors.any? %>
-<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%">
-<tr style="background-color:red !important;color:white !important;background-image:none" class="header"><td>错误</td></tr>
-<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
-    <% @talk_record.errors.full_messages.each do |msg| %>
-			<ul><li><%= msg %></ul>
-    <% end %>
-</td></tr></table></td></tr></table>
-<br>
-<% end %>
 
 
-
-<%= form_for @talk_record do |f|%>
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
 <tbody><tr><td bgcolor="#dde3ec">
-<table border="0" cellpadding="4" cellspacing="1" width="100%">
-<tbody><tr class="header"><td colspan="5">新增谈话记录</td></tr>
-<tr align="center">
-<td bgcolor="#f8f9fc" width="15%">内容摘要:</td>
-<td bgcolor="#ffffff" width="27%"><%= f.text_field :about ,style:'width:100%'%></td>
-<td bgcolor="#f8f9fc" width="15%">发生时间:</td>
-<td bgcolor="#ffffff" width="28%"><%= select_date() %></td>
+<table width="100%" cellspacing="1" cellpadding="4" border="0">
+<tbody><tr><td class="header" colspan="2">其他信息</td>
 </tr>
-<tr><td bgcolor="#f8f9fc" width="15%" style="text-align:center">
-	备注:
-</td>
-<td bgcolor="#ffffff" colspan="40">
-	<%= f.text_area :memo,style:'width:100%;height:100px'%>
-</td>
-</tr>
-<tr>
-<td bgcolor="#f8f9fc" colspan="40" style="text-align:center">
-	<%= f.submit '新增谈话记录' %>
-</td>
-</tr>
-</tbody></table></td></tr></tbody></table>
-<% end %>
+<tr><td bgcolor="#ffffff">
+
+<table width="98%" cellspacing="0" cellpadding="6" border="0">
+<tbody><tr><td width="100%">
+
+<table width="98%" cellspacing="0" cellpadding="4" border="0">
+<tbody>
+	<tr><td width="50%" class="bold">属于班级:</td><td width="55%"><%= link_to @student.klass.grade.name,@student.klass.grade if @student.klass and @student.klass.grade %>级<%= link_to @student.klass.name,@student.klass  if @student.klass%>班</td></tr>
+	<tr><td width="50%" class="bold">已修学分:</td><td width="55%"><%= @yixiu %></td></tr>
+	<tr><td width="50%" class="bold">不及格学分:</td><td width="55%"><%= @bujige %></td></tr>
+	<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
+	<% t_courses = @student.assignments.where('score>=90').order('score desc') %>
+	<tr><td width="50%" class="bold" valign="top">优秀科目(<%= t_courses.count %>):</td>
+		<td width="55%"><% t_courses.each do |ass|%><%= ass.course.name %>(<span style="color:green"><%= ass.score %></span>)<br><% end %></td>
+	</tr>
+	<% t_courses = @student.assignments.where('score<60').order('score') %>
+	<tr><td width="50%" class="bold" valign="top">不及格科目(<%= t_courses.count %>):</td>
+		<td width="55%"><% t_courses.each do |ass|%><%= ass.course.name %>(<span style="color:red"><%= ass.score %></span>)<br><% end %></td>
+	</tr>
+	<tr><td width="50%" class="bold">平均学期获得学分:</td>
+		<td width="55%"><%= @student.yixiu %>学分 / <%= @student.has_xueqi %>学期 = <%= @student.yixiu*1.0/@student.has_xueqi %> </td>
+	</tr>
+	<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
+	<tr><td width="50%" class="bold">谈话记录数:</td>
+		<td width="55%"><%= @student.talk_records.count %> <%= button_to "管理#{@student.name}的谈话记录","/students/#{@student.id}/talk_records",:method=>:get %></td>
+	</tr>
+
+</tbody></table>
+
+</td></tr></tbody></table>
+
+</td></tr>
+
+</tbody></table></td></tr></tbody></table><br><br>
+
+</div><!-- big_wrapper -->

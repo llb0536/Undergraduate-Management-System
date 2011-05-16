@@ -7,6 +7,9 @@ class KlassesController < ApplicationController
     @klasses = Klass
     @klasses = @klasses.where(grade_id:params[:grade_id]) if params[:grade_id]
     @klasses = @klasses.order('grade_id').page(params[:page])
+    @klass2s = Klass2
+    @klass2s = @klass2s.where(grade_id:params[:grade_id]) if params[:grade_id]
+    @klass2s = @klass2s.order('grade_id').page(params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @klasses }

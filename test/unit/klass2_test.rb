@@ -1,7 +1,6 @@
-# -*- encoding : utf-8 -*-
 require 'test_helper'
 
-class TalkRecordTest < ActiveSupport::TestCase
+class Klass2Test < ActiveSupport::TestCase
   # Replace this with your real tests.
   test "the truth" do
     assert true

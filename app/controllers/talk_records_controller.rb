@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class TalkRecordsController < ApplicationController
   # GET /talk_records
   # GET /talk_records.xml
@@ -44,10 +45,10 @@ class TalkRecordsController < ApplicationController
 
     respond_to do |format|
       if @talk_record.save
-        format.html { redirect_to(@talk_record, :notice => 'Talk record was successfully created.') }
+        format.html { redirect_to("/students/#{@talk_record.student_id}/talk_records", :notice => '成功添加谈话记录！') }
         format.xml  { render :xml => @talk_record, :status => :created, :location => @talk_record }
       else
-        format.html { render :action => "new" }
+        format.html { @student = Student.find(@talk_record.student_id) and render :template=>'students/talk_records' }
         format.xml  { render :xml => @talk_record.errors, :status => :unprocessable_entity }
       end
     end
@@ -60,7 +61,7 @@ class TalkRecordsController < ApplicationController
 
     respond_to do |format|
       if @talk_record.update_attributes(params[:talk_record])
-        format.html { redirect_to(@talk_record, :notice => 'Talk record was successfully updated.') }
+        format.html { redirect_to("/students/#{@talk_record.student_id}/talk_records", :notice => '谈话记录成功更新') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +77,7 @@ class TalkRecordsController < ApplicationController
     @talk_record.destroy
 
     respond_to do |format|
-      format.html { redirect_to(talk_records_url) }
+      format.html { redirect_to("/students/#{@talk_record.student_id}/talk_records",notice:'记录成功删除') }
       format.xml  { head :ok }
     end
   end

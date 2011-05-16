@@ -29,6 +29,8 @@ Stuinfo::Application.routes.draw do
   resources :import_logs
 
   resources :students
+  get '/students/:id/school_report' => 'students#school_report'
+  get '/students/:id/talk_records' => 'students#talk_records'
 
   resources :klasses
 
@@ -52,6 +54,7 @@ Stuinfo::Application.routes.draw do
   post '/inquiry/tableConfirmed' => 'inquiry#tableConfirmed'
   get '/grades/:grade_id/students' => 'students#index'
   get '/klasses/:klass_id/students' => 'students#index'
+  get '/klass2s/:klass2_id/students' => 'students#index'
   get '/courses/:course_id/students' => 'students#index'
   get "/messages/:message_id/set_read" => 'messages#set_read'
   get "/messages/:message_id/set_unread" => 'messages#set_unread'
@@ -67,6 +70,11 @@ Stuinfo::Application.routes.draw do
   get '/researches/keyan' => 'researches#keyan'
   get '/researches/jijin' => 'researches#jijin'
   resources :researches
+  get '/settings' => 'welcome#settings', as:'settings'
+  get '/system_jobs/update_credit' => 'core#system_jobs_update_credit'
+  get '/system_jobs/update_klass2s' => 'core#system_jobs_update_klass2s'
+  get '/system_jobs' => 'core#system_jobs_index'
+  post '/students/:student_id/update_scores' => 'students#update_scores'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

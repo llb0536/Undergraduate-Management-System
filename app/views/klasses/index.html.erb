@@ -59,3 +59,38 @@
 	</tr></tbody></table>
 	
 </table>
+<br><br>
+
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+	<font class="mediumtxt"><br>
+		
+	<table width="90%" cellspacing="0" cellpadding="0" border="0" align="center"><tbody>
+		
+		<tr><td bgcolor="#dde3ec"><table width="100%" cellspacing="1" cellpadding="4" border="0" class="smalltxt"><tbody><tr class="header"><td colspan="99">招生专业门班级列表</td></tr>
+	<tr align="center" class="category">
+		<td width="90">属于年级</td>
+		<td>名称</td>
+		<td width="50">含学生数</td>
+	</tr>
+		<% @klass2s.each do |klass| %>
+		  <tr align="center" class="pointable">
+				<td bgcolor="#f8f9fc"><%= klass.grade.name %>级</td>
+				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'" style="text-align:left"><a href="/klass2s/<%= klass.id %>/students"><% if !klass.name %>不详<%else%><%= klass.grade.name %>级<%= klass.name %><%end%></a></td>
+				<td bgcolor="#ffffff"><%= klass.students.count %></td>
+		  </tr>
+		<% end %>
+		</tbody></table></td></tr>
+			<tr class="multi"><td><%= paginate @klasses %></td></tr>
+	</tbody></table></font>
+	<table width="99%" cellspacing="0" cellpadding="0" align="center">
+	<tbody><tr>
+	</tr></tbody></table>
+	
+</table>

@@ -73,6 +73,8 @@
 				<span style="color:orange"><%= Grade.find(params[:grade_id]).name %>级</span> 学生列表
 			<% elsif params[:course_id] %>
 			  修读了 <span style="color:orange"><%= Course.find(params[:course_id]).name %></span> 的学生列表
+			<% elsif params[:klass2_id] %>
+				招生专业门为 <span style="color:orange"><%= Klass2.find(params[:klass2_id]).name %></span> 的学生列表
 			<% end %>
 		</td></tr>
 	<tr align="center" class="category">
@@ -81,7 +83,7 @@
 		<td><%=a_href_order '姓名','name' %></td>
 		<td width="10"><%= a_href_order '级','bj'%></td>
 		<td width="30"><%= a_href_order '班','klass_id'%></td>
-		<td colspan="3">操作</td>
+		<td colspan="4">操作</td>
 	</tr>
 		<% @students.each do |student| %>
 		  <tr align="center" class="pointable">
@@ -94,6 +96,8 @@
 
 				<td bgcolor="#ffffff"><%= student.klass.name if student.klass %></td>
 		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_props.png"/>'.html_safe, student %></td>
+		    <td bgcolor="#ffffff" width="20"><%= link_to '<img src="/images/b_edit.png"/>'.html_safe, "/students/#{student.id}?edit=all" %></td>
+				    <td bgcolor="#ffffff" width="20"><%= link_to '<img src="/images/icon_thjl.gif"/>'.html_safe, "/students/#{student.id}/talk_records" %></td>
 		    <td bgcolor="#f8f9fc" width="20"><%= link_to '<img src="/images/b_drop.png"/>'.html_safe, student, :confirm => '确认吗?', :method => :delete %></td>
 		  </tr>
 		<% end %>

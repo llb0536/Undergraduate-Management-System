@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class WatchListItemsController < ApplicationController
   # GET /watch_list_items
   # GET /watch_list_items.xml

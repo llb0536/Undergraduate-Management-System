@@ -37,4 +37,5 @@ gem 'spreadsheet'
 gem 'kaminari'
 gem 'to_xls'
 gem 'mysql2','0.2.6'
-
+gem 'stalker'
+gem 'god'

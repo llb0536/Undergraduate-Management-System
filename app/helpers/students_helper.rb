@@ -1,5 +1,12 @@
 # -*- encoding : utf-8 -*-
 module StudentsHelper
+  def table_edit_tag(x,color='white')
+    if params[:edit] == x
+      '[<a href="/students/'+@student.id.to_s+'" style="color:'+color+'">取消编辑</a>]'
+    else
+      '[<a href="/students/'+@student.id.to_s+'?edit='+x+'" style="color:'+color+'">编辑</a>]'
+    end
+  end
   def score_to_color(x)
     if x>=95
       "#FF0F00"

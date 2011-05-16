@@ -1,8 +1,9 @@
 # -*- encoding : utf-8 -*-
 class WarningsController < ApplicationController
   before_filter :authenticate_user!
+
   def index_credit
-    render text:'开发中'
+    @warning_xuefen_students = WarningXuefenStudent.order(:val)
   end
   def index_score
     render text:'开发中'

@@ -9,6 +9,18 @@ end
 
 class CoreController < ApplicationController
   before_filter :authenticate_user!
+  def system_jobs_index
+  end
+  def system_jobs_update_credit
+    Stalker.enqueue("update_credit",:threshold=>15.0)
+    render text:'enqueued'
+  end
+  def system_jobs_update_klass2s
+    Stalker.enqueue("update_klass2s")
+    render text:'enqueued'
+  end
+  
+
   def import
     @msg = ''
     if params[:log_id]

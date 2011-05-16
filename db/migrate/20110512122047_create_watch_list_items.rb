@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CreateWatchListItems < ActiveRecord::Migration
   def self.up
     create_table :watch_list_items do |t|

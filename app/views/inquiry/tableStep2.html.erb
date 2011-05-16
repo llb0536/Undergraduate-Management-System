@@ -27,7 +27,7 @@
 		<% @students.each do |student| %>
 		  <tr align="center" class="pointable">
 				<td bgcolor="#f8f9fc"><input type="checkbox" checked="checked" value="1" name="checked_students[<%= student.id %>]"></td>
-				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"><%= student.klass.grade.name %>级<%= student.klass.name %>班</td>
+				<td bgcolor="#ffffff" onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"><% if student.klass %><%= student.klass.grade.name %>级<%= student.klass.name %>班<%end %></td>
 				<td bgcolor="#ffffff"><%= student.name %></td>
 		  </tr>
 		<% end %>

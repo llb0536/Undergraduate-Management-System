@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110512122047) do
+ActiveRecord::Schema.define(:version => 20110516043519) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "course_id"
@@ -79,6 +79,13 @@ ActiveRecord::Schema.define(:version => 20110512122047) do
     t.integer  "co_count"
     t.integer  "co_no_count"
     t.boolean  "erroneous"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "klass2s", :force => true do |t|
+    t.string   "name"
+    t.integer  "grade_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -175,6 +182,7 @@ ActiveRecord::Schema.define(:version => 20110512122047) do
     t.string   "wlfl"
     t.string   "lqlb"
     t.integer  "zhuanye_id"
+    t.integer  "klass2_id"
   end
 
   create_table "tables", :force => true do |t|
@@ -197,6 +205,8 @@ ActiveRecord::Schema.define(:version => 20110512122047) do
     t.text     "memo"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.date     "happened_at"
+    t.string   "talker"
   end
 
   create_table "users", :force => true do |t|
@@ -220,6 +230,13 @@ ActiveRecord::Schema.define(:version => 20110512122047) do
   add_index "users", ["name"], :name => "index_users_on_name", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
+  create_table "warning_xuefen_students", :force => true do |t|
+    t.integer  "student_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.float    "val"
+  end
+
   create_table "warnings", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -227,12 +244,6 @@ ActiveRecord::Schema.define(:version => 20110512122047) do
 
   create_table "watch_list_items", :force => true do |t|
     t.integer  "student_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "zhuanyes", :force => true do |t|
-    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
