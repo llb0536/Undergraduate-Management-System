@@ -6,9 +6,27 @@
     <% @talk_record.errors.full_messages.each do |msg| %>
 			<ul><li><%= msg %></ul>
     <% end %>
-</td></tr></table></td></tr></table>
+</td>
+
+</tr></table></td></tr></table>
 <br><br>
 <% end %>
+
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%"><tr class="header"><td colspan="20">技巧提示</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+<ul><li>本页显示的是学生<%=@student.name%>的谈话纪录，按发生日期排序。</ul>
+<ul><li>您可以<a href="/inquiry/talk">点击这里</a>管理全部谈话纪录。</ul>
+</td>
+
+<td bgcolor="#f8f9fc" style="text-align:center;vertical-align:center">
+	<a href="/students/<%=@student.id%>/talk_records.xls"><img width="50" height="50" style="padding-bottom:10px" src="/images/excel_logo.gif?1307167751" alt="Excel_logo"><br>导出Excel工作表</a>
+</td>
+
+
+</tr></table></td>
+</tr></table>
+
+<br><br>
 
 
 

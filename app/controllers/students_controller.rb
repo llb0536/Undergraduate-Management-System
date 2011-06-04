@@ -53,6 +53,41 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
     @talk_record = TalkRecord.new(student_id:@student.id)
     @talk_record.student_id = @student.id
+    respond_to do |format|
+      format.xls{
+                Spreadsheet.client_encoding = 'UTF-8'
+                book = Spreadsheet::Workbook.new
+                data = StringIO.new('')
+                sheet1 = book.create_worksheet :name => @student.name+'的谈话纪录'
+                sheet1.row(0).replace %w{发生日期 谈话人 内容摘要 备注}
+                sheet1.row(0).height = 20
+                format = Spreadsheet::Format.new :weight => :bold,
+                                                 :size => 10
+                sheet1.row(0).default_format = format
+                bold = Spreadsheet::Format.new :weight => :bold
+                sheet1.column(0).width = 20
+                sheet1.column(1).width = 10
+                sheet1.column(2).width = 10
+                sheet1.column(3).width = 30
+                sheet1.column(4).width = 40
+
+                
+                i=1
+            		@student.talk_records.each do |talk_record|
+            		  sheet1.row(i).replace [talk_record.happened_at.strftime("%Y年%m月%d日"),
+            		    talk_record.talker,
+            		    talk_record.about,
+            		    talk_record.memo]
+            		  sheet1.row(i).set_format(0, bold)
+            		  i+=1
+                end
+                data = StringIO.new('')
+                book.write(data)  
+
+                send_data(data.string, :filename => @student.name+'的谈话纪录'+".xls")
+      }
+      format.html
+    end
   end
 
   # GET /students/new

@@ -206,7 +206,7 @@
 	</tr>
 	<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
 	<tr><td width="50%" class="bold">谈话记录数:</td>
-		<td width="55%"><%= @student.talk_records.count %> <%= button_to "管理#{@student.name}的谈话记录","/students/#{@student.id}/talk_records",:method=>:get %></td>
+		<td width="55%"><%= @student.talk_records.count %> <%= button_to "管理#{@student.name}的谈话记录","/students/#{@student.id}/talk_records",:method=>:get,:style=>'background-color:blue;color:white' %></td>
 	</tr>
 
 </tbody></table>
