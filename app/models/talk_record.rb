@@ -5,4 +5,5 @@ class TalkRecord < ActiveRecord::Base
   validates_presence_of :student_id
   validates_presence_of :happened_at
   validates_presence_of :about
+
 end

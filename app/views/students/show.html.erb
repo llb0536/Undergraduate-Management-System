@@ -190,7 +190,7 @@
 	<tr><td width="50%" class="bold">不及格学分:</td><td width="55%"><%= @bujige %></td></tr>
 	<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
 	<tr><td width="50%" class="bold" valign="top">所获奖学金(<%= @student.scholarships.count %>次):</td>
-		<td width="55%"><% @student.scholarships.each do |ass|%><%= ass.event %> - <%= ass.level %> - <span style="color:red"><%= ass.acount %>元</span><br><% end %></td>
+		<td width="55%"><% @student.scholarships.each do |ass|%><%= ass.event_formatted %> - <%= ass.level %> - <span style="color:red"><%= ass.acount %>元</span><br><% end %></td>
 	</tr>
 	<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
 	<% t_courses = @student.assignments.where('score>=90').order('score desc') %>
