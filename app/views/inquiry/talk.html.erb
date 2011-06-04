@@ -18,18 +18,16 @@
 <table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%" class="smalltxt"><tr class="header"><td colspan="99">所有学生的谈话记录</td></tr>
 <tr align="center" class="category">
 	<td width="150">发生日期</td>
-	<td width="100">学生</td>
 	<td width="100">谈话人</td>
-
+	<td width="100">学生</td>
 	<td>内容摘要</td>
 	<td width="65" colspan="2">操作</td>
 </tr>
 <% @talk_records.each do |talk_record| %>
 <tr align="center">
-		<td bgcolor="#F8F9FC"><%= talk_record.happened_at.strftime("%Y年%m月%d日") %><br><%= dateGap(talk_record.happened_at) %></td>
-	<td bgcolor="#FFF"><%= link_to talk_record.student.name,talk_record.student %></td>
+		<td bgcolor="#FFFFFF"><%= talk_record.happened_at.strftime("%Y年%m月%d日") %><br><%= dateGap(talk_record.happened_at) %></td>
 		<td bgcolor="#F8F9FC"><%= talk_record.talker %></td>
-
+	<td style="background-color:#F8F9FC"><%= link_to talk_record.student.name,talk_record.student %></td>
 		<td bgcolor="#FFFFFF" <% if talk_record.memo!="" %>style="cursor:pointer" onClick="$('#formula_<%= talk_record.id %>').toggle()"  onMouseOver="this.style.backgroundColor='#F8F9FC'"  onMouseOut="this.style.backgroundColor='#FFFFFF'"<%end %>><%= talk_record.about %></td>
 	    <td bgcolor="#F8F9FC" width="20"><%= link_to '<img src="/images/b_edit.png"/>'.html_safe, edit_talk_record_path(talk_record,:zong=>true) %></td>
 			<td bgcolor="#F8F9FC" width="20"><%= link_to '<img src="/images/b_drop.png"/>'.html_safe, talk_record_path(talk_record,zong:true), :confirm => '确定删除？', :method => :delete %></td>
