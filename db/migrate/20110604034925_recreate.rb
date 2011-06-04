@@ -24,8 +24,6 @@ class Recreate < ActiveRecord::Migration
 
         t.timestamps
       end
-    end
-
   end
 
   def self.down

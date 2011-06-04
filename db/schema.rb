@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110604032455) do
+ActiveRecord::Schema.define(:version => 20110604034925) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "course_id"
@@ -69,6 +69,33 @@ ActiveRecord::Schema.define(:version => 20110604032455) do
   end
 
   create_table "import4_logs", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "students_updated"
+    t.integer  "students_created"
+    t.boolean  "erroneous"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "import5_logs", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "students_updated"
+    t.integer  "students_created"
+    t.boolean  "erroneous"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "import6_logs", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "students_updated"
+    t.integer  "students_created"
+    t.boolean  "erroneous"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "import7_logs", :force => true do |t|
     t.integer  "user_id"
     t.integer  "students_updated"
     t.integer  "students_created"
