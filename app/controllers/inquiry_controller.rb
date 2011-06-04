@@ -42,7 +42,7 @@ class InquiryController < ApplicationController
                 data = StringIO.new('')
                 book.write(data)  
 
-                send_data(data.string, :filename => "全部谈话纪录.xls")
+                send_data(data.string, :filename => "Data.xls")
       }
       format.html
     end

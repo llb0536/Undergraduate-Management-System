@@ -55,7 +55,7 @@ class TablesController < ApplicationController
         
         data = StringIO.new('')
         book.write(data)  
-        send_data(data.string, :filename => "#{@table.name}.xls")
+        send_data(data.string, :filename => "Data.xls")
       }
     end
   end
