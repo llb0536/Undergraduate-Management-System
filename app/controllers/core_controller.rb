@@ -313,10 +313,11 @@ class CoreController < ApplicationController
         j = 1
         j = params[:j].to_i if params[:j]
         j_lim = j+1000
+        @msg += "正在处理行#{j}至行#{j_lim}"
         while j<=j_lim
           row = worksheet.row(j)
-          j+=1 and next if yuanxi_first and !(row[yuanxi_first] =~ /数学/)
           break if !row or row.empty? or !row[number_first] or !row[name_first] 
+          j+=1 and next if yuanxi_first and !(row[yuanxi_first] =~ /数学/)
           if row[number_first].class == Float
             row[number_first] = row[number_first].to_i
           end
