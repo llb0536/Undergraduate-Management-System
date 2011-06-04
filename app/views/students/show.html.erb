@@ -189,12 +189,16 @@
 	<tr><td width="50%" class="bold">已修学分:</td><td width="55%"><%= @yixiu %></td></tr>
 	<tr><td width="50%" class="bold">不及格学分:</td><td width="55%"><%= @bujige %></td></tr>
 	<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
+	<tr><td width="50%" class="bold" valign="top">所获奖学金(<%= @student.scholarships.count %>次):</td>
+		<td width="55%"><% @student.scholarships.each do |ass|%><%= ass.event %> - <%= ass.level %> - <span style="color:red"><%= ass.acount %>元</span><br><% end %></td>
+	</tr>
+	<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
 	<% t_courses = @student.assignments.where('score>=90').order('score desc') %>
-	<tr><td width="50%" class="bold" valign="top">优秀科目(<%= t_courses.count %>):</td>
+	<tr><td width="50%" class="bold" valign="top">优秀科目(<%= t_courses.count %>科):</td>
 		<td width="55%"><% t_courses.each do |ass|%><%= ass.course.name %>(<span style="color:green"><%= ass.score %></span>)<br><% end %></td>
 	</tr>
 	<% t_courses = @student.assignments.where('score<60').order('score') %>
-	<tr><td width="50%" class="bold" valign="top">不及格科目(<%= t_courses.count %>):</td>
+	<tr><td width="50%" class="bold" valign="top">不及格科目(<%= t_courses.count %>科):</td>
 		<td width="55%"><% t_courses.each do |ass|%><%= ass.course.name %>(<span style="color:red"><%= ass.score %></span>)<br><% end %></td>
 	</tr>
 	<tr><td width="50%" class="bold">平均学期获得学分:</td>

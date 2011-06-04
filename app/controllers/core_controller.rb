@@ -187,8 +187,11 @@ class CoreController < ApplicationController
         while j<=j_lim
           row = worksheet.row(j)
           break if row.empty? or !row[number_first] or !row[name_first]
-          number = row[number_first].strip
-          name = row[name_first].strip
+          if row[number_first].class == Float
+            row[number_first] = row[number_first].to_i
+          end
+          number = row[number_first].to_s.strip
+          name = row[name_first].to_s.strip
           student = Student.find_by_number(number)
           if student
             import2Log.students_updated += 1
@@ -265,4 +268,117 @@ class CoreController < ApplicationController
     import2Log.save!
     render :template=>'core/showmsg'
   end
+  
+  
+  
+  def import3
+    @msg = ''
+    if params[:log_id]
+      import3Log = Import3Log.find(params[:log_id])
+    else
+      import3Log = Import3Log.create!(students_updated:0,students_created:0,user_id:current_user.id,erroneous:true)
+    end
+    begin    
+      if params[:from]=='server'
+        student_created = student_updated = nil
+        worksheets = Spreadsheet.open(params[:filepath]).worksheets
+        @msg += params[:filepath].split('/')[-1]+"<br><br>"
+        raise RuntimeError,'请保证xls文件只含一个工作表' if worksheets.count != 1
+        worksheet = worksheets.first
+      p  firstrow = worksheet.row(0)
+	    p huojiangdengji_first = firstrow.index('获奖等级')
+      p huojiangdengji_first ||= firstrow.index('奖项')
+      p jin_e_first = firstrow.index('金额')
+      p number_first = firstrow.index('学号')
+      p name_first = firstrow.index('姓名')
+      
+      if !huojiangdengji_first or !number_first
+        p firstrow = worksheet.row(1)
+        p huojiangdengji_first = firstrow.index('获奖等级')
+        p huojiangdengji_first ||= firstrow.index('奖项')
+        p jin_e_first = firstrow.index('金额')
+        p number_first = firstrow.index('学号')
+        p name_first = firstrow.index('姓名')
+      end
+      raise RuntimeError,'不能没有获奖等级 金额 学号 姓名' if !huojiangdengji_first or !number_first
+
+
+
+
+
+        event = String.new(File.basename(params[:filepath]))
+        
+        j = 1
+        j = params[:j].to_i if params[:j]
+        j_lim = j+100
+        while j<=j_lim
+          row = worksheet.row(j)
+          break if !row or row.empty? or !row[number_first] or !row[name_first] 
+          if row[number_first].class == Float
+            row[number_first] = row[number_first].to_i
+          end
+          number = row[number_first].to_s.strip
+          name = row[name_first].to_s.strip
+          student = Student.find_by_number(number)
+          if !student
+            student = Student.new
+            student.number = number.to_s
+            student.name = name.to_s
+            student.save!
+            @msg += "创建学生 #{student.name}<br>"
+            import3Log.students_created+=1
+          end
+          @msg += "学生 #{number} - #{student.name}"
+          if !student.scholarships.find_by_event(event)
+            if jin_e_first
+              jin_e = row[jin_e_first].to_i
+            else
+              jin_e = 0
+            end
+            student.scholarships.create!(level:row[huojiangdengji_first],acount:jin_e,event:event)
+            @msg += " - #{jin_e}元 - #{event}"
+          end
+          @msg += "<br>"
+          import3Log.students_updated += 1
+          student.save!
+          j+=1
+        end
+        @msg += "<br>已创建#{import3Log.students_created}条新学生记录" if import3Log.students_created>0
+        @msg += "<br><br>已更新#{import3Log.students_updated}条记录" if import3Log.students_updated>0
+        @cont = nil
+        if j>j_lim
+          @msg = "<span style=\"color:red\">正在导入更多数据，请勿离开此页</span><br><br>" + @msg
+          @cont_path = '/core/import3'
+          @cont = Hash.new
+          @cont[:from] = params[:from]
+          @cont[:filepath] = params[:filepath]
+          @cont[:j] = j
+          @cont[:log_id] = import3Log.id
+        else
+          @msg = "<span style=\"color:green\">全部完成</span><br><br>" + @msg
+          import3Log.erroneous = false
+        end
+      elsif params[:from]=='local'
+        path = "#{RAILS_ROOT}/data/huojiang/upload/#{Time.now.strftime('%Y%m%d%H%M%S')}"
+        File.open(path,"wb") do |f|
+          f.write(params[:datafile].read)
+        end
+        @msg += "<br>文件上传已经完成，正在开始导入"
+        @cont_path = '/core/import3'
+        @cont = Hash.new
+        @cont[:from] = 'server'
+        @cont[:filepath] = path
+        @cont[:j] = 1
+        @cont[:log_id] = import3Log.id
+      else
+        raise RuntimeError,'from参数未指定'
+      end
+    rescue Exception => e
+      @msg += "错误：#{e}<br><br>"
+      p e.backtrace
+    end
+    import3Log.save!
+    render :template=>'core/showmsg'
+  end
+
 end

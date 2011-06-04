@@ -1,0 +1,67 @@
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%"><tr class="header"><td>技巧提示</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+<ul><li>数据源为固定格式的Excel电子表格文件，如遇格式错误系统将给出提示。</ul>
+<ul><li>请保证Excel文件只含一个工作表（即总表）	</ul>
+<ul><li>必须包含以下三个字段：获奖等级、金额、学号、姓名</ul>
+<ul><li>文件名格式：XXX年奖学金</ul>
+</td></tr></table></td></tr></table>
+
+<br>
+<script type="text/javascript" charset="utf-8">
+	var do_it_all = function(){
+		<% 0.upto(Dir.glob("#{RAILS_ROOT}/data/info/*.xls").count-1) do |i|%>
+			window.open('/auto_import?type=2&i=<%= i %>');
+		<% end %>
+	}
+</script>
+<%= form_tag '/core/import3',:id=>'import_form',:multipart=>true do %>
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center">
+<tr><td bgcolor="#DDE3EC">
+<table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr class="header">
+<td colspan="2">获奖情况导入</td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F9FC" width="40%"><input type="radio" name="from" onclick="$('#form_datafile').attr('disabled',true);$('#filepath_id').removeAttr('disabled')" value="server" checked >从服务器(/data/info):</td>
+<td bgcolor="#FFFFFF" width="60%">
+	<select name="filepath" id="filepath_id">
+		<% Dir.glob("#{RAILS_ROOT}/data/huojiang/*.xls").each do |file| %>
+			<option value="<%= file %>"><%= file %></option>
+		<% end %>
+	</select>
+	<button type="button" onclick="do_it_all()">全部导入这些文件</button>
+</td></tr>
+
+<tr>
+
+<td bgcolor="#F8F9FC" width="40%"><input type="radio" name="from" value="local" onclick="$('#form_datafile').removeAttr('disabled');$('#filepath_id').attr('disabled',true)">从本地文件:</td>
+<td bgcolor="#FFFFFF" width="60%"><input type="file" size="29" name="datafile" id="form_datafile" disabled></td></tr>
+
+</table></td></tr></table><br>
+<center><%= submit_tag('提 交',:id=>'import_submit',:onclick=>"$('#import_submit').attr('disabled',true);$('#import_submit').val('导入中，请稍候...');$('#import_form').submit();return false") %></center>
+<% end %>
+
+
+<br>
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%" class="smalltxt"><tr class="header"><td colspan="99">基础信息历史导入日志</td></tr>
+<tr align="center" class="category">
+	<td width="160">时间</td>
+	<td width="100">操作人</td>
+	<td>创建学生数</td>
+	<td>更新学生数</td>
+	<td width="65">结果</td>
+	<td width="65">删除</td>
+</tr>
+<% Import3Log.order('created_at DESC').each do |importLog| %>
+<tr align="center">
+
+		<td bgcolor="#FFFFFF"><%= importLog.created_at.strftime("%Y年%m月%d日 %H:%M:%S") %></td>
+		<td bgcolor="#F8F9FC"><%= link_to importLog.user.name,importLog.user %></td>
+		<td bgcolor="#FFFFFF"><%= importLog.students_created %></td>
+		<td bgcolor="#F8F9FC"><%= importLog.students_updated %></td>
+	<td bgcolor="#FFFFFF"><% if importLog.erroneous %> <span style="color:red">失败</span> <% else %> <span style="color:green">成功</span> <% end %></td>
+	<td bgcolor="#FFFFFF"><%= link_to '删除', importLog, :confirm => '确定删除此日志？', :method => :delete %></td>
+</tr>
+<% end %>
+</table></td></tr></table>

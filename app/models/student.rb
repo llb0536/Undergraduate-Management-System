@@ -3,6 +3,7 @@ class Student < ActiveRecord::Base
   belongs_to :klass
   belongs_to :klass2
   belongs_to :zhuanye
+  has_many :scholarships
   has_many :assignments
   has_many :talk_records
   has_many :courses,:through=>:assignments

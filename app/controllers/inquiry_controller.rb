@@ -7,6 +7,7 @@ class InquiryController < ApplicationController
     render text:'开发中'
   end
   def talk
+    @talk_records = TalkRecord.order('happened_at DESC')
   end
   def graduate
     render text:'开发中'

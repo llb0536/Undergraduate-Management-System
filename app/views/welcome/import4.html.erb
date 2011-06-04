@@ -1,0 +1,43 @@
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center"><tr><td bgcolor="#DDE3EC"><table border="0" cellspacing="1" cellpadding="4" width="100%"><tr class="header"><td>技巧提示</td></tr>
+<tr bgcolor="#F8F9FC"><td style="padding-top:15px;padding-bottom:8px">
+<ul><li>数据源为固定格式的Excel电子表格文件，如遇格式错误系统将给出提示。</ul>
+<ul><li>请保证Excel文件只含一个工作表（即总表）	</ul>
+</td></tr></table></td></tr></table>
+
+<br>
+<script type="text/javascript" charset="utf-8">
+	var do_it_all = function(){
+		<% 0.upto(Dir.glob("#{RAILS_ROOT}/data/info/*.xls").count-1) do |i|%>
+			window.open('/auto_import?type=2&i=<%= i %>');
+		<% end %>
+	}
+</script>
+<%= form_tag '/core/import4',:id=>'import_form',:multipart=>true do %>
+<table cellspacing="0" cellpadding="0" border="0" width="90%" align="center">
+<tr><td bgcolor="#DDE3EC">
+<table border="0" cellspacing="1" cellpadding="4" width="100%">
+<tr class="header">
+<td colspan="2">讲座情况导入</td>
+</tr>
+
+<tr>
+<td bgcolor="#F8F9FC" width="40%"><input type="radio" name="from" onclick="$('#form_datafile').attr('disabled',true);$('#filepath_id').removeAttr('disabled')" value="server" checked >从服务器(/data/info):</td>
+<td bgcolor="#FFFFFF" width="60%">
+	<select name="filepath" id="filepath_id">
+		<% Dir.glob("#{RAILS_ROOT}/data/jiangzuo/*.xls").each do |file| %>
+			<option value="<%= file %>"><%= file %></option>
+		<% end %>
+	</select>
+	<button type="button" onclick="do_it_all()">全部导入这些文件</button>
+</td></tr>
+
+<tr>
+
+<td bgcolor="#F8F9FC" width="40%"><input type="radio" name="from" value="local" onclick="$('#form_datafile').removeAttr('disabled');$('#filepath_id').attr('disabled',true)">从本地文件:</td>
+<td bgcolor="#FFFFFF" width="60%"><input type="file" size="29" name="datafile" id="form_datafile" disabled></td></tr>
+
+</table></td></tr></table><br>
+<center><%= submit_tag('提 交',:id=>'import_submit',:onclick=>"$('#import_submit').attr('disabled',true);$('#import_submit').val('导入中，请稍候...');$('#import_form').submit();return false") %></center>
+<% end %>
+
+

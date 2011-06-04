@@ -11,8 +11,12 @@
 <% end %>
 
 
-
-<%= form_for @talk_record do |f|%>
+<% if params[:zong] %>
+	<% url = "/talk_records/#{@talk_record.id}?zong=true" %>
+<% else %>
+	<% url = "/talk_records/#{@talk_record.id}" %>
+<% end %>
+<%= form_for @talk_record,:url=>url do |f|%>
 <table align="center" border="0" cellpadding="0" cellspacing="0" width="90%">
 <tbody><tr><td bgcolor="#dde3ec">
 <table border="0" cellpadding="4" cellspacing="1" width="100%">

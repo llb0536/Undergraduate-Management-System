@@ -61,7 +61,13 @@ class TalkRecordsController < ApplicationController
 
     respond_to do |format|
       if @talk_record.update_attributes(params[:talk_record])
-        format.html { redirect_to("/students/#{@talk_record.student_id}/talk_records", :notice => '谈话记录成功更新') }
+        format.html { 
+          if params[:zong]
+            redirect_to("/inquiry/talk", :notice => '谈话记录成功更新') 
+          else
+            redirect_to("/students/#{@talk_record.student_id}/talk_records", :notice => '谈话记录成功更新') 
+          end
+        }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -77,7 +83,14 @@ class TalkRecordsController < ApplicationController
     @talk_record.destroy
 
     respond_to do |format|
-      format.html { redirect_to("/students/#{@talk_record.student_id}/talk_records",notice:'记录成功删除') }
+      format.html { 
+        if params[:zong]
+          redirect_to("/inquiry/talk", :notice => '记录成功删除') 
+        else
+          redirect_to("/students/#{@talk_record.student_id}/talk_records",notice:'记录成功删除')
+        end
+        
+         }
       format.xml  { head :ok }
     end
   end
