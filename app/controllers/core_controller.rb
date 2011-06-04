@@ -291,6 +291,7 @@ class CoreController < ApplicationController
       p jin_e_first = firstrow.index('金额')
       p number_first = firstrow.index('学号')
       p name_first = firstrow.index('姓名')
+
       
       if !huojiangdengji_first or !number_first
         p firstrow = worksheet.row(1)
@@ -302,7 +303,8 @@ class CoreController < ApplicationController
       end
       raise RuntimeError,'不能没有获奖等级 金额 学号 姓名' if !huojiangdengji_first or !number_first
 
-
+      yuanxi_first = worksheet.row(0).index('院系')
+      yuanxi_first ||= worksheet.row(1).index('院系')
 
 
 
@@ -310,9 +312,10 @@ class CoreController < ApplicationController
         
         j = 1
         j = params[:j].to_i if params[:j]
-        j_lim = j+100
+        j_lim = j+1000
         while j<=j_lim
           row = worksheet.row(j)
+          j+=1 and next if yuanxi_first and !(row[yuanxi_first] =~ /数学/)
           break if !row or row.empty? or !row[number_first] or !row[name_first] 
           if row[number_first].class == Float
             row[number_first] = row[number_first].to_i
