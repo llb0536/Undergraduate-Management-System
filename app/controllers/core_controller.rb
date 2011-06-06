@@ -426,7 +426,7 @@ worksheets.each do |worksheet|
     end
     j+=1
   end
-  sem.memo += memo.strip
+  sem.memo = memo.strip if !sem.memo
   sem.save!
 end
 
