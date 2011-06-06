@@ -193,6 +193,11 @@
 		<td width="55%"><% @student.scholarships.each do |ass|%><%= ass.event_formatted %> - <%= ass.level %> - <span style="color:red"><%= ass.acount %>元</span><br><% end %></td>
 	</tr>
 	<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
+	<tr><td width="50%" class="bold" valign="top">所听讲座(共<%= @student.seminars.count %>次):</td>
+		<td width="55%"><% @student.seminars.each do |sem|%>“<%= sem.name %>”<br><%if sem.memo%>&nbsp;&nbsp;&nbsp;&nbsp;| <%=sem.memo%><br><%end %> <% end %></td>
+	</tr>
+	
+	<tr><td colspan="2"><hr width="95%" size="0" noshade="" color="#dde3ec"></td></tr>
 	<% t_courses = @student.assignments.where('score>=90').order('score desc') %>
 	<tr><td width="50%" class="bold" valign="top">优秀科目(<%= t_courses.count %>科):</td>
 		<td width="55%"><% t_courses.each do |ass|%><%= ass.course.name %>(<span style="color:green"><%= ass.score %></span>)<br><% end %></td>

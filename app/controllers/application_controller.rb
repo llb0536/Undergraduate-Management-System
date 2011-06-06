@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
       @is_ie6 = (request.env['HTTP_USER_AGENT'].downcase.index('msie 6')!=nil)
       @is_ie9 = (request.env['HTTP_USER_AGENT'].downcase.index('msie 9')!=nil)
     end
-    flash[:alert] = "检测到您正在使用IE浏览器，推荐您使用非IE浏览器（如<a href=\"http://www.google.com/chrome/\">Chrome</a>）以使用系统的全部功能。".html_safe if @is_ie
+    flash[:alert] = "推荐您使用非IE核心的浏览器（如<a href=\"http://www.google.com/chrome/\">Chrome</a>），以获得最佳使用体验和使用系统的全部功能；更改浏览器后本提示将消失。".html_safe if @is_ie
   end
   
   rescue_from CanCan::AccessDenied do |exception|

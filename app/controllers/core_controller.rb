@@ -385,4 +385,78 @@ class CoreController < ApplicationController
     render :template=>'core/showmsg'
   end
 
+
+  
+  def import4
+    @msg = ''
+    if params[:log_id]
+      import4Log = Import4Log.find(params[:log_id])
+    else
+      import4Log = Import4Log.create!(students_updated:0,students_created:0,user_id:current_user.id,erroneous:true)
+    end
+    begin    
+      if params[:from]=='server'
+        student_created = student_updated = nil
+        worksheets = Spreadsheet.open(params[:filepath]).worksheets
+        @msg += params[:filepath].split('/')[-1]+"<br><br>"
+        ttt=''
+worksheets.each do |worksheet|
+  event = String.new(File.basename(params[:filepath]).split('.')[0..-2].join('.').strip)
+  sem = Seminar.find_or_create_by_name(event)
+  memo = ''
+  j = 0
+  j = params[:j].to_i if params[:j]
+  while j<worksheet.count
+    row = worksheet.row(j)
+    row.each do |cell|
+      next unless cell
+      cell = cell.to_i if cell.class==Float
+      cell = cell.to_s
+      cell.strip!
+      if cell=~/^(\d+)$/
+        if stu = Student.find_by_number($1)
+          unless stu.seminars.include?(sem)
+            stu.seminars << sem
+            stu.save!
+          end
+        end
+      else
+        memo+= " #{cell}"
+      end
+    end
+    j+=1
+  end
+  sem.memo += memo.strip
+  sem.save!
+end
+
+        @msg += "<br>已创建#{import4Log.students_created}条新学生记录" if import4Log.students_created>0
+        @msg += "<br><br>已更新#{import4Log.students_updated}条记录" if import4Log.students_updated>0
+        @cont = nil
+
+          @msg = "<span style=\"color:green\">全部完成</span><br><br>" + @msg
+          import4Log.erroneous = false
+
+      elsif params[:from]=='local'
+        path = "#{RAILS_ROOT}/data/huojiang/upload/#{Time.now.strftime('%Y%m%d%H%M%S')}"
+        File.open(path,"wb") do |f|
+          f.write(params[:datafile].read)
+        end
+        @msg += "<br>文件上传已经完成，正在开始导入"
+        @cont_path = '/core/import4'
+        @cont = Hash.new
+        @cont[:from] = 'server'
+        @cont[:filepath] = path
+        @cont[:j] = 1
+        @cont[:log_id] = import4Log.id
+      else
+        raise RuntimeError,'from参数未指定'
+      end
+    rescue Exception => e
+      @msg += "错误：#{e}<br><br>"
+      p e.backtrace
+    end
+    import4Log.save!
+    render :template=>'core/showmsg'
+  end
 end

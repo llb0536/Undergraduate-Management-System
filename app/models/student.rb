@@ -1,5 +1,6 @@
 # -*- encoding : utf-8 -*-
 class Student < ActiveRecord::Base
+  has_and_belongs_to_many :seminars
   belongs_to :klass
   belongs_to :klass2
   belongs_to :zhuanye
